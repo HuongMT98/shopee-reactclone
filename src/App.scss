@@ -2,6 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: "helvetica";
 }
 a {
   text-decoration: none;
@@ -40,4 +41,9 @@ li {
 
 *::-webkit-scrollbar-thumb:active {
   background-color: #4900ff;
+}
+
+:root {
+  --bg-root: #ee4d2d;
+  --bg-primary: #fef6f5;
 }
