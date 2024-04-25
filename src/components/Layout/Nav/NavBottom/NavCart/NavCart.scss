@@ -1,0 +1,36 @@
+.nav-cart {
+  width: 37px;
+  height: 40px;
+  color: white;
+  cursor: pointer;
+}
+
+.cart-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 4rem;
+
+  &:hover {
+    background-color: #f1eaea85;
+  }
+
+  .cart-item-img {
+    width: 40px;
+  }
+
+  .cart-item-info {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+    .cart-item-name {
+      font-size: 14px;
+      margin: 0 0.3rem;
+    }
+
+    .cart-item-price {
+      color: red;
+    }
+  }
+}

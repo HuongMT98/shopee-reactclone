@@ -1,0 +1,27 @@
+.nav-search {
+  width: 840px;
+  margin-bottom: 10px;
+  height: 40px !important;
+  display: flex;
+  align-items: center;
+
+  .rs-input-group.rs-input-group-inside {
+    height: 40px !important;
+    display: flex;
+    align-items: center;
+
+    .rs-input-group-addon {
+      background-color: var(--bg-root);
+      width: 4rem;
+      height: 90%;
+      color: black;
+      border-radius: 3px;
+      margin-right: 0.3rem;
+
+      .rs-icon {
+        color: var(--bg-primary);
+        font-size: 20px;
+      }
+    }
+  }
+}

@@ -1,61 +1,172 @@
 .active {
   color: red;
 }
+:focus-visible {
+  text-decoration: none;
+}
 
-.nav {
-  display: flex;
+.nav-wrap {
+  position: fixed;
   width: 100%;
-  background-color: var(--bg-root);
-  justify-content: center;
+  top: 0;
 
-  button {
-    background: transparent;
-    border: none;
-  }
-  .nav-item {
-    width: 1200px;
+  .nav {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-    height: 34px;
+    width: 100%;
+    background-color: var(--bg-root);
+    justify-content: center;
 
-    .nav-contact {
-      a {
-        padding: 6px;
-        color: var(--bg-primary);
-        cursor: pointer;
-        font-size: 13px;
-        font-weight: 300;
+    button {
+      background: transparent;
+      border: none;
+    }
+    .nav-item {
+      width: 1200px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      height: 34px;
+
+      .nav-contact {
+        a {
+          padding: 6px;
+          color: var(--bg-primary);
+          cursor: pointer;
+          font-size: 13px;
+          font-weight: 300;
+
+          &:hover {
+            opacity: 0.8;
+            text-decoration: none;
+          }
+        }
+
+        .icon {
+          padding: 0 5px;
+          font-size: 15px;
+        }
+
+        .tippy-content {
+          width: 180px;
+          border: 1px solid #10000036;
+          border-radius: 0;
+        }
       }
 
-      .icon {
-        padding: 0 5px;
-        font-size: 15px;
+      .nav-info {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+
+        .icon {
+          padding: 0 0.4rem;
+          font-size: 16px;
+        }
+
+        .notification-tippy {
+          .tippy-content {
+            padding: 0;
+            h4 {
+              opacity: 0.4;
+              font-size: 13px;
+              padding: 0.6rem 0.5rem;
+            }
+
+            .box-notification {
+              width: 100%;
+              display: flex;
+              flex-direction: row;
+              align-items: center;
+              padding: 0 0.5rem;
+
+              &:hover {
+                background-color: #f1eaea85;
+              }
+
+              .image-notification {
+                width: 45px;
+                height: auto;
+              }
+
+              .boxwrap-notification {
+                padding: 0.3rem 0.4rem;
+
+                .title-notification {
+                  font-size: 13px;
+                }
+
+                .content-notification {
+                  font-size: 12px;
+                }
+              }
+            }
+          }
+        }
+
+        a {
+          padding: 6px;
+          color: var(--bg-primary);
+          cursor: pointer;
+          font-size: 13px;
+          font-weight: 300;
+
+          &:hover {
+            opacity: 0.8;
+            text-decoration: none;
+          }
+        }
+
+        .user {
+          display: flex;
+
+          .tippy-content {
+            padding: 1rem;
+            color: var(--bg-primary);
+          }
+        }
+
+        .user-img {
+          width: 20px;
+          height: 20px;
+          border-radius: 50%;
+          margin: 0 3px;
+        }
+
+        .language {
+          .language-text {
+            display: flex;
+            color: black;
+            padding: 0.4rem 2rem 0.4rem 0.5rem;
+            font-weight: 600;
+          }
+        }
       }
     }
+  }
 
-    .nav-info {
+  .nav-bottom {
+    height: 85px;
+    display: flex;
+    width: 100%;
+    background-color: var(--bg-root);
+    justify-content: center;
+    align-items: center;
+
+    .nav-bottom-item {
+      width: 1200px;
       display: flex;
-      flex-direction: row;
       align-items: center;
+      justify-content: space-between;
 
-      a {
-        padding: 6px;
-        color: var(--bg-primary);
-        cursor: pointer;
-        font-size: 13px;
-        font-weight: 300;
-      }
+      .nav-bottom-logo-img {
+        width: 120px;
+        height: 50px;
+        display: block;
 
-      .user {
-        display: flex;
-      }
-
-      .user-img {
-        width: 20px;
-        height: 20px;
-        border-radius: 50%;
-        margin: 0 3px;
+        .shopee-logo {
+          width: 100%;
+          color: white;
+        }
       }
     }
   }

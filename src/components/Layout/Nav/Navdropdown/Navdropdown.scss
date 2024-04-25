@@ -1,0 +1,26 @@
+.tippy-content {
+  background-color: white;
+  border: 1px solid rgb(212, 203, 203);
+  color: black;
+
+  .nav-dropdown {
+    ul {
+      list-style: none;
+
+      li {
+        padding: 10px 0;
+
+        a {
+          text-decoration: none;
+          color: black !important;
+          font-size: 14px !important;
+
+          &:hover {
+            color: #00bfa5 !important;
+            background-color: rgba(255, 255, 255, 0.074) !important;
+          }
+        }
+      }
+    }
+  }
+}
