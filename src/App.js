@@ -3,7 +3,6 @@ import "./App.scss"
 import Home from "../src/components/Layout/Home/Home"
 import Nav from "./components/Layout/Nav/Nav"
 import NavBottom from "./components/Layout/Nav/NavBottom/NavBottom"
-import Headroom from "react-headroom"
 
 function App() {
   return (

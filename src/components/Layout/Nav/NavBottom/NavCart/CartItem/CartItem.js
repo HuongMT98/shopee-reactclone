@@ -1,8 +1,11 @@
+import { Link } from "react-router-dom"
 import cartimg1 from "../../../../../../Assets/cartitem1.jpg"
 import cartimg2 from "../../../../../../Assets/cartitem2.jpg"
 import cartimg3 from "../../../../../../Assets/cartitem3.jpg"
 import cartimg4 from "../../../../../../Assets/cartitem4.jpg"
 import cartimg5 from "../../../../../../Assets/cartitem5.jpg"
+import "../../NavCart/NavCart.scss"
+
 function CartItem() {
   const Carts = [
     {
@@ -40,17 +43,26 @@ function CartItem() {
     <>
       {Carts.map((cart) => (
         <div className='cart-item' key={cart.id}>
-          <div>
-            <img src={cart.image} alt='' className='cart-item-img' />
-          </div>
-          <div className='cart-item-info'>
+          <Link to={"/cart"}>
             <div>
-              <div className='cart-item-name'>{cart.name}</div>
+              <img src={cart.image} alt='' className='cart-item-img' />
             </div>
-            <div className='cart-item-price'>đ{cart.price}</div>
-          </div>
+            <div className='cart-item-info'>
+              <div>
+                <div className='cart-item-name'>{cart.name}</div>
+              </div>
+              <div className='cart-item-price'>đ{cart.price}</div>
+            </div>
+          </Link>
         </div>
       ))}
+      <div className='add-to-cartwrap'>
+        <div className='add-to-cart'>
+          <Link to={"/cart"}>
+            <button className='btn-cart'>view my shopping cart</button>
+          </Link>
+        </div>
+      </div>
     </>
   )
 }

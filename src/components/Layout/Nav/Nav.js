@@ -22,11 +22,11 @@ function Nav() {
   const languageChoice = [
     {
       id: 1,
-      name: "Vietnamese",
+      name: "English",
     },
     {
       id: 2,
-      name: "English",
+      name: "Tiếng Việt",
     },
   ]
 

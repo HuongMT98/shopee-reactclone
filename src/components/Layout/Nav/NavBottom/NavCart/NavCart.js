@@ -11,6 +11,7 @@ function NavCart() {
       placement='bottom-end'
       interactive={true}
       className='nav-cart-tippy'
+      delay={[0, 500]}
     >
       <FontAwesomeIcon icon={faCartShopping} className='nav-cart' />
     </Tippy>

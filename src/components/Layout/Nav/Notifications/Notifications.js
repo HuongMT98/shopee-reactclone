@@ -1,7 +1,6 @@
 import NotificationContent from "./NotificationContent/NotificationContent"
 
-function Notifications() {
-  const username = "Nguyen Van A"
+function Notifications({ username }) {
   return (
     <>
       <div>

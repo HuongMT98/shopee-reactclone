@@ -9,6 +9,7 @@
   position: fixed;
   width: 100%;
   top: 0;
+  z-index: 999;
 
   .nav {
     display: flex;
@@ -136,7 +137,7 @@
           .language-text {
             display: flex;
             color: black;
-            padding: 0.4rem 2rem 0.4rem 0.5rem;
+            padding: 0.4rem 4rem 0.4rem 0.5rem;
             font-weight: 600;
           }
         }
