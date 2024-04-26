@@ -4,7 +4,7 @@ import Tippy from "@tippyjs/react"
 import "tippy.js/dist/tippy.css"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faFacebook, faInstagram } from "@fortawesome/free-brands-svg-icons"
-import { useState, useCallback } from "react"
+import { useState } from "react"
 import Navdropdown from "./Navdropdown/Navdropdown"
 import DownloadApp from "./DownloadApp/DownloadApp"
 import Notifications from "./Notifications/Notifications"
@@ -31,9 +31,11 @@ function Nav() {
   ]
 
   const language = languageChoice.map((item) => (
-    <NavLink to='/language' className={"language-text"}>
-      {item.name}
-    </NavLink>
+    <div key={item.id}>
+      <NavLink to='/language' className={"language-text"}>
+        {item.name}
+      </NavLink>
+    </div>
   ))
 
   const handleClick = () => {

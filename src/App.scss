@@ -5,7 +5,7 @@
   font-family: "helvetica";
 }
 a {
-  text-decoration: none;
+  text-decoration: none !important;
 }
 
 li {
@@ -45,5 +45,9 @@ li {
 
 :root {
   --bg-root: #ee4d2d;
-  --bg-primary: #fef6f5;
+  --bg-primary: #ffffff;
+  --gb-all: #efebebc7;
+  --color-red: #ff0000;
+  --color-black: #000000;
+  --color-prime: #00bfa5;
 }
