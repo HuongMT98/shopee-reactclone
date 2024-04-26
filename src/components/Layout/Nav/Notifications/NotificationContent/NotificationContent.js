@@ -1,6 +1,6 @@
-import shoppeNotification1 from "../../../../../Assets/shoppe-notification-1.jpg"
-import shoppeNotification2 from "../../../../../Assets/shoppe-notification-2.png"
-import shoppeNotification3 from "../../../../../Assets/shoppe-notification-3.png"
+import shoppeNotification1 from "../../../../../Assets/Notification/shoppe-notification-1.jpg"
+import shoppeNotification2 from "../../../../../Assets/Notification/shoppe-notification-2.png"
+import shoppeNotification3 from "../../../../../Assets/Notification/shoppe-notification-3.png"
 
 function NotificationContent() {
   const username = "Nguyen Van A"

@@ -1,9 +1,9 @@
 import { Link } from "react-router-dom"
-import cartimg1 from "../../../../../../Assets/cartitem1.jpg"
-import cartimg2 from "../../../../../../Assets/cartitem2.jpg"
-import cartimg3 from "../../../../../../Assets/cartitem3.jpg"
-import cartimg4 from "../../../../../../Assets/cartitem4.jpg"
-import cartimg5 from "../../../../../../Assets/cartitem5.jpg"
+import cartimg1 from "../../../../../../Assets/CartItem/cartitem1.jpg"
+import cartimg2 from "../../../../../../Assets/CartItem/cartitem2.jpg"
+import cartimg3 from "../../../../../../Assets/CartItem/cartitem3.jpg"
+import cartimg4 from "../../../../../../Assets/CartItem/cartitem4.jpg"
+import cartimg5 from "../../../../../../Assets/CartItem/cartitem5.jpg"
 import "../../NavCart/NavCart.scss"
 
 function CartItem() {

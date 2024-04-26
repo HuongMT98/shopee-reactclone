@@ -1,7 +1,7 @@
-import QRcode from "../../../../Assets/QRcode.png"
-import Chplay from "../../../../Assets/googleplay.png"
-import Appstore from "../../../../Assets/appstore.png"
-import AppGallery from "../../../../Assets/AppGallery.png"
+import QRcode from "../../../../Assets/DownloadApp/QRcode.png"
+import Chplay from "../../../../Assets/DownloadApp/googleplay.png"
+import Appstore from "../../../../Assets/DownloadApp/appstore.png"
+import AppGallery from "../../../../Assets/DownloadApp/AppGallery.png"
 import "./DownloadApp.scss"
 function DownloadApp() {
   return (
