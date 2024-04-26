@@ -1,4 +1,4 @@
-import SlideBot from "./SliderBottom.json"
+import SlideBot from "./Data.json"
 
 function SliderBottom() {
   return (
@@ -12,7 +12,7 @@ function SliderBottom() {
                   <img src={item.img} alt='img' />
                 </div>
                 <div className='slider-bottom-title'>
-                  <p>{item.title}</p>
+                  <h4>{item.title}</h4>
                 </div>
               </div>
             ))}
