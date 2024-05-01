@@ -14,9 +14,9 @@ function FlashSale() {
           <div className='flash-sale-title'>
             <div className='flash-sale-left'>
               <div
-                class='flash-sale-logo'
+                className='flash-sale-logo'
                 aria-label='title Flash Deals'
-                tabindex='0'
+                tabIndex='0'
               >
                 <img src={flashSaveImg} alt='' />
               </div>

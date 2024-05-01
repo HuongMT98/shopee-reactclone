@@ -39,6 +39,7 @@ function CartItem() {
       price: 40000,
     },
   ]
+
   return (
     <>
       {Carts.map((cart) => (

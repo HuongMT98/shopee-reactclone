@@ -2,8 +2,7 @@ import shoppeNotification1 from "../../../../../Assets/Notification/shoppe-notif
 import shoppeNotification2 from "../../../../../Assets/Notification/shoppe-notification-2.png"
 import shoppeNotification3 from "../../../../../Assets/Notification/shoppe-notification-3.png"
 
-function NotificationContent() {
-  const username = "Nguyen Van A"
+function NotificationContent({ username }) {
   const notifications = [
     {
       id: 1,

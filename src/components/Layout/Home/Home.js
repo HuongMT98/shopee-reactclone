@@ -1,5 +1,6 @@
 import Categories from "../Categories/Categories"
 import FlashSale from "../FlashSale/FlashSale"
+import ShopeeMall from "../ShopeeMall/ShopeeMall"
 import SliderBottom from "../SliderShow/SliderBottom/SliderBottom"
 import SliderShow from "../SliderShow/SliderShow"
 import "./Home.scss"
@@ -11,6 +12,7 @@ function Home() {
       <SliderBottom />
       <Categories />
       <FlashSale />
+      <ShopeeMall />
     </div>
   )
 }

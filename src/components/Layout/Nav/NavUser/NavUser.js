@@ -1,22 +1,22 @@
 import { NavLink } from "react-router-dom"
 import "./Navdropdown.scss"
 
-function Navdropdown({ handleClickLogin }) {
+function NavUser({ handleClick }) {
   return (
     <nav className='nav-dropdown'>
       <ul>
         <li>
-          <NavLink to='/'>my account</NavLink>
+          <NavLink to='/info'>my account</NavLink>
         </li>
         <li>
-          <NavLink>my purchase</NavLink>
+          <NavLink to='./cart'>my purchase</NavLink>
         </li>
         <li>
-          <NavLink onClick={handleClickLogin}>log out</NavLink>
+          <NavLink onClick={handleClick}>log out</NavLink>
         </li>
       </ul>
     </nav>
   )
 }
 
-export default Navdropdown
+export default NavUser

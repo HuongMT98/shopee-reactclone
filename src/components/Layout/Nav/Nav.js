@@ -1,11 +1,11 @@
-import { NavLink } from "react-router-dom"
+import { Link, NavLink } from "react-router-dom"
 import "./Nav.scss"
 import Tippy from "@tippyjs/react"
 import "tippy.js/dist/tippy.css"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faFacebook, faInstagram } from "@fortawesome/free-brands-svg-icons"
 import { useState } from "react"
-import Navdropdown from "./Navdropdown/Navdropdown"
+import Navdropdown from "./NavUser/NavUser"
 import DownloadApp from "./DownloadApp/DownloadApp"
 import Notifications from "./Notifications/Notifications"
 import {
@@ -17,7 +17,7 @@ import {
 
 function Nav() {
   const [isLogin, setIsLogin] = useState(true)
-  const username = "Nguyen Van A"
+  const username = "--USER TEST--"
 
   const languageChoice = [
     {
@@ -38,14 +38,17 @@ function Nav() {
     </div>
   ))
 
-  const handleClickLogin = () => {
+  const handleClick = () => {
     setIsLogin(!isLogin)
     localStorage.setItem("isLogin", JSON.stringify(!isLogin))
-    alert(isLogin ? "Logout" : "Login")
+    alert(isLogin ? "Log Out" : "Log In")
   }
 
   const handleClickSignUp = () => {
     alert("Sign Up")
+    return (
+      <Link to='/buyer/signup?next=https%3A%2F%2Fshopee.vn%2F'>Sign Up</Link>
+    )
   }
 
   return (
@@ -62,6 +65,8 @@ function Nav() {
             <FontAwesomeIcon icon={faInstagram} className='icon' />
           </NavLink>
         </nav>
+
+        {/* isLogin === true render UI login */}
         {isLogin && (
           <nav className='nav-info'>
             {/* Notifications */}
@@ -102,7 +107,7 @@ function Nav() {
             <Tippy
               content={
                 <Navdropdown
-                  handleClick={handleClickLogin}
+                  handleClick={handleClick}
                   isLogin={isLogin}
                   setIsLogin={setIsLogin}
                 />
@@ -122,6 +127,8 @@ function Nav() {
             </Tippy>
           </nav>
         )}
+
+        {/* isLogin === false render UI log out */}
         {!isLogin && (
           <nav className='nav-info'>
             {/* Notifications */}
@@ -159,11 +166,13 @@ function Nav() {
                 <FontAwesomeIcon icon={faAngleDown} className='icon' />
               </NavLink>
             </Tippy>
+
+            {/* Account  */}
             <div className='nav-info-account'>
               <button onClick={handleClickSignUp} isLogin={isLogin}>
                 Sign Up
               </button>
-              <button onClick={handleClickLogin} isLogin={isLogin}>
+              <button onClick={handleClick} isLogin={isLogin}>
                 Login
               </button>
             </div>

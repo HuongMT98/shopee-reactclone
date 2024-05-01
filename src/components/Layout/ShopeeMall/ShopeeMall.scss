@@ -1,0 +1,160 @@
+.shopee-mall {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  .shopee-mall-container {
+    width: 1200px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+
+    .shopee-mall-title-wrap {
+      width: 100%;
+      display: flex;
+      align-items: center;
+
+      //   Shopee Mall Title
+      .shopee-mall-title {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        height: 60px;
+
+        a {
+          border-right: 1px solid;
+          padding: 0 0.5rem;
+          color: var(--color-red);
+          font-size: 18px;
+        }
+        //   Shopee Mall Title Refund
+        .shopee-mall-title-refund {
+          display: flex;
+          flex-direction: row;
+          align-items: center;
+          height: 100%;
+
+          p {
+            margin: 0;
+            padding: 0 0.5rem;
+
+            svg {
+              padding-right: 0.3rem;
+              color: var(--color-red);
+            }
+          }
+        }
+      }
+    }
+
+    //   Shopee Mall Title See More
+    .shopee-mall-title-see-more {
+      right: 0;
+      position: absolute;
+      padding: 0 2rem;
+      color: var(--color-red);
+    }
+
+    //   Shopee Mall Carousel
+    .shopee-mall-carousel {
+      width: 100%;
+      height: 450px;
+      display: flex;
+      flex-direction: row;
+
+      .shopee-mall-carousel-left {
+        width: 30%;
+        height: 100%;
+
+        .slick-slider {
+          .slick-prev {
+            display: block;
+            position: absolute;
+            z-index: 5;
+            left: 0;
+
+            &:before {
+              font-size: 3rem;
+            }
+          }
+          .slick-next {
+            display: block;
+            position: absolute;
+            z-index: 5;
+            right: 8%;
+
+            &:before {
+              font-size: 3rem;
+            }
+          }
+          .slick-dots {
+            display: block;
+            position: absolute;
+            bottom: 2rem;
+
+            li {
+              button {
+                &::before {
+                  font-size: 13px;
+                  color: var(--color-red);
+                }
+              }
+            }
+          }
+        }
+
+        .shopee-mall-carousel-left-img {
+          width: 100%;
+          height: 100%;
+
+          img {
+            width: 100%;
+            height: 450px;
+            object-fit: contain;
+          }
+        }
+      }
+      .shopee-mall-carousel-right {
+        width: 70%;
+
+        .slick-slider {
+          .slick-prev {
+            left: 0;
+            z-index: 5;
+            &::before {
+              font-size: 3rem;
+              color: red;
+            }
+          }
+
+          .slick-next {
+            right: 5%;
+            z-index: 5;
+            &::before {
+              font-size: 3rem;
+              color: red;
+            }
+          }
+
+          .slick-track {
+            .shopee-mall-carousel-right-wrap {
+              .shopee-mall-carousel-right-img {
+                width: 100%;
+                position: relative;
+
+                p {
+                  position: absolute;
+                  bottom: 0;
+                  transform: translate(50%);
+                  color: var(--color-red);
+                  font-size: 18px;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

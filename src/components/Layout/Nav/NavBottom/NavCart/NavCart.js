@@ -1,21 +1,10 @@
-import { faCartShopping } from "@fortawesome/free-solid-svg-icons"
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import Tippy from "@tippyjs/react"
 import "./NavCart.scss"
 import CartItem from "./CartItem/CartItem"
+import Cart from "./Cart/Cart"
 
 function NavCart() {
-  return (
-    <Tippy
-      content={<CartItem />}
-      placement='bottom-end'
-      interactive={true}
-      className='nav-cart-tippy'
-      delay={[0, 500]}
-    >
-      <FontAwesomeIcon icon={faCartShopping} className='nav-cart' />
-    </Tippy>
-  )
+  return <Cart />
 }
 
 export default NavCart
