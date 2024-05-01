@@ -38,10 +38,14 @@ function Nav() {
     </div>
   ))
 
-  const handleClick = () => {
+  const handleClickLogin = () => {
     setIsLogin(!isLogin)
     localStorage.setItem("isLogin", JSON.stringify(!isLogin))
-    alert("Đăng xuất")
+    alert(isLogin ? "Logout" : "Login")
+  }
+
+  const handleClickSignUp = () => {
+    alert("Sign Up")
   }
 
   return (
@@ -60,6 +64,7 @@ function Nav() {
         </nav>
         {isLogin && (
           <nav className='nav-info'>
+            {/* Notifications */}
             <div className='notification-tippy'>
               <Tippy
                 content={<Notifications username={username} />}
@@ -78,6 +83,8 @@ function Nav() {
               <FontAwesomeIcon icon={faCircleQuestion} className='icon' />
               Help
             </NavLink>
+
+            {/* Language Choice */}
             <Tippy
               content={language}
               interactive={true}
@@ -91,10 +98,11 @@ function Nav() {
               </NavLink>
             </Tippy>
 
+            {/* Nav DropDown User  */}
             <Tippy
               content={
                 <Navdropdown
-                  handleClick={handleClick}
+                  handleClick={handleClickLogin}
                   isLogin={isLogin}
                   setIsLogin={setIsLogin}
                 />
@@ -116,13 +124,49 @@ function Nav() {
         )}
         {!isLogin && (
           <nav className='nav-info'>
-            <Tippy content={"Thông báo"}>
-              <NavLink to='/notifications'>Notifications</NavLink>
+            {/* Notifications */}
+            <div className='notification-tippy'>
+              <Tippy
+                content={<Notifications username={username} />}
+                interactive={true}
+                arrow={true}
+                delay={[0, 500]}
+                placement='bottom-end'
+              >
+                <NavLink to='/notifications'>
+                  <FontAwesomeIcon icon={faBell} className='icon' />
+                  Notifications
+                </NavLink>
+              </Tippy>
+            </div>
+
+            {/* Help */}
+            <NavLink to='/help'>
+              <FontAwesomeIcon icon={faCircleQuestion} className='icon' />
+              Help
+            </NavLink>
+
+            {/* Language Choice */}
+            <Tippy
+              content={language}
+              interactive={true}
+              className='language'
+              arrow={true}
+            >
+              <NavLink to='/language' className={"language"}>
+                <FontAwesomeIcon icon={faGlobe} className='icon' />
+                English
+                <FontAwesomeIcon icon={faAngleDown} className='icon' />
+              </NavLink>
             </Tippy>
-            <NavLink to='/help'>Help</NavLink>
-            <button onClick={handleClick} isLogin={isLogin}>
-              {isLogin ? "Logout" : "Login"}
-            </button>
+            <div className='nav-info-account'>
+              <button onClick={handleClickSignUp} isLogin={isLogin}>
+                Sign Up
+              </button>
+              <button onClick={handleClickLogin} isLogin={isLogin}>
+                Login
+              </button>
+            </div>
           </nav>
         )}
       </nav>

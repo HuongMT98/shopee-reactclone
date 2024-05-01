@@ -21,7 +21,7 @@ function SliderShowCarousel() {
   const settings = {
     dots: true,
     infinite: true,
-    autoplay: true,
+    autoplay: false,
     autoplaySpeed: 3000,
     speed: 500,
     slidesToShow: 1,

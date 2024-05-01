@@ -1,3 +1,4 @@
+import { NavLink } from "react-router-dom"
 import img1 from "../../../../../Assets/SliderBottom/slidebottom.png"
 import img2 from "../../../../../Assets/SliderBottom/slidebottom1.png"
 import img3 from "../../../../../Assets/SliderBottom/slidebottom2.png"
@@ -54,12 +55,14 @@ function DataSliderBottom() {
     <div className='slider-bottom-content'>
       {Data.map((item) => (
         <div key={item.id} className='slider-bottom-container'>
-          <div className='slider-bottom-img'>
-            <img src={item.image} alt='' />
-          </div>
-          <div className='slider-bottom-title'>
-            <div>{item.title}</div>
-          </div>
+          <NavLink to='/voucher'>
+            <div className='slider-bottom-img'>
+              <img src={item.image} alt='' />
+            </div>
+            <div className='slider-bottom-title'>
+              <p>{item.title}</p>
+            </div>
+          </NavLink>
         </div>
       ))}
     </div>

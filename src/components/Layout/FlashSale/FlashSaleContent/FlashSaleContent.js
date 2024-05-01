@@ -30,7 +30,10 @@ import img15 from "../../../../Assets/FlashSale/flashsale15.jpg"
 import img15a from "../../../../Assets/FlashSale/flashsale15a.png"
 import img16 from "../../../../Assets/FlashSale/flashsale16.jpg"
 import img16a from "../../../../Assets/FlashSale/flashsale16a.png"
+import flashsalebanner from "../../../../Assets/FlashSale/flashsalebanner.png"
+
 import Slider from "react-slick"
+import { NavLink } from "react-router-dom"
 
 function FlashSaleContent() {
   const dataFlashSale = [
@@ -39,141 +42,156 @@ function FlashSaleContent() {
       image: img1,
       context: img1a,
       sale: "-22%",
-      price: 139000,
+      price: "139.000",
     },
     {
       id: 2,
       image: img2,
       context: img2a,
       sale: "-45%",
-      price: 71000,
+      price: "71.000",
     },
     {
       id: 3,
       image: img3,
       context: img3a,
       sale: "-9%",
-      price: 1047000,
+      price: "1.047.000",
     },
     {
       id: 4,
       image: img4,
       context: img4a,
       sale: "-37%",
-      price: 2018000,
+      price: "2.018.000",
     },
     {
       id: 5,
       image: img5,
       context: img5a,
       sale: "-20%",
-      price: 716000,
+      price: "716.000",
     },
     {
       id: 6,
       image: img6,
       context: img6a,
       sale: "-60%",
-      price: 404000,
+      price: "404.000",
     },
     {
       id: 7,
       image: img7,
       context: img7a,
       sale: "-44%",
-      price: 419000,
+      price: "419.000",
     },
     {
       id: 8,
       image: img8,
       context: img8a,
       sale: "-55%",
-      price: 149000,
+      price: "149.000",
     },
     {
       id: 9,
       image: img9,
       context: img9a,
       sale: "-25%",
-      price: 278000,
+      price: "278.000",
     },
     {
       id: 10,
       image: img10,
       context: img10a,
       sale: "-44%",
-      price: 100000,
+      price: "100.000",
     },
     {
       id: 11,
       image: img11,
       context: img11a,
       sale: "-43%",
-      price: 200000,
+      price: "200.000",
     },
     {
       id: 12,
       image: img12,
       context: img12a,
       sale: "-53%",
-      price: 220000,
+      price: "220.000",
     },
     {
       id: 13,
       image: img13,
       context: img13a,
       sale: "-64%",
-      price: 19000,
+      price: "19.000",
     },
     {
       id: 14,
       image: img14,
       context: img14a,
       sale: "-64%",
-      price: 277900,
+      price: "277.900",
     },
     {
       id: 15,
       image: img15,
       context: img15a,
       sale: "-61%",
-      price: 13500,
+      price: "13.500",
     },
     {
       id: 16,
       image: img16,
       context: img16a,
       sale: "-61%",
-      price: 402000,
+      price: "402.000",
     },
   ]
 
   let settings = {
-    dots: true,
-    infinite: true,
+    dots: false,
+    infinite: false,
     speed: 500,
     slidesToShow: 6,
     slidesToScroll: 5,
   }
   return (
     <>
-      <div>
+      <div className='slider-flashsale'>
         <Slider {...settings}>
           {dataFlashSale.map((item) => {
             return (
               <div className='slider-flashsale-wrap-all' key={item.id}>
-                <div className='slider-flashsale-content'>
+                <NavLink
+                  to={"/flashsale"}
+                  key={item.id}
+                  className='slider-flashsale-item'
+                >
                   <div className='slider-flashsale-img'>
                     <img src={item.image} alt={item.context} />
-                    <div>
+                    <div className='slider-flashsale-img-context'>
                       <img src={item.context} alt='' />
                     </div>
+                    <div className='slider-flashsale-img-sale'>
+                      <p>{item.sale}</p>
+                    </div>
                   </div>
-                </div>
+                  <div className='slider-flashsale-price'>
+                    <p>đ {item.price}</p>
+                  </div>
+                </NavLink>
               </div>
             )
           })}
         </Slider>
+        <div className='slider-flashsale-banner'>
+          <NavLink to={"/flashsale"}>
+            <img src={flashsalebanner} alt='' />
+          </NavLink>
+        </div>
       </div>
     </>
   )

@@ -10,48 +10,139 @@
     background-color: var(--bg-primary);
 
     .flash-sale {
+      // Flash Sale Title ********************************
       .flash-sale-title {
         height: 4rem;
         padding: 0 0.5rem 0 1rem;
         display: flex;
+        position: relative;
         flex-direction: row;
         align-items: center;
 
-        .flash-sale-logo {
-          background-size: contain;
-          height: 30px;
-          line-height: 30px;
-          text-transform: uppercase;
-          width: 8.125rem;
+        // Flash Sale Left ********************************
+        .flash-sale-left {
+          display: flex;
 
-          img {
-            width: 7.5rem;
-          }
-        }
+          .flash-sale-logo {
+            background-size: contain;
+            height: 30px;
+            line-height: 30px;
+            text-transform: uppercase;
+            width: 8.125rem;
 
-        .flash-sale-logo-coundown {
-          .countdown-content {
-            .countBox {
-              display: flex;
-              flex-direction: row-reverse;
-              align-items: center;
+            img {
+              width: 7.5rem;
             }
           }
-          .displayedTime {
-            .count {
-              color: var(--bg-primary) !important;
-              background-color: var(--color-black) !important;
-              margin: 0 0.2rem;
-              border-radius: 3px;
+          // Flash Sale Logo Coundown *********************************
+          .flash-sale-logo-coundown {
+            .countdown-content {
+              .countBox {
+                display: flex;
+                flex-direction: row-reverse;
+                align-items: center;
+              }
+            }
+            .displayedTime {
+              .count {
+                color: var(--bg-primary) !important;
+                background-color: var(--color-black) !important;
+                margin: 0 0.2rem;
+                border-radius: 3px;
 
-              &:first-child {
+                &:first-child {
+                  display: none !important;
+                }
+              }
+              .split {
                 display: none !important;
               }
             }
-            .split {
-              display: none !important;
+          }
+        }
+
+        // Flash Sale Right ********************************
+        .flash-sale-right {
+          right: 0;
+          position: absolute;
+          padding-right: 3rem;
+
+          a {
+            color: var(--bg-root);
+          }
+        }
+      }
+
+      // FlashSale Content ****************************
+      .flash-sale-content {
+        display: flex;
+
+        // Slider FlashSale ****************************
+        .slider-flashsale {
+          width: 100%;
+
+          .slick-slider {
+            .slick-prev {
+              left: -5%;
+
+              &:before {
+                font-size: 3rem;
+              }
+            }
+            .slick-next {
+              left: 101%;
+
+              &:before {
+                font-size: 3rem;
+              }
             }
           }
+
+          .slider-flashsale-wrap-all {
+            position: relative;
+            padding: 0 1rem;
+
+            .slider-flashsale-item {
+              .slider-flashsale-img {
+                img {
+                  width: 100%;
+                }
+
+                .slider-flashsale-img-context {
+                  position: absolute;
+                  top: 0;
+
+                  img {
+                    width: 100%;
+                  }
+                }
+                .slider-flashsale-img-sale {
+                  position: absolute;
+                  top: 0;
+                  right: 0;
+                  width: 3rem;
+                  text-align: center;
+                  background: var(--flashsale-bg);
+
+                  p {
+                    color: var(--bg-root);
+                  }
+                }
+              }
+              .slider-flashsale-price {
+                margin-top: 2rem;
+                color: red;
+                text-align: center;
+
+                p {
+                  font-size: 18px;
+                }
+              }
+            }
+          }
+        }
+        .slider-flashsale-banner {
+          margin-top: 3rem;
         }
       }
     }

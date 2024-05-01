@@ -1,18 +1,18 @@
 import { NavLink } from "react-router-dom"
 import "./Navdropdown.scss"
 
-function Navdropdown(handleClick) {
+function Navdropdown({ handleClickLogin }) {
   return (
     <nav className='nav-dropdown'>
       <ul>
         <li>
-          <NavLink to='/'>Tài khoản của tôi</NavLink>
+          <NavLink to='/'>my account</NavLink>
         </li>
         <li>
-          <NavLink>Đơn mua</NavLink>
+          <NavLink>my purchase</NavLink>
         </li>
         <li>
-          <NavLink onClick={handleClick}>Đăng xuất</NavLink>
+          <NavLink onClick={handleClickLogin}>log out</NavLink>
         </li>
       </ul>
     </nav>
