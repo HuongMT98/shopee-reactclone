@@ -1,6 +1,7 @@
 import "./FlashSale.scss"
 import flashSaveImg from "../../../Assets/flashsale.png"
 import CountdownFlashSale from "./CoundownFlashSale/CoundownFlashSale"
+import FlashSaleContent from "./FlashSaleContent/FlashSaleContent"
 
 function FlashSale() {
   return (
@@ -19,6 +20,9 @@ function FlashSale() {
               <CountdownFlashSale />
             </div>
           </div>
+        </div>
+        <div className='flash-sale-content'>
+          <FlashSaleContent />
         </div>
       </div>
     </div>
