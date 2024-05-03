@@ -5,7 +5,7 @@ import "tippy.js/dist/tippy.css"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faFacebook, faInstagram } from "@fortawesome/free-brands-svg-icons"
 import { useState } from "react"
-import Navdropdown from "./NavUser/NavUser"
+import NavUser from "./NavUser/NavUser"
 import DownloadApp from "./DownloadApp/DownloadApp"
 import Notifications from "./Notifications/Notifications"
 import {
@@ -14,6 +14,7 @@ import {
   faCircleQuestion,
   faGlobe,
 } from "@fortawesome/free-solid-svg-icons"
+import NotificationLogout from "./Notifications/NotificationLogout/NotificationLogout"
 
 function Nav() {
   const [isLogin, setIsLogin] = useState(true)
@@ -38,16 +39,25 @@ function Nav() {
     </div>
   ))
 
-  const handleClick = () => {
+  const handleClickLogin = () => {
     setIsLogin(!isLogin)
-    localStorage.setItem("isLogin", JSON.stringify(!isLogin))
-    alert(isLogin ? "Log Out" : "Log In")
+    let saveLocalLogin = localStorage.setItem(
+      "isLogin",
+      JSON.stringify(!isLogin)
+    )
+    console.log(saveLocalLogin)
+
+    alert(isLogin ? "Log Out Popup" : "Log In Popup")
   }
 
   const handleClickSignUp = () => {
     alert("Sign Up")
     return (
-      <Link to='/buyer/signup?next=https%3A%2F%2Fshopee.vn%2F'>Sign Up</Link>
+      <div>
+        <Link to='https://shopee.vn/buyer/signup?next=https%3A%2F%2Fshopee.vn%2F'>
+          Sign Up
+        </Link>
+      </div>
     )
   }
 
@@ -96,22 +106,18 @@ function Nav() {
               className='language'
               arrow={true}
             >
-              <NavLink to='/language' className={"language"}>
-                <FontAwesomeIcon icon={faGlobe} className='icon' />
-                English
+              <NavLink className={"language"}>
+                <buton>
+                  <FontAwesomeIcon icon={faGlobe} className='icon' />
+                  English
+                </buton>
                 <FontAwesomeIcon icon={faAngleDown} className='icon' />
               </NavLink>
             </Tippy>
 
-            {/* Nav DropDown User  */}
+            {/* Nav User  */}
             <Tippy
-              content={
-                <Navdropdown
-                  handleClick={handleClick}
-                  isLogin={isLogin}
-                  setIsLogin={setIsLogin}
-                />
-              }
+              content={<NavUser handleClickLogin={handleClickLogin} />}
               delay={[0, 500]}
               hideOnClick={true}
               interactive={true}
@@ -132,9 +138,14 @@ function Nav() {
         {!isLogin && (
           <nav className='nav-info'>
             {/* Notifications */}
-            <div className='notification-tippy'>
+            <div className='notification-tippy-logout'>
               <Tippy
-                content={<Notifications username={username} />}
+                content={
+                  <NotificationLogout
+                    handleClickLogin={handleClickLogin}
+                    handleClickSignUp={handleClickSignUp}
+                  />
+                }
                 interactive={true}
                 arrow={true}
                 delay={[0, 500]}
@@ -172,7 +183,7 @@ function Nav() {
               <button onClick={handleClickSignUp} isLogin={isLogin}>
                 Sign Up
               </button>
-              <button onClick={handleClick} isLogin={isLogin}>
+              <button onClick={handleClickLogin} isLogin={isLogin}>
                 Login
               </button>
             </div>

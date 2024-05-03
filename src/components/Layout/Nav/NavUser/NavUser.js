@@ -1,18 +1,18 @@
 import { NavLink } from "react-router-dom"
-import "./Navdropdown.scss"
+import "./NavUser.scss"
 
-function NavUser({ handleClick }) {
+function NavUser({ handleClickLogin }) {
   return (
-    <nav className='nav-dropdown'>
+    <nav className='nav-user'>
       <ul>
         <li>
           <NavLink to='/info'>my account</NavLink>
         </li>
         <li>
-          <NavLink to='./cart'>my purchase</NavLink>
+          <NavLink to='/cart'>my purchase</NavLink>
         </li>
         <li>
-          <NavLink onClick={handleClick}>log out</NavLink>
+          <NavLink onClick={handleClickLogin}>log out</NavLink>
         </li>
       </ul>
     </nav>

@@ -1,0 +1,42 @@
+.notification-tippy-logout {
+  .tippy-content {
+    width: 400px;
+    .notification-logout-container {
+      .notification-logout {
+        .notification-logout-content {
+          height: 400px;
+          width: 100%;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          flex-direction: column;
+
+          img {
+            width: 100px;
+            height: 100px;
+          }
+
+          p {
+          }
+        }
+        .notification-logout-btn {
+          width: 100%;
+          display: flex;
+          justify-content: space-around;
+
+          button {
+            width: 50%;
+            height: 2rem;
+            background: rgb(240, 236, 236);
+            transition: 0.3s;
+
+            &:hover {
+              background: rgb(224, 221, 221);
+              color: var(--color-red);
+            }
+          }
+        }
+      }
+    }
+  }
+}

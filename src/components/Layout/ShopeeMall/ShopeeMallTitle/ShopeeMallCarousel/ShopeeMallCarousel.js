@@ -1,4 +1,3 @@
-import Slider from "react-slick"
 import ShopeeMallCarouselLeft from "./ShopeeMallCarouselLeft/ShopeeMallCarouselLeft"
 import ShopeeMallCarouselRight from "./ShopeeMallCarouselRight/ShopeeMallCarouselRight"
 

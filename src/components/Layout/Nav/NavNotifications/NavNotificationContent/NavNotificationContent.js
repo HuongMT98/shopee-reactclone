@@ -2,7 +2,7 @@ import shoppeNotification1 from "../../../../../Assets/Notification/shoppe-notif
 import shoppeNotification2 from "../../../../../Assets/Notification/shoppe-notification-2.png"
 import shoppeNotification3 from "../../../../../Assets/Notification/shoppe-notification-3.png"
 
-function NotificationContent({ username }) {
+function NavNotificationContent({ username }) {
   const notifications = [
     {
       id: 1,
@@ -64,4 +64,4 @@ function NotificationContent({ username }) {
   )
 }
 
-export default NotificationContent
+export default NavNotificationContent
