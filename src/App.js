@@ -6,6 +6,8 @@ import NavBottom from "./components/Layout/Nav/NavBottom/NavBottom"
 import Home from "./pages/Home/Home"
 import Info from "./pages/Info/Info"
 import Cart from "./pages/Cart/Cart"
+import Notification from "./pages/Notification/Notification"
+import Download from "./pages/Download/Download"
 
 function App() {
   return (
@@ -19,6 +21,8 @@ function App() {
           <Route path='/' element={<Home />} />
           <Route path='/info' element={<Info />} />
           <Route path='/cart' element={<Cart />} />
+          <Route path='/notification' element={<Notification />} />
+          <Route path='/download' element={<Download />} />
         </Routes>
       </Router>
     </>

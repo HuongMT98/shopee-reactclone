@@ -1,6 +1,6 @@
 import img from "../../../../../Assets/Notification/NotificationLogOut.png"
-import "./NotificationLogout.scss"
-function NotificationLogout({ handleClickLogin }, { handleClickSignUp }) {
+import "./NavNotificationLogout.scss"
+function NavNotificationLogout({ handleClickLogin }, { handleClickSignUp }) {
   return (
     <>
       <div className='notification-logout-container'>
@@ -19,4 +19,4 @@ function NotificationLogout({ handleClickLogin }, { handleClickSignUp }) {
   )
 }
 
-export default NotificationLogout
+export default NavNotificationLogout

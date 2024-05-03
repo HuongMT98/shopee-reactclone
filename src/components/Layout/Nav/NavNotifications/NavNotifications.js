@@ -1,4 +1,4 @@
-import NavNotificationContent from "./NotificationContent/NotificationContent"
+import NavNotificationContent from "./NavNotificationContent/NavNotificationContent"
 
 function NavNotifications({ username }) {
   return (

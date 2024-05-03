@@ -7,14 +7,15 @@ import { faFacebook, faInstagram } from "@fortawesome/free-brands-svg-icons"
 import { useState } from "react"
 import NavUser from "./NavUser/NavUser"
 import DownloadApp from "./DownloadApp/DownloadApp"
-import Notifications from "./Notifications/Notifications"
+import NavNotifications from "../Nav/NavNotifications/NavNotifications"
+import NotificationLogout from "../Nav/NavNotifications/NavNotificationLogout/NavNotificationLogout"
+
 import {
   faAngleDown,
   faBell,
   faCircleQuestion,
   faGlobe,
 } from "@fortawesome/free-solid-svg-icons"
-import NotificationLogout from "./Notifications/NotificationLogout/NotificationLogout"
 
 function Nav() {
   const [isLogin, setIsLogin] = useState(true)
@@ -82,19 +83,19 @@ function Nav() {
             {/* Notifications */}
             <div className='notification-tippy'>
               <Tippy
-                content={<Notifications username={username} />}
+                content={<NavNotifications username={username} />}
                 interactive={true}
                 arrow={true}
                 delay={[0, 500]}
                 placement='bottom-end'
               >
-                <NavLink to='/notifications'>
+                <NavLink to='/notification'>
                   <FontAwesomeIcon icon={faBell} className='icon' />
                   Notifications
                 </NavLink>
               </Tippy>
             </div>
-            <NavLink to='/help'>
+            <NavLink to='/'>
               <FontAwesomeIcon icon={faCircleQuestion} className='icon' />
               Help
             </NavLink>
@@ -151,7 +152,7 @@ function Nav() {
                 delay={[0, 500]}
                 placement='bottom-end'
               >
-                <NavLink to='/notifications'>
+                <NavLink to='/notification'>
                   <FontAwesomeIcon icon={faBell} className='icon' />
                   Notifications
                 </NavLink>
@@ -159,7 +160,7 @@ function Nav() {
             </div>
 
             {/* Help */}
-            <NavLink to='/help'>
+            <NavLink to='/'>
               <FontAwesomeIcon icon={faCircleQuestion} className='icon' />
               Help
             </NavLink>
@@ -171,7 +172,7 @@ function Nav() {
               className='language'
               arrow={true}
             >
-              <NavLink to='/language' className={"language"}>
+              <NavLink to='/' className={"language"}>
                 <FontAwesomeIcon icon={faGlobe} className='icon' />
                 English
                 <FontAwesomeIcon icon={faAngleDown} className='icon' />
