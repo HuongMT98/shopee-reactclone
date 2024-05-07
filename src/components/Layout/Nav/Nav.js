@@ -68,7 +68,7 @@ function Nav() {
         <nav className='nav-contact'>
           <NavLink to='/seller'>Seller Centre</NavLink>
           <Tippy content={<DownloadApp />} interactive={true} arrow={false}>
-            <NavLink to='/download'>Download</NavLink>
+            <NavLink>Download</NavLink>
           </Tippy>
           <NavLink to='/'>
             Follow us on
