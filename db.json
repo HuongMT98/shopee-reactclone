@@ -1,0 +1,395 @@
+{
+  "products": [
+    {
+      "id": "1",
+      "name": "Áo Polo Phối cổ SPION Local Brand polo unisex nam nữ oversize - KNC 192",
+      "price": "đ125.000",
+      "color": ["Nâu xám", "Đen", "Trắng", "Đỏ mận", "Nâu", "Đen"],
+      "image": "https://img.ws.mms.shopee.vn/vn-11134207-7r98o-lq13ywo38rmaf2",
+      "sold": 100
+    },
+    {
+      "id": "2",
+      "name": "Quần Jean Nam Baggy Màu Trơn Ống Rộng Guu Studio",
+      "price": "₫159.000",
+      "color": ["Xanh Nhạt", "Đen trơn", "Xám"],
+      "image": "https://zizoou.com/cdn/shop/products/Quan-Baggy-Jean-nam-nu-2b-1-Quan-ong-rong-xanh-classic-ZiZoou-Store_grande.jpg?v=1680283265",
+      "sold": 100
+    },
+    {
+      "id": "3",
+      "name": "Á,o Sơ Mi Nam Ngắn Tay Phối Cà Vạt Oversize , Áo Sơ Mi Nam Caravat Form Rộng, Basic, Phong Cách Hàn Quốc-By ZONEF [SMC]",
+      "price": "₫136.220",
+      "color": ["Xanh Nhạt", "Đen trơn", "Xám"],
+      "image": "https://down-vn.img.susercontent.com/file/vn-11134207-7qukw-lkenpykzun54e1",
+      "sold": 100
+    },
+    {
+      "id": "4",
+      "name": "Quần tây nam Hàn Quốc",
+      "price": "₫145.000",
+      "color": ["Xanh Nhạt", "Đen trơn", "Xám"],
+      "image": "https://bizweb.dktcdn.net/thumb/1024x1024/100/471/821/products/73a9c08fdfec39ab3d98b0320041c278.png?v=1670255506977",
+      "sold": 100
+    },
+    {
+      "id": "5",
+      "name": "Tai nghe có dây QKZ 3.5mm 4d Bass Dây tóc cao Dual Est Reo Độ trung thực cao có micrô",
+      "price": "đ26.000",
+      "color": ["Đen", "Trắng", "Vàng", "Đỏ"],
+      "image": "https://down-vn.img.susercontent.com/file/86ca567fbf115fcd124531b59248ebf3",
+      "sold": 100
+    },
+    {
+      "id": "6",
+      "name": "Quần short nam unisex màu đen vải thun cào có bigsize đến 98kg",
+      "price": "₫29.700 ",
+      "color": ["Đen", "Trắng", "Vàng", "Đỏ"],
+      "image": "https://img.ws.mms.shopee.vn/ab69281f2bd354a7091430e3940e290f",
+      "sold": 100
+    },
+    {
+      "id": "7",
+      "name": "(có size 28kg-90kg) áo thun nam ,nữ lỡ tay,áo phông rộng",
+      "price": "₫61.000",
+      "color": ["Đen", "Trắng", "Vàng", "Đỏ"],
+      "image": "https://img.ws.mms.shopee.vn/463288d7dd430e3d0f00fc4ccd693a7c",
+      "sold": 100
+    },
+    {
+      "id": "8",
+      "name": "Myers áo phông nam Áo Thun phông áo nam thun Áo Thun Form Rộng Ngắn Tay Unisex MTX24408GO 14Z240403",
+      "price": "₫58.000",
+      "color": ["Đen", "Trắng", "Vàng", "Đỏ"],
+      "image": "https://down-vn.img.susercontent.com/file/cn-11134207-7r98o-ltnohe99oiwd5d_tn.webp",
+      "sold": 100
+    },
+    {
+      "id": "9",
+      "name": "Bó hoa gấu bông loopy, gấu dâu làm quà tặng dễ thương, xinh xắn MIUSHOP",
+      "price": "₫8.999",
+      "color": ["Đen", "Trắng", "Vàng", "Đỏ"],
+      "image": "https://down-vn.img.susercontent.com/file/vn-11134207-7r98o-lt2892iey4eca6",
+      "sold": 100
+    },
+    {
+      "id": "10",
+      "name": "Q,uần jean trắng nam ống suông rộng Bigsize ,quần baggy nam phom xuông dáng đứng vải jeans bò cao cấp 20WE SR01 hottrend",
+      "price": "₫99.000",
+      "color": ["Đen", "Trắng", "Vàng", "Đỏ"],
+      "image": "https://encrypted-tbn0.gstatic.com/shopping?q=tbn:ANd9GcTzkU5cbTfspaJrpXXLH1Htyd9oIvDApGK5I0nFkciyUEV28PV87HvxtZ2b0CvS92NwegUkEjhR8ldrJk6tz3s9-yk3H9WzPko91oo6Ef1DOs4FOooknt6f&usqp=CAE",
+      "sold": 100
+    },
+    {
+      "id": "11",
+      "name": "Áo sơ mi nam Basic chất kaki cao cấp cực đẹp",
+      "price": "₫99.000",
+      "color": ["Đen", "Trắng", "Vàng", "Đỏ"],
+      "image": "https://img.ws.mms.shopee.vn/sg-11134201-22110-jtnklcl0z0jv76",
+      "sold": 100
+    },
+    {
+      "id": "12",
+      "name": "Quần đùi nam nữ GUMA, quần Short ngố Cao Cấp Thời Trang Lịch Lãm, Trẻ Trung, Sang Trọng.",
+      "price": "₫145.000",
+      "color": ["Đen", "Trắng", "Vàng", "Đỏ"],
+      "image": "https://down-vn.img.susercontent.com/file/vn-11134207-7qukw-lf9a1nhhdobb9c_tn",
+      "sold": 100
+    },
+    {
+      "id": "13",
+      "name": "Tai nghe có dây QKZ 3.5mm 4d Bass Dây tóc cao Dual Est Reo Độ trung thực cao có micrô",
+      "price": 26000,
+      "color": ["Đen", "Trắng", "Vàng", "Đỏ"],
+      "image": "https://picsum.photos/200/300",
+      "sold": 100
+    },
+    {
+      "id": "14",
+      "name": "Tai nghe có dây QKZ 3.5mm 4d Bass Dây tóc cao Dual Est Reo Độ trung thực cao có micrô",
+      "price": 26000,
+      "color": ["Đen", "Trắng", "Vàng", "Đỏ"],
+      "image": "https://picsum.photos/200/300",
+      "sold": 100
+    },
+    {
+      "id": "15",
+      "name": "Tai nghe có dây QKZ 3.5mm 4d Bass Dây tóc cao Dual Est Reo Độ trung thực cao có micrô",
+      "price": 26000,
+      "color": ["Đen", "Trắng", "Vàng", "Đỏ"],
+      "image": "https://picsum.photos/200/300",
+      "sold": 100
+    },
+    {
+      "id": "16",
+      "name": "Tai nghe có dây QKZ 3.5mm 4d Bass Dây tóc cao Dual Est Reo Độ trung thực cao có micrô",
+      "price": 26000,
+      "color": ["Đen", "Trắng", "Vàng", "Đỏ"],
+      "image": "https://picsum.photos/200/300",
+      "sold": 100
+    },
+    {
+      "id": "17",
+      "name": "Tai nghe có dây QKZ 3.5mm 4d Bass Dây tóc cao Dual Est Reo Độ trung thực cao có micrô",
+      "price": 26000,
+      "color": ["Đen", "Trắng", "Vàng", "Đỏ"],
+      "image": "https://picsum.photos/200/300",
+      "sold": 100
+    },
+    {
+      "id": "18",
+      "name": "Tai nghe có dây QKZ 3.5mm 4d Bass Dây tóc cao Dual Est Reo Độ trung thực cao có micrô",
+      "price": 26000,
+      "color": ["Đen", "Trắng", "Vàng", "Đỏ"],
+      "image": "https://picsum.photos/200/300",
+      "sold": 100
+    },
+    {
+      "id": "19",
+      "name": "Áo Polo Phối cổ SPION Local Brand polo unisex nam nữ oversize - KNC 192",
+      "price": "đ125.000",
+      "color": ["Nâu xám", "Đen", "Trắng", "Đỏ mận", "Nâu", "Đen"],
+      "image": "https://img.ws.mms.shopee.vn/vn-11134207-7r98o-lq13ywo38rmaf2",
+      "sold": 100
+    },
+    {
+      "id": "20",
+      "name": "Quần Jean Nam Baggy Màu Trơn Ống Rộng Guu Studio",
+      "price": "₫159.000",
+      "color": ["Xanh Nhạt", "Đen trơn", "Xám"],
+      "image": "https://zizoou.com/cdn/shop/products/Quan-Baggy-Jean-nam-nu-2b-1-Quan-ong-rong-xanh-classic-ZiZoou-Store_grande.jpg?v=1680283265",
+      "sold": 100
+    },
+    {
+      "id": "21",
+      "name": "Á,o Sơ Mi Nam Ngắn Tay Phối Cà Vạt Oversize , Áo Sơ Mi Nam Caravat Form Rộng, Basic, Phong Cách Hàn Quốc-By ZONEF [SMC]",
+      "price": "₫136.220",
+      "color": ["Xanh Nhạt", "Đen trơn", "Xám"],
+      "image": "https://down-vn.img.susercontent.com/file/vn-11134207-7qukw-lkenpykzun54e1",
+      "sold": 100
+    },
+    {
+      "id": "22",
+      "name": "Quần tây nam Hàn Quốc",
+      "price": "₫145.000",
+      "color": ["Xanh Nhạt", "Đen trơn", "Xám"],
+      "image": "https://bizweb.dktcdn.net/thumb/1024x1024/100/471/821/products/73a9c08fdfec39ab3d98b0320041c278.png?v=1670255506977",
+      "sold": 100
+    },
+    {
+      "id": "23",
+      "name": "Tai nghe có dây QKZ 3.5mm 4d Bass Dây tóc cao Dual Est Reo Độ trung thực cao có micrô",
+      "price": "đ26.000",
+      "color": ["Đen", "Trắng", "Vàng", "Đỏ"],
+      "image": "https://down-vn.img.susercontent.com/file/86ca567fbf115fcd124531b59248ebf3",
+      "sold": 100
+    },
+    {
+      "id": "24",
+      "name": "Quần short nam unisex màu đen vải thun cào có bigsize đến 98kg",
+      "price": "₫29.700 ",
+      "color": ["Đen", "Trắng", "Vàng", "Đỏ"],
+      "image": "https://img.ws.mms.shopee.vn/ab69281f2bd354a7091430e3940e290f",
+      "sold": 100
+    },
+    {
+      "id": "25",
+      "name": "(có size 28kg-90kg) áo thun nam ,nữ lỡ tay,áo phông rộng",
+      "price": "₫61.000",
+      "color": ["Đen", "Trắng", "Vàng", "Đỏ"],
+      "image": "https://img.ws.mms.shopee.vn/463288d7dd430e3d0f00fc4ccd693a7c",
+      "sold": 100
+    },
+    {
+      "id": "26",
+      "name": "Myers áo phông nam Áo Thun phông áo nam thun Áo Thun Form Rộng Ngắn Tay Unisex MTX24408GO 14Z240403",
+      "price": "₫58.000",
+      "color": ["Đen", "Trắng", "Vàng", "Đỏ"],
+      "image": "https://down-vn.img.susercontent.com/file/cn-11134207-7r98o-ltnohe99oiwd5d_tn.webp",
+      "sold": 100
+    },
+    {
+      "id": "27",
+      "name": "Bó hoa gấu bông loopy, gấu dâu làm quà tặng dễ thương, xinh xắn MIUSHOP",
+      "price": "₫8.999",
+      "color": ["Đen", "Trắng", "Vàng", "Đỏ"],
+      "image": "https://down-vn.img.susercontent.com/file/vn-11134207-7r98o-lt2892iey4eca6",
+      "sold": 100
+    },
+    {
+      "id": "28",
+      "name": "Q,uần jean trắng nam ống suông rộng Bigsize ,quần baggy nam phom xuông dáng đứng vải jeans bò cao cấp 20WE SR01 hottrend",
+      "price": "₫99.000",
+      "color": ["Đen", "Trắng", "Vàng", "Đỏ"],
+      "image": "https://encrypted-tbn0.gstatic.com/shopping?q=tbn:ANd9GcTzkU5cbTfspaJrpXXLH1Htyd9oIvDApGK5I0nFkciyUEV28PV87HvxtZ2b0CvS92NwegUkEjhR8ldrJk6tz3s9-yk3H9WzPko91oo6Ef1DOs4FOooknt6f&usqp=CAE",
+      "sold": 100
+    },
+    {
+      "id": "29",
+      "name": "Áo sơ mi nam Basic chất kaki cao cấp cực đẹp",
+      "price": "₫99.000",
+      "color": ["Đen", "Trắng", "Vàng", "Đỏ"],
+      "image": "https://img.ws.mms.shopee.vn/sg-11134201-22110-jtnklcl0z0jv76",
+      "sold": 100
+    },
+    {
+      "id": "30",
+      "name": "Quần đùi nam nữ GUMA, quần Short ngố Cao Cấp Thời Trang Lịch Lãm, Trẻ Trung, Sang Trọng.",
+      "price": "₫145.000",
+      "color": ["Đen", "Trắng", "Vàng", "Đỏ"],
+      "image": "https://down-vn.img.susercontent.com/file/vn-11134207-7qukw-lf9a1nhhdobb9c_tn",
+      "sold": 100
+    },
+    {
+      "id": "31",
+      "name": "Quần đùi nam nữ GUMA, quần Short ngố Cao Cấp Thời Trang Lịch Lãm, Trẻ Trung, Sang Trọng.",
+      "price": "₫145.000",
+      "color": ["Đen", "Trắng", "Vàng", "Đỏ"],
+      "image": "https://down-vn.img.susercontent.com/file/vn-11134207-7qukw-lf9a1nhhdobb9c_tn",
+      "sold": 100
+    },
+    {
+      "id": "32",
+      "name": "Quần đùi nam nữ GUMA, quần Short ngố Cao Cấp Thời Trang Lịch Lãm, Trẻ Trung, Sang Trọng.",
+      "price": "₫145.000",
+      "color": ["Đen", "Trắng", "Vàng", "Đỏ"],
+      "image": "https://down-vn.img.susercontent.com/file/vn-11134207-7qukw-lf9a1nhhdobb9c_tn",
+      "sold": 100
+    },
+    {
+      "id": "33",
+      "name": "Quần đùi nam nữ GUMA, quần Short ngố Cao Cấp Thời Trang Lịch Lãm, Trẻ Trung, Sang Trọng.",
+      "price": "₫145.000",
+      "color": ["Đen", "Trắng", "Vàng", "Đỏ"],
+      "image": "https://down-vn.img.susercontent.com/file/vn-11134207-7qukw-lf9a1nhhdobb9c_tn",
+      "sold": 100
+    },
+    {
+      "id": "34",
+      "name": "Quần đùi nam nữ GUMA, quần Short ngố Cao Cấp Thời Trang Lịch Lãm, Trẻ Trung, Sang Trọng.",
+      "price": "₫145.000",
+      "color": ["Đen", "Trắng", "Vàng", "Đỏ"],
+      "image": "https://down-vn.img.susercontent.com/file/vn-11134207-7qukw-lf9a1nhhdobb9c_tn",
+      "sold": 100
+    },
+    {
+      "id": "35",
+      "name": "Quần đùi nam nữ GUMA, quần Short ngố Cao Cấp Thời Trang Lịch Lãm, Trẻ Trung, Sang Trọng.",
+      "price": "₫145.000",
+      "color": ["Đen", "Trắng", "Vàng", "Đỏ"],
+      "image": "https://down-vn.img.susercontent.com/file/vn-11134207-7qukw-lf9a1nhhdobb9c_tn",
+      "sold": 100
+    },
+    {
+      "id": "36",
+      "name": "Quần đùi nam nữ GUMA, quần Short ngố Cao Cấp Thời Trang Lịch Lãm, Trẻ Trung, Sang Trọng.",
+      "price": "₫145.000",
+      "color": ["Đen", "Trắng", "Vàng", "Đỏ"],
+      "image": "https://down-vn.img.susercontent.com/file/vn-11134207-7qukw-lf9a1nhhdobb9c_tn",
+      "sold": 100
+    },
+    {
+      "id": "37",
+      "name": "Quần đùi nam nữ GUMA, quần Short ngố Cao Cấp Thời Trang Lịch Lãm, Trẻ Trung, Sang Trọng.",
+      "price": "₫145.000",
+      "color": ["Đen", "Trắng", "Vàng", "Đỏ"],
+      "image": "https://down-vn.img.susercontent.com/file/vn-11134207-7qukw-lf9a1nhhdobb9c_tn",
+      "sold": 100
+    },
+    {
+      "id": "38",
+      "name": "Quần đùi nam nữ GUMA, quần Short ngố Cao Cấp Thời Trang Lịch Lãm, Trẻ Trung, Sang Trọng.",
+      "price": "₫145.000",
+      "color": ["Đen", "Trắng", "Vàng", "Đỏ"],
+      "image": "https://down-vn.img.susercontent.com/file/vn-11134207-7qukw-lf9a1nhhdobb9c_tn",
+      "sold": 100
+    },
+    {
+      "id": "39",
+      "name": "Quần đùi nam nữ GUMA, quần Short ngố Cao Cấp Thời Trang Lịch Lãm, Trẻ Trung, Sang Trọng.",
+      "price": "₫145.000",
+      "color": ["Đen", "Trắng", "Vàng", "Đỏ"],
+      "image": "https://down-vn.img.susercontent.com/file/vn-11134207-7qukw-lf9a1nhhdobb9c_tn",
+      "sold": 100
+    },
+    {
+      "id": "40",
+      "name": "Quần đùi nam nữ GUMA, quần Short ngố Cao Cấp Thời Trang Lịch Lãm, Trẻ Trung, Sang Trọng.",
+      "price": "₫145.000",
+      "color": ["Đen", "Trắng", "Vàng", "Đỏ"],
+      "image": "https://down-vn.img.susercontent.com/file/vn-11134207-7qukw-lf9a1nhhdobb9c_tn",
+      "sold": 100
+    },
+    {
+      "id": "41",
+      "name": "Quần đùi nam nữ GUMA, quần Short ngố Cao Cấp Thời Trang Lịch Lãm, Trẻ Trung, Sang Trọng.",
+      "price": "₫145.000",
+      "color": ["Đen", "Trắng", "Vàng", "Đỏ"],
+      "image": "https://down-vn.img.susercontent.com/file/vn-11134207-7qukw-lf9a1nhhdobb9c_tn",
+      "sold": 100
+    },
+    {
+      "id": "42",
+      "name": "Quần đùi nam nữ GUMA, quần Short ngố Cao Cấp Thời Trang Lịch Lãm, Trẻ Trung, Sang Trọng.",
+      "price": "₫145.000",
+      "color": ["Đen", "Trắng", "Vàng", "Đỏ"],
+      "image": "https://down-vn.img.susercontent.com/file/vn-11134207-7qukw-lf9a1nhhdobb9c_tn",
+      "sold": 100
+    },
+    {
+      "id": "43",
+      "name": "Quần đùi nam nữ GUMA, quần Short ngố Cao Cấp Thời Trang Lịch Lãm, Trẻ Trung, Sang Trọng.",
+      "price": "₫145.000",
+      "color": ["Đen", "Trắng", "Vàng", "Đỏ"],
+      "image": "https://down-vn.img.susercontent.com/file/vn-11134207-7qukw-lf9a1nhhdobb9c_tn",
+      "sold": 100
+    },
+    {
+      "id": "44",
+      "name": "Quần đùi nam nữ GUMA, quần Short ngố Cao Cấp Thời Trang Lịch Lãm, Trẻ Trung, Sang Trọng.",
+      "price": "₫145.000",
+      "color": ["Đen", "Trắng", "Vàng", "Đỏ"],
+      "image": "https://down-vn.img.susercontent.com/file/vn-11134207-7qukw-lf9a1nhhdobb9c_tn",
+      "sold": 100
+    },
+    {
+      "id": "45",
+      "name": "Quần đùi nam nữ GUMA, quần Short ngố Cao Cấp Thời Trang Lịch Lãm, Trẻ Trung, Sang Trọng.",
+      "price": "₫145.000",
+      "color": ["Đen", "Trắng", "Vàng", "Đỏ"],
+      "image": "https://down-vn.img.susercontent.com/file/vn-11134207-7qukw-lf9a1nhhdobb9c_tn",
+      "sold": 100
+    },
+    {
+      "id": "46",
+      "name": "Quần đùi nam nữ GUMA, quần Short ngố Cao Cấp Thời Trang Lịch Lãm, Trẻ Trung, Sang Trọng.",
+      "price": "₫145.000",
+      "color": ["Đen", "Trắng", "Vàng", "Đỏ"],
+      "image": "https://down-vn.img.susercontent.com/file/vn-11134207-7qukw-lf9a1nhhdobb9c_tn",
+      "sold": 100
+    },
+    {
+      "id": "47",
+      "name": "Quần đùi nam nữ GUMA, quần Short ngố Cao Cấp Thời Trang Lịch Lãm, Trẻ Trung, Sang Trọng.",
+      "price": "₫145.000",
+      "color": ["Đen", "Trắng", "Vàng", "Đỏ"],
+      "image": "https://down-vn.img.susercontent.com/file/vn-11134207-7qukw-lf9a1nhhdobb9c_tn",
+      "sold": 100
+    },
+    {
+      "id": "48",
+      "name": "Quần đùi nam nữ GUMA, quần Short ngố Cao Cấp Thời Trang Lịch Lãm, Trẻ Trung, Sang Trọng.",
+      "price": "₫145.000",
+      "color": ["Đen", "Trắng", "Vàng", "Đỏ"],
+      "image": "https://down-vn.img.susercontent.com/file/vn-11134207-7qukw-lf9a1nhhdobb9c_tn",
+      "sold": 100
+    }
+  ],
+  "comments": [
+    { "id": "1", "text": "a comment about post 1", "postId": "1" },
+    { "id": "2", "text": "another comment about post 1", "postId": "1" }
+  ],
+  "profile": {
+    "name": "typicode"
+  }
+}

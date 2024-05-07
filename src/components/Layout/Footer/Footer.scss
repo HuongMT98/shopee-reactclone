@@ -1,9 +1,13 @@
 // Footer Banner SCSS
 .footer-container {
-  margin-top: 8rem;
   width: 100%;
   display: flex;
   justify-content: center;
+  padding-top: 3rem;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  border-top: 4px solid red;
 
   .footer-wrap {
     width: 1200px;
