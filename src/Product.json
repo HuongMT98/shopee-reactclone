@@ -1,0 +1,62 @@
+[
+  {
+    "id": 1,
+    "name": "Áo phông BEEYANBUY nam wash áo thun vintage hiphop tay lỡ T-shirt unisex ulzzang 100% cotton-Y0808",
+    "price": 34000,
+    "selloff": 24,
+    "size": ["M", "L", "XXL"],
+    "color": ["Đen", "Xanh", "Đỏ", "Nâu Xám", "Đỏ Mận"],
+    "image": "https://down-vn.img.susercontent.com/file/vn-50009109-b82dff26c937c23f78c4bedca63d4866",
+    "quantity": 71000
+  },
+  {
+    "id": 2,
+    "name": "Quần Jean Nam Baggy Màu Trơn Ống Rộng Guu Studio",
+    "price": 190000,
+    "selloff": 0,
+    "size": [27, 28, 29, 30, 31, 32, 33],
+    "color": ["Đen Nhạt", "Đen Trơn", "Xám Lông Chuột"],
+    "image": "https://down-vn.img.susercontent.com/file/vn-50009109-9b832d0e780542b34dd35407f02d84c0",
+    "quantity": 900
+  },
+  {
+    "id": 3,
+    "name": "Áo Sơ Mi Nam Ngắn Tay Phối Cà Vạt Oversize , Áo Sơ Mi Nam Caravat Form Rộng, Basic, Phong Cách Hàn Quốc-By ZONEF [SMC]",
+    "price": 139000,
+    "selloff": 26,
+    "size": ["M", "L", "XL", "XXL"],
+    "color": ["Trắng", "Đen"],
+    "image": "https://down-vn.img.susercontent.com/file/vn-11134207-7qukw-lkenpykzun54e1",
+    "quantity": 1800
+  },
+  {
+    "id": 4,
+    "name": "Tai nghe có dây QKZ 3.5mm 4d Bass Dây tóc cao Dual Est Reo Độ trung thực cao có micrô",
+    "price": 26000,
+    "selloff": 40,
+    "size": [],
+    "color": ["Đen", "Trắng", "Vàng", "Đỏ"],
+    "image": "https://down-vn.img.susercontent.com/file/vn-50009109-1dfef3cb17135bb303ab4f743e35be22",
+    "quantity": 500
+  },
+  {
+    "id": 5,
+    "name": "Áo polo unisex thêu Chiseared FCEP chất tổ ong thoáng mát đẹp, Nice Clothes",
+    "price": 150000,
+    "selloff": 47,
+    "size": ["M", "L", "XL", "XXL"],
+    "color": ["Ghi", "Trắng", "Xanh"],
+    "image": "https://down-vn.img.susercontent.com/file/vn-50009109-15e6fae4bb6236b8e76d2e2cb5c9dea1",
+    "quantity": 314
+  },
+  {
+    "id": 6,
+    "name": "Ly Giữ Nhiệt Iced Americano Inox 304 Đúc Liền Khối Cao Cấp Có Nắp Đậy Tặng Kèm Ống Hút Hàng Loại 1",
+    "price": 55000,
+    "selloff": 40,
+    "size": [],
+    "color": ["Đen", "Xanh", "Xám", "Bạc"],
+    "image": "https://down-vn.img.susercontent.com/file/vn-11134201-23030-95y8aob7yfov10",
+    "quantity": 1000
+  }
+]

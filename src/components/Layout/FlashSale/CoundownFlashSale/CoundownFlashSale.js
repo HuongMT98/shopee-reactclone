@@ -1,5 +1,4 @@
 import CountdownTimer from "react-component-countdown-timer"
-// import "~react-component-countdown-timer/lib/styles.css"
 
 const CountdownFlashSale = () => {
   return (
