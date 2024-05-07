@@ -1,3 +1,4 @@
+import BodyWrapItem from "../../components/Layout/BodyWrapItem/BodyWrapItem"
 import Categories from "../../components/Layout/Categories/Categories"
 import FlashSale from "../../components/Layout/FlashSale/FlashSale"
 import ShopeeMall from "../../components/Layout/ShopeeMall/ShopeeMall"
@@ -13,6 +14,7 @@ function Home() {
       <Categories />
       <FlashSale />
       <ShopeeMall />
+      <BodyWrapItem />
     </div>
   )
 }

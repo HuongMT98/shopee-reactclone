@@ -39,6 +39,13 @@ function NavNotificationContent({ username }) {
       content:
         "Nhớ vài lưu ý, Lễ vui đặt hàng🛒🇻🇳. Bỏ túi ngay các lưu ý cho dịp Lễ 30.4 & 1.5 sắp tới TẠI ĐÂY bạn nhé!",
     },
+    {
+      id: 6,
+      title: `TẶNG ${username} MÃ 100K CHỐT ĐƠN ĐÓ LỄ`,
+      image: shoppeNotification2,
+      content:
+        "Nhớ vài lưu ý, Lễ vui đặt hàng🛒��🇳. Bỏ túi ngay các lưu ý cho dịp Lễ 30.4 & 1.5 sắp tới TẠI ĐÂY bạn nhé!",
+    },
   ]
 
   return (

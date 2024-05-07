@@ -6,6 +6,7 @@ import "./NavSearch.scss"
 function NavSearch() {
   return (
     <>
+      {/* Using Library RSuite render Search Bar */}
       <InputGroup inside>
         <Input />
         <InputGroup.Button>

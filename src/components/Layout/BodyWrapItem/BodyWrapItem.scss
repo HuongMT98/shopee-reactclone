@@ -1,0 +1,22 @@
+.body-wrap-item-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  background: var(--gb-all);
+
+  .body-wrap-item {
+    width: 1200px;
+    margin-top: 1.2rem;
+
+    .body-wrap-item-title {
+      height: 60px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: var(--bg-primary);
+      margin-bottom: 1.2rem;
+      border-bottom: 5px solid red;
+      color: var(--color-red);
+    }
+  }
+}
