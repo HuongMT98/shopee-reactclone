@@ -44,7 +44,7 @@ function CartItem() {
     <>
       {Carts.map((cart) => (
         <div className='cart-item' key={cart.id}>
-          <Link to={"/cart"}>
+          <Link to={"/purchase"}>
             <div>
               <img src={cart.image} alt='' className='cart-item-img' />
             </div>

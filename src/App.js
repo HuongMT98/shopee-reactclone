@@ -7,8 +7,8 @@ import Home from "./pages/Home/Home"
 import Info from "./pages/Info/Info"
 import Cart from "./pages/Cart/Cart"
 import Notification from "./pages/Notification/Notification"
-import Footer from "./components/Layout/Footer/Footer"
 import FlashSalePage from "./pages/FlashSalePage/FlashSale"
+import PurchasePage from "./pages/PurchasePage/PurchasePage"
 
 function App() {
   return (
@@ -26,9 +26,8 @@ function App() {
           <Route path='/cart' element={<Cart />} />
           <Route path='/notification' element={<Notification />} />
           <Route path='/flashsale' element={<FlashSalePage />} />
+          <Route path='/purchase' element={<PurchasePage />} />
         </Routes>
-        {/* Render footer */}
-        <Footer />
       </Router>
     </>
   )

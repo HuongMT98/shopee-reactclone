@@ -28,7 +28,6 @@ function BodyWrapItemContent() {
                 <p className='bodywrapitem-item-price'>{item.price}</p>
                 <p className='bodywrapitem-item-sold'>{item.sold} sold</p>
               </div>
-              {console.log(item)}
             </Link>
           ))}
         </div>

@@ -385,9 +385,16 @@
       "sold": 100
     }
   ],
-  "comments": [
-    { "id": "1", "text": "a comment about post 1", "postId": "1" },
-    { "id": "2", "text": "another comment about post 1", "postId": "1" }
+  "user": [
+    {
+      "id": "1",
+      "name": "User Test 1",
+      "email": "g7Ueh@example.com",
+      "image": "https://img.freepik.com/free-vector/businessman-character-avatar-isolated_24877-60111.jpg?w=2000",
+      "gender": "Male",
+      "phone": "0123456789",
+      "address": "123 Main St, Anytown, CA 94123"
+    }
   ],
   "profile": {
     "name": "typicode"

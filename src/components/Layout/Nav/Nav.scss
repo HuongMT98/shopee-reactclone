@@ -132,11 +132,15 @@
           }
         }
 
-        .user-img {
-          width: 20px;
-          height: 20px;
-          border-radius: 50%;
-          margin: 0 3px;
+        .user-wrap {
+          display: flex;
+
+          .user-img {
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+            margin: 0 3px;
+          }
         }
 
         .language {

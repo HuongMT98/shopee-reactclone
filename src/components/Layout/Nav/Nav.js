@@ -4,7 +4,7 @@ import Tippy from "@tippyjs/react"
 import "tippy.js/dist/tippy.css"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faFacebook, faInstagram } from "@fortawesome/free-brands-svg-icons"
-import { useState } from "react"
+import { useEffect, useState } from "react"
 import NavUser from "./NavUser/NavUser"
 import DownloadApp from "./DownloadApp/DownloadApp"
 import NavNotifications from "../Nav/NavNotifications/NavNotifications"
@@ -16,10 +16,18 @@ import {
   faCircleQuestion,
   faGlobe,
 } from "@fortawesome/free-solid-svg-icons"
+import axios from "axios"
 
 function Nav() {
   const [isLogin, setIsLogin] = useState(true)
-  const username = "--USER TEST--"
+  const [user, setUser] = useState([])
+
+  useEffect(() => {
+    axios
+      .get("http://localhost:5200/user")
+      .then((res) => setUser(res.data))
+      .catch((err) => console.log(err))
+  }, [])
 
   const languageChoice = [
     {
@@ -83,7 +91,7 @@ function Nav() {
             {/* Notifications */}
             <div className='notification-tippy'>
               <Tippy
-                content={<NavNotifications username={username} />}
+                content={<NavNotifications />}
                 interactive={true}
                 arrow={true}
                 delay={[0, 500]}
@@ -124,12 +132,12 @@ function Nav() {
               interactive={true}
             >
               <NavLink className='user'>
-                <img
-                  src='https://bedental.vn/wp-content/uploads/2022/11/hot-girl.jpg'
-                  className='user-img'
-                  alt='user-img'
-                />
-                {username}
+                {user.map((item) => (
+                  <div className='user-wrap' key={item.id}>
+                    <img src={item.image} alt='' className='user-img' />
+                    <p>{item.name}</p>
+                  </div>
+                ))}
               </NavLink>
             </Tippy>
           </nav>
