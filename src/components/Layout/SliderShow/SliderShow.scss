@@ -3,11 +3,11 @@
   height: 235px;
   display: flex;
   justify-content: center;
-  padding-top: 3rem;
 
   .slider-container {
     display: flex;
     width: var(--widthdefault);
+    height: max-content;
     align-items: center;
 
     // Slider Carousel  ****************************
