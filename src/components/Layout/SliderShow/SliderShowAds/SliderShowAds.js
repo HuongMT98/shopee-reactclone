@@ -1,6 +1,4 @@
 import { Link } from "react-router-dom"
-import img1 from "../../../../Assets/SliderAds/sliderAds1.jpg"
-import img2 from "../../../../Assets/SliderAds/sliderAds2.jpg"
 
 function SliderShowAds() {
   return (
@@ -8,10 +6,18 @@ function SliderShowAds() {
       <div className='slider-ads-wrap'>
         <div className='slider-ads-container'>
           <Link className='slider-ads-content'>
-            <img src={img1} alt='' className='slider-ads-img' />
+            <img
+              src='https://down-vn.img.susercontent.com/file/744b6c519828b25ecb7838a8c2aabee9'
+              alt=''
+              className='slider-ads-img'
+            />
           </Link>
           <Link className='slider-ads-content'>
-            <img src={img2} alt='' className='slider-ads-img' />
+            <img
+              src='https://digi.cropro.vn/wp-content/uploads/2022/08/Orange-Red-Flash-Sale-9.9-Promotion-Banner-1024x512.png'
+              alt=''
+              className='slider-ads-img'
+            />
           </Link>
         </div>
       </div>
