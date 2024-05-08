@@ -36,26 +36,19 @@
           }
           // Flash Sale Logo Coundown *********************************
           .flash-sale-logo-coundown {
-            .countdown-content {
-              .countBox {
-                display: flex;
-                flex-direction: row-reverse;
-                align-items: center;
-              }
-            }
-            .displayedTime {
-              .count {
-                color: var(--bg-primary) !important;
-                background-color: var(--color-black) !important;
-                margin: 0 0.2rem;
-                border-radius: 3px;
+            .timer {
+              display: flex;
 
-                &:first-child {
-                  display: none !important;
+              .box {
+                margin: 0 0.3rem;
+                background-color: black;
+                color: white;
+                font-size: 17px;
+                border-radius: 2px;
+
+                p {
+                  padding: 0.2rem;
                 }
-              }
-              .split {
-                display: none !important;
               }
             }
           }
