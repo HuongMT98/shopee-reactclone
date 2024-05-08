@@ -60,7 +60,7 @@ function NavNotificationContent() {
   ]
 
   return (
-    <div>
+    <>
       {notifications.map((notification) => (
         <div key={notification.id} className='box-notification'>
           <div>
@@ -78,7 +78,7 @@ function NavNotificationContent() {
           </div>
         </div>
       ))}
-    </div>
+    </>
   )
 }
 

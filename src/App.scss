@@ -12,36 +12,35 @@ li {
   list-style: none;
 }
 
-// /* Chrome, Edge and Safari Srollbar Styling */
-// *::-webkit-scrollbar {
-//   height: 5px;
-//   width: 5px;
-// }
-// *::-webkit-scrollbar-track {
-//   border-radius: 3px;
-//   background-color: #eaeaea;
-// }
+*::-webkit-scrollbar {
+  height: 8px;
+  width: 8px;
+}
+*::-webkit-scrollbar-track {
+  border-radius: 4px;
+  background-color: #eaeaea;
+}
 
-// *::-webkit-scrollbar-track:hover {
-//   background-color: #eaeaea;
-// }
+*::-webkit-scrollbar-track:hover {
+  background-color: #eaeaea;
+}
 
-// *::-webkit-scrollbar-track:active {
-//   background-color: #eaeaea;
-// }
+*::-webkit-scrollbar-track:active {
+  background-color: #f2fcff;
+}
 
-// *::-webkit-scrollbar-thumb {
-//   border-radius: 10px;
-//   background-color: #156eff;
-// }
+*::-webkit-scrollbar-thumb {
+  border-radius: 5px;
+  background-color: #a6a6a6;
+}
 
-// *::-webkit-scrollbar-thumb:hover {
-//   background-color: #4900ff;
-// }
+*::-webkit-scrollbar-thumb:hover {
+  background-color: #a6a6a6;
+}
 
-// *::-webkit-scrollbar-thumb:active {
-//   background-color: #4900ff;
-// }
+*::-webkit-scrollbar-thumb:active {
+  background-color: #a6a6a6;
+}
 
 :root {
   --bg-root: #ee4d2d;
