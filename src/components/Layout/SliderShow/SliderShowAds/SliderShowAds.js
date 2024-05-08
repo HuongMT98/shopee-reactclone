@@ -1,24 +1,32 @@
+import axios from "axios"
+import { useEffect, useState } from "react"
 import { Link } from "react-router-dom"
 
 function SliderShowAds() {
+  const [data, setData] = useState([])
+
+  useEffect(() => {
+    axios
+      .get("http://localhost:5200/carouselbanner")
+      .then((res) => setData(res.data))
+      .catch((err) => console.log(err))
+  })
+
   return (
     <>
       <div className='slider-ads-wrap'>
         <div className='slider-ads-container'>
-          <Link className='slider-ads-content'>
-            <img
-              src='https://down-vn.img.susercontent.com/file/744b6c519828b25ecb7838a8c2aabee9'
-              alt=''
-              className='slider-ads-img'
-            />
-          </Link>
-          <Link className='slider-ads-content'>
-            <img
-              src='https://digi.cropro.vn/wp-content/uploads/2022/08/Orange-Red-Flash-Sale-9.9-Promotion-Banner-1024x512.png'
-              alt=''
-              className='slider-ads-img'
-            />
-          </Link>
+          {data.map((item) => (
+            <div className='slider-ads-content'>
+              <Link to={`/product/${item.id}`}>
+                <img
+                  className='slider-ads-img'
+                  src={item.image}
+                  alt={item.name}
+                />
+              </Link>
+            </div>
+          ))}
         </div>
       </div>
     </>
