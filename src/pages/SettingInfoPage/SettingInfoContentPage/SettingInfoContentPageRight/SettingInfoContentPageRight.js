@@ -6,7 +6,7 @@ function SettingInfoContentPageRight({ user }) {
           <div className='settinginforight-container'>
             <img src={item.image} alt='' className='settinginforight-img' />
             <div className='settinginforight-info'>
-              <p className='settinginforight-infonametitle'>USER NAME</p>
+              <p className='settinginforight-infonametitle'>User Name: </p>
               <p className='settinginforight-infoname'>{item.username}</p>
             </div>
             <div className='settinginforight-info'>
