@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom"
-import img1 from "../../../../Assets/sliderAds1.jpg"
-import img2 from "../../../../Assets/sliderAds2.jpg"
+import img1 from "../../../../Assets/SliderAds/sliderAds1.jpg"
+import img2 from "../../../../Assets/SliderAds/sliderAds2.jpg"
 
 function SliderShowAds() {
   return (
