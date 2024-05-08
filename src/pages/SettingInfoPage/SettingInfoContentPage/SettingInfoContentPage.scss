@@ -1,0 +1,87 @@
+.setting-info-content {
+  width: 100%;
+
+  .setting-info-content-container {
+    width: var(--setingpage-width);
+
+    .setting-info-content-title {
+      padding: 1rem 0;
+      border-bottom: 1px solid red;
+
+      h4 {
+        font-size: 20px;
+        font-weight: 400;
+      }
+      p {
+        font-size: 14px;
+      }
+    }
+
+    .setting-info-content-body {
+      .setting-info-content-body-container {
+        display: flex;
+        line-height: 4;
+        padding-top: 2rem;
+
+        .settinginfoleft {
+          display: flex;
+          flex-direction: column;
+          align-items: flex-end;
+        }
+
+        .settinginfomid {
+          padding: 0 2rem;
+          border-right: 1px solid rgb(224, 213, 213);
+
+          input {
+            width: 100%;
+            height: 2.5rem;
+            border: 1px solid black;
+            border-radius: 5px;
+            padding: 0 1rem;
+          }
+        }
+
+        .settinginforight {
+          align-items: center;
+          display: flex;
+          justify-content: center;
+
+          .settinginforight-wrap {
+            .settinginforight-container {
+              display: flex;
+              flex-direction: column;
+              flex-wrap: nowrap;
+              align-items: center;
+              justify-content: center;
+              line-height: 2;
+
+              .settinginforight-img {
+                width: 10rem;
+                height: 10rem;
+                border-radius: 50%;
+                object-fit: cover;
+              }
+              .settinginforight-info {
+                display: flex;
+                justify-content: space-around;
+                align-items: center;
+
+                .settinginforight-infonametitle {
+                  font-size: 16px;
+                  font-weight: 700;
+                  padding-right: 1rem;
+                }
+                .settinginforight-infoname {
+                  font-size: 16px;
+                  font-weight: 400;
+                  margin: 0;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

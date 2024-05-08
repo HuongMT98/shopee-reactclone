@@ -52,4 +52,25 @@ li {
   --color-prime: #00bfa5;
   --flashsale-bg: rgb(255, 251, 0);
   --btn-background: #909090;
+  --setting-margintop: 2rem;
+  --paddingtop-layout: 8rem;
+  --paddingtop-route: 1rem;
+  --paddingtop-content: 3rem;
+  --widthdefault: 1200px;
+  --borderbottomred: 4px solid red;
+  --setingpage-width: 95%;
+}
+.center-item-flex {
+  display: flex;
+  justify-content: center;
+}
+
+.w30 {
+  width: 30%;
+}
+.w50 {
+  width: 50%;
+}
+.w20 {
+  width: 20%;
 }

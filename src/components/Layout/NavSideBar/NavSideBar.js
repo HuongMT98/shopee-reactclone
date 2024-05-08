@@ -45,47 +45,53 @@ function NavSideBar() {
         <div className='nav-sidebar-bottom'>
           <div className='nav-sidebar-bottom-title'>
             <img src={img1} alt='' />
-            <Link>5.5 Brands Sale</Link>
+            <Link className='navsidebar-bottom-titleaccount'>
+              5.5 Brands Sale
+            </Link>
           </div>
           <ul className='nav-sidebar-bottom-list'>
             <div>
               <img src={img2} alt='' />
-              <Link>My Account</Link>
+              <Link className='navsidebar-bottom-titleaccount'>My Account</Link>
             </div>
             <li>
               <NavLink to='/info'>Profile</NavLink>
             </li>
             <li>
-              <NavLink to='/bank'>Banks & Cards</NavLink>
+              <NavLink to='/info'>Banks & Cards</NavLink>
             </li>
             <li>
-              <NavLink to='/address'>Addresses</NavLink>
+              <NavLink to='/info'>Addresses</NavLink>
             </li>
             <li>
-              <NavLink to='/password'>Change Password</NavLink>
+              <NavLink to='/info'>Change Password</NavLink>
             </li>
             <li>
-              <NavLink to='/notificationsetting'>Notification Settings</NavLink>
+              <NavLink to='/info'>Notification Settings</NavLink>
             </li>
             <li>
-              <NavLink to='/privacysetting'>Privacy Settings</NavLink>
+              <NavLink to='/info'>Privacy Settings</NavLink>
             </li>
           </ul>
           <div className='nav-sidebar-bottom-title'>
             <img src={img3} alt='' />
-            <Link>My Purchase</Link>
+            <Link className='navsidebar-bottom-titleaccount'>My Purchase</Link>
           </div>
           <div className='nav-sidebar-bottom-title'>
             <img src={img4} alt='' />
-            <Link>Notifications</Link>
+            <Link className='navsidebar-bottom-titleaccount'>
+              Notifications
+            </Link>
           </div>
           <div className='nav-sidebar-bottom-title'>
             <img src={img5} alt='' />
-            <Link>My Vouchers</Link>
+            <Link className='navsidebar-bottom-titleaccount'>My Vouchers</Link>
           </div>
           <div className='nav-sidebar-bottom-title'>
             <img src={img6} alt='' />
-            <Link>My Shopee Coins</Link>
+            <Link className='navsidebar-bottom-titleaccount'>
+              My Shopee Coins
+            </Link>
           </div>
         </div>
       </div>

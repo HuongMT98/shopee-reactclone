@@ -24,7 +24,7 @@
 
     // Nav Item *******************************************
     .nav-item {
-      width: 1200px;
+      width: var(--widthdefault);
       display: flex;
       justify-content: space-between;
       align-items: center;
@@ -178,7 +178,7 @@
     align-items: center;
 
     .nav-bottom-item {
-      width: 1200px;
+      width: var(--widthdefault);
       display: flex;
       align-items: center;
       justify-content: space-around;

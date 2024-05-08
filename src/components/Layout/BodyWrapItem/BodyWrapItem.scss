@@ -4,9 +4,10 @@
   justify-content: center;
   background: var(--gb-all);
   padding-bottom: 3rem;
+  border-bottom: var(--borderbottomred);
 
   .body-wrap-item {
-    width: 1200px;
+    width: var(--widthdefault);
     margin-top: 1.2rem;
 
     .body-wrap-item-title {
@@ -16,7 +17,7 @@
       justify-content: center;
       background: var(--bg-primary);
       margin-bottom: 1.2rem;
-      border-bottom: 5px solid red;
+      border-bottom: var(--borderbottomred);
       color: var(--color-red);
     }
 

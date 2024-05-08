@@ -1,0 +1,27 @@
+.setting-info-page {
+  width: 100%;
+  padding-top: var(--paddingtop-layout);
+  background: var(--gb-all);
+  padding-bottom: 3rem;
+  border-bottom: var(--borderbottomred);
+
+  .setting-info-page-container-wrap {
+    display: flex;
+    justify-content: center;
+    padding-top: var(--paddingtop-route);
+
+    .setting-info-page-container {
+      width: var(--widthdefault);
+      display: flex;
+
+      .setting-info-page-sidebar {
+        background: transparent;
+      }
+
+      .setting-info-page-content {
+        width: 100%;
+        background: var(--bg-primary);
+      }
+    }
+  }
+}
