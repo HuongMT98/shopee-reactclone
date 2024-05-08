@@ -1,26 +1,37 @@
+import { useEffect, useState } from "react"
 import shoppeNotification1 from "../../../../../Assets/Notification/shoppe-notification-1.jpg"
 import shoppeNotification2 from "../../../../../Assets/Notification/shoppe-notification-2.png"
 import shoppeNotification3 from "../../../../../Assets/Notification/shoppe-notification-3.png"
+import axios from "axios"
 
-function NavNotificationContent({ username }) {
+function NavNotificationContent() {
+  const [data, setData] = useState([])
+  useEffect(() => {
+    axios
+      .get("http://localhost:5200/user")
+      .then((res) => setData(res.data))
+      .catch((err) => console.log(err))
+  })
+  const userName = data.map((item) => item.name)
+
   const notifications = [
     {
       id: 1,
-      title: `${username} ơi khoan hẳn ngủ nha`,
+      title: `${userName} ơi khoan hẳn ngủ nha`,
       image: shoppeNotification1,
       content:
         "💥Sắp tới giờ săn sale cuối tháng rùiii 🌟Anessa, Samsung, Coolmate..giảm đến 50% 🌸5 mã Freeship đến 300.000đ 💸Khung giờ sale khủng - Chốt đơn 'tỉnh người'",
     },
     {
       id: 2,
-      title: `😊 ${username} ơi, cho Shopee hỏi nhỏ`,
+      title: `😊 ${userName} ơi, cho Shopee hỏi nhỏ`,
       image: shoppeNotification2,
       content:
         '✨ Các chương trình của Shopee có "ghi điểm" trong lòng bạn? Hãy chia sẻ ý kiến TẠI ĐÂY để giúp Shopee cải thiện hơn nữa nhé!',
     },
     {
       id: 3,
-      title: `TẶNG ${username} MÃ 100K CHỐT ĐƠN ĐÓN LỄ`,
+      title: `TẶNG ${userName} MÃ 100K CHỐT ĐƠN ĐÓN LỄ`,
       image: shoppeNotification3,
       content:
         "🎫Khi nhập FMCGA500K cho đơn từ 500.000đ 💰Thêm loạt mã giảm 20.000đ, Freeship cực đã 💥Khám phá và mua ngay TẠI ĐÂY!",
@@ -34,14 +45,14 @@ function NavNotificationContent({ username }) {
     },
     {
       id: 5,
-      title: `🎁 ${username} MÃ 100K CHỐT ĐƠN ĐÓ LỄ`,
+      title: `🎁 ${userName} MÃ 100K CHỐT ĐƠN ĐÓ LỄ`,
       image: shoppeNotification1,
       content:
         "Nhớ vài lưu ý, Lễ vui đặt hàng🛒🇻🇳. Bỏ túi ngay các lưu ý cho dịp Lễ 30.4 & 1.5 sắp tới TẠI ĐÂY bạn nhé!",
     },
     {
       id: 6,
-      title: `TẶNG ${username} MÃ 100K CHỐT ĐƠN ĐÓ LỄ`,
+      title: `TẶNG ${userName} MÃ 100K CHỐT ĐƠN ĐÓ LỄ`,
       image: shoppeNotification2,
       content:
         "Nhớ vài lưu ý, Lễ vui đặt hàng🛒��🇳. Bỏ túi ngay các lưu ý cho dịp Lễ 30.4 & 1.5 sắp tới TẠI ĐÂY bạn nhé!",
