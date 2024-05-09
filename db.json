@@ -395,17 +395,18 @@
       "image": "https://kenh14cdn.com/thumb_w/660/203336854389633024/2023/7/8/photo-9-16888099662661094157342.jpg",
       "gender": "Female",
       "phone": "0123456789",
-      "address": "123 Main St, Anytown, CA 94123"
+      "address": "123 Main St, Anytown, CA 94123",
+      "role": "User"
     }
   ],
   "carouselbanner": [
     {
       "id": "1",
-      "image": "https://down-vn.img.susercontent.com/file/744b6c519828b25ecb7838a8c2aabee9"
+      "image": "https://cf.shopee.vn/file/vn-50009109-867ecb91f6acaefa56d0f5c06ecd2c5f_xhdpi"
     },
     {
       "id": "2",
-      "image": "https://digi.cropro.vn/wp-content/uploads/2022/08/Orange-Red-Flash-Sale-9.9-Promotion-Banner-1024x512.png"
+      "image": "https://cf.shopee.vn/file/vn-50009109-e429b445be8e1f4fdafb3d01dc0f8394_xhdpi"
     }
   ]
 }

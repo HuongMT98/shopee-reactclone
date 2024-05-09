@@ -166,7 +166,7 @@ function FlashSaleContent() {
             return (
               <div className='slider-flashsale-wrap-all' key={item.id}>
                 <NavLink
-                  to={"/flashsale"}
+                  to={`/flashsale`}
                   key={item.id}
                   className='slider-flashsale-item'
                 >

@@ -7,32 +7,57 @@
   .slider-container {
     display: flex;
     width: var(--widthdefault);
-    height: max-content;
+    height: 235px;
     align-items: center;
 
     // Slider Carousel  ****************************
     .slider-carousel {
-      width: 64%;
+      width: 65%;
+      height: 100%;
 
       .slider-content {
         .slick-slider {
+          .slick-prev {
+            height: max-content;
+            width: auto;
+            z-index: 100;
+            left: 0;
+            display: flex;
+            align-items: center;
+
+            &:before {
+              font-size: 2.8rem;
+            }
+          }
+          .slick-next {
+            height: max-content;
+            width: auto;
+            z-index: 100;
+            right: 0;
+            display: flex;
+            align-items: center;
+
+            &:before {
+              font-size: 2.8rem;
+            }
+          }
           .slick-list {
             img {
               width: 100%;
             }
           }
-        }
-        .slick-dots {
-          position: absolute;
-          bottom: 0.5rem;
+          .slick-dots {
+            position: absolute;
+            bottom: 0.5rem;
 
-          .slick-active {
-            color: var(--bg-root);
-          }
+            .slick-active {
+              color: var(--bg-root);
+            }
 
-          li button:before {
-            font-size: 13px;
-            color: rgb(255, 255, 255);
+            li button:before {
+              font-size: 13px;
+              color: rgb(255, 255, 255);
+            }
           }
         }
       }
@@ -40,7 +65,7 @@
 
     // Slider ADS **************************************
     .slider-ads {
-      width: 36%;
+      width: 35%;
 
       .slider-ads-wrap {
         width: 100%;
@@ -50,9 +75,9 @@
           height: 50%;
 
           .slider-ads-content {
-            padding: 0.3rem;
             height: 100%;
             display: block;
+            padding: 0 0 2px 3px;
 
             .slider-ads-img {
               width: 100%;

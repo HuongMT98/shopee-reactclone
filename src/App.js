@@ -9,6 +9,8 @@ import Notification from "./pages/Notification/Notification"
 import FlashSalePage from "./pages/FlashSalePage/FlashSale"
 import PurchasePage from "./pages/PurchasePage/PurchasePage"
 import SettingInfoPage from "./pages/SettingInfoPage/SettingInfoPage"
+import Categories from "./pages/Categories/Categories"
+import Voucher from "./pages/Voucher/Voucher"
 
 function App() {
   return (
@@ -27,6 +29,8 @@ function App() {
           <Route path='/flashsale' element={<FlashSalePage />} />
           <Route path='/purchase' element={<PurchasePage />} />
           <Route path='/info' element={<SettingInfoPage />} />
+          <Route path={`/categories`} element={<Categories />} />
+          <Route path='/voucher' element={<Voucher />} />
         </Routes>
       </Router>
     </>

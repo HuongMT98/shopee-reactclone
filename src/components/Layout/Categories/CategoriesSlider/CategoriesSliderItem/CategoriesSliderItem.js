@@ -28,6 +28,7 @@ import img27 from "../../../../../Assets/Categories/categories27.png"
 
 import Slider from "react-slick"
 import { NavLink } from "react-bootstrap"
+import { Link } from "react-router-dom"
 
 function CategoriesSliderItem() {
   const dataCategori = [
@@ -187,9 +188,9 @@ function CategoriesSliderItem() {
               <div className='category-slider-wrap-all' key={item.id}>
                 <div className='category-content'>
                   <div className='category-slider-img'>
-                    <NavLink to='/'>
+                    <Link to={`/categories`}>
                       <img src={item.image} alt={item.title} />
-                    </NavLink>
+                    </Link>
                   </div>
                   <p>{item.title}</p>
                 </div>

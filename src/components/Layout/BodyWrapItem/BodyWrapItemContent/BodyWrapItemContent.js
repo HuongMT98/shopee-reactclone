@@ -5,6 +5,9 @@ import { Link } from "react-router-dom"
 function BodyWrapItemContent() {
   const [data, setData] = useState([])
   const [visible, setVisible] = useState(12)
+
+  // ➡️➡️➡️➡️➡️➡️➡️➡️➡️➡️➡️➡️➡️➡️➡️➡️➡️➡️➡️➡️
+  // Dùng thư viện axios gọi API sản phẩm
   useEffect(() => {
     axios
       .get("http://localhost:5200/products")
@@ -12,6 +15,8 @@ function BodyWrapItemContent() {
       .catch((err) => console.log(err))
   }, [])
 
+  // ➡️➡️➡️➡️➡️➡️➡️➡️➡️➡️➡️➡️➡️➡️➡️➡️➡️➡️➡️➡️
+  // Phân trang load thêm 12 sản phẩm mỗi khi click với See more
   const handleLoadMore = () => {
     setVisible(visible + 12)
   }
@@ -21,7 +26,11 @@ function BodyWrapItemContent() {
       <div className='bodywrapitem-container'>
         <div className='bodywrapitem'>
           {data.slice(0, visible).map((item) => (
-            <Link key={item.id} className='bodywrapitem-item'>
+            <Link
+              key={item.id}
+              className='bodywrapitem-item'
+              to={`/product/${item.name}`}
+            >
               <img src={item.image} alt='' />
               <p className='bodywrapitem-item-name'>{item.name}</p>
               <div className='bodywrapitem-item-infosell'>

@@ -17,6 +17,7 @@ import img11 from "../../../../Assets/SliderLoading/11.jpg"
 import img12 from "../../../../Assets/SliderLoading/12.jpg"
 import img13 from "../../../../Assets/SliderLoading/13.jpg"
 import img14 from "../../../../Assets/SliderLoading/14.jpg"
+import { NavLink } from "react-router-dom"
 function SliderShowCarousel() {
   const settings = {
     dots: true,
@@ -31,25 +32,13 @@ function SliderShowCarousel() {
   }
 
   function SampleNextArrow(props) {
-    const { className, style, onClick } = props
-    return (
-      <div
-        className={className}
-        style={{ ...style, display: "none", background: "red" }}
-        onClick={onClick}
-      />
-    )
+    const { className, onClick } = props
+    return <div className={className} onClick={onClick} />
   }
 
   function SamplePrevArrow(props) {
-    const { className, style, onClick } = props
-    return (
-      <div
-        className={className}
-        style={{ ...style, display: "none", background: "green" }}
-        onClick={onClick}
-      />
-    )
+    const { className, onClick } = props
+    return <div className={className} onClick={onClick} />
   }
 
   return (
@@ -57,46 +46,74 @@ function SliderShowCarousel() {
       <div className='slider-content'>
         <Slider {...settings}>
           <div>
-            <img src={img1} alt='' />
+            <NavLink to='/voucher'>
+              <img src={img1} alt='' />
+            </NavLink>
           </div>
           <div>
-            <img src={img2} alt='' />
+            <NavLink to='/voucher'>
+              <img src={img2} alt='' />
+            </NavLink>
           </div>
           <div>
-            <img src={img3} alt='' />
+            <NavLink to='/voucher'>
+              <img src={img3} alt='' />
+            </NavLink>
           </div>
           <div>
-            <img src={img4} alt='' />
+            <NavLink to='/voucher'>
+              <img src={img4} alt='' />
+            </NavLink>
           </div>
           <div>
-            <img src={img5} alt='' />
+            <NavLink to='/voucher'>
+              <img src={img5} alt='' />
+            </NavLink>
           </div>
           <div>
-            <img src={img6} alt='' />
+            <NavLink to='/voucher'>
+              <img src={img6} alt='' />
+            </NavLink>
           </div>
           <div>
-            <img src={img7} alt='' />
+            <NavLink to='/voucher'>
+              <img src={img7} alt='' />
+            </NavLink>
           </div>
           <div>
-            <img src={img8} alt='' />
+            <NavLink to='/voucher'>
+              <img src={img8} alt='' />
+            </NavLink>
           </div>
           <div>
-            <img src={img9} alt='' />
+            <NavLink to='/voucher'>
+              <img src={img9} alt='' />
+            </NavLink>
           </div>
           <div>
-            <img src={img10} alt='' />
+            <NavLink to='/voucher'>
+              <img src={img10} alt='' />
+            </NavLink>
           </div>
           <div>
-            <img src={img11} alt='' />
+            <NavLink to='/voucher'>
+              <img src={img11} alt='' />
+            </NavLink>
           </div>
           <div>
-            <img src={img12} alt='' />
+            <NavLink to='/voucher'>
+              <img src={img12} alt='' />
+            </NavLink>
           </div>
           <div>
-            <img src={img13} alt='' />
+            <NavLink to='/voucher'>
+              <img src={img13} alt='' />
+            </NavLink>
           </div>
           <div>
-            <img src={img14} alt='' />
+            <NavLink to='/voucher'>
+              <img src={img14} alt='' />
+            </NavLink>
           </div>
         </Slider>
       </div>

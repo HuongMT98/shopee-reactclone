@@ -75,18 +75,29 @@
           width: 100%;
 
           .slick-slider {
+            .slick-disabled {
+              opacity: 0;
+            }
             .slick-prev {
-              left: -5%;
+              right: 0;
+              z-index: 9;
+              height: auto;
+              opacity: 1;
 
               &:before {
                 font-size: 3rem;
+                color: #7a7676;
               }
             }
             .slick-next {
-              left: 101%;
+              right: 0;
+              z-index: 9;
+              height: auto;
+              opacity: 1;
 
               &:before {
                 font-size: 3rem;
+                color: #7a7676;
               }
             }
           }
