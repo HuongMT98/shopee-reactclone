@@ -6,8 +6,6 @@ function BodyWrapItemContent() {
   const [data, setData] = useState([])
   const [visible, setVisible] = useState(12)
 
-  // ➡️➡️➡️➡️➡️➡️➡️➡️➡️➡️➡️➡️➡️➡️➡️➡️➡️➡️➡️➡️
-  // Dùng thư viện axios gọi API sản phẩm
   useEffect(() => {
     axios
       .get("http://localhost:5200/products")
@@ -15,10 +13,8 @@ function BodyWrapItemContent() {
       .catch((err) => console.log(err))
   }, [])
 
-  // ➡️➡️➡️➡️➡️➡️➡️➡️➡️➡️➡️➡️➡️➡️➡️➡️➡️➡️➡️➡️
-  // Phân trang load thêm 12 sản phẩm mỗi khi click với See more
   const handleLoadMore = () => {
-    setVisible(visible + 12)
+    setVisible((prevVisible) => prevVisible + 12)
   }
 
   return (
@@ -40,14 +36,16 @@ function BodyWrapItemContent() {
             </Link>
           ))}
         </div>
-        <div className='bodywrapitem-loadmore'>
-          <button
-            className='bodywrapitem-loadmore-btn'
-            onClick={handleLoadMore}
-          >
-            See more
-          </button>
-        </div>
+        {visible < data.length && (
+          <div className='bodywrapitem-loadmore'>
+            <button
+              className='bodywrapitem-loadmore-btn'
+              onClick={handleLoadMore}
+            >
+              See more
+            </button>
+          </div>
+        )}
       </div>
     </>
   )

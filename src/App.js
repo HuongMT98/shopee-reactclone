@@ -1,3 +1,4 @@
+import React from "react"
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom"
 import "./App.scss"
 
@@ -16,12 +17,10 @@ function App() {
   return (
     <>
       <Router>
-        {/* Render Navbar */}
         <div className='nav-wrap'>
           <Nav />
           <NavBottom />
         </div>
-        {/* Render Routes */}
         <Routes>
           <Route path='/' element={<Home />} />
           <Route path='/cart' element={<Cart />} />
@@ -29,7 +28,7 @@ function App() {
           <Route path='/flashsale' element={<FlashSalePage />} />
           <Route path='/purchase' element={<PurchasePage />} />
           <Route path='/info' element={<SettingInfoPage />} />
-          <Route path={`/categories`} element={<Categories />} />
+          <Route path='/categories' element={<Categories />} />
           <Route path='/voucher' element={<Voucher />} />
         </Routes>
       </Router>

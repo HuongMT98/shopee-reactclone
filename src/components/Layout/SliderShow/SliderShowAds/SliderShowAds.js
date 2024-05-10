@@ -17,8 +17,8 @@ function SliderShowAds() {
       <div className='slider-ads-wrap'>
         <div className='slider-ads-container'>
           {data.map((item) => (
-            <div className='slider-ads-content'>
-              <Link to={`/vouchers`}>
+            <div className='slider-ads-content' key={item.id}>
+              <Link to={`/voucher`}>
                 <img
                   className='slider-ads-img'
                   src={item.image}
