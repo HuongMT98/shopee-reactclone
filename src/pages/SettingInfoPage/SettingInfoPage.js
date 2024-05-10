@@ -1,6 +1,7 @@
 import FooterBottom from "../../components/Layout/Footer/FooterBottom/FooterBottom"
 import FooterInfo from "../../components/Layout/Footer/FooterInfo/FooterInfo"
 import FooterPolicy from "../../components/Layout/Footer/FooterPolicy/FooterPolicy"
+import Nav from "../../components/Layout/Nav/Nav"
 import NavSideBar from "../../components/Layout/NavSideBar/NavSideBar"
 import SettingInfoContentPage from "./SettingInfoContentPage/SettingInfoContentPage"
 import "./SettingInfoPage.scss"
@@ -8,6 +9,9 @@ import "./SettingInfoPage.scss"
 function SettingInfoPage() {
   return (
     <>
+      {/* Import NavBarComponent */}
+      <Nav />
+      {/* Content Info-Page */}
       <div className='setting-info-page'>
         <div className='setting-info-page-container-wrap'>
           <div className='setting-info-page-container'>
@@ -19,7 +23,8 @@ function SettingInfoPage() {
             </div>
           </div>
         </div>
-      </div>{" "}
+      </div>
+      {/* Import Footer Component */}
       <FooterBottom />
       <FooterInfo />
       <FooterPolicy />

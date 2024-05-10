@@ -2,6 +2,7 @@ import { NavLink } from "react-router-dom"
 import LOGO from "./NavLogo/LOGO"
 import NavSearch from "./NavSearch/NavSearch"
 import NavCart from "./NavCart/NavCart"
+import "./NavBottom.scss"
 
 function NavBottom() {
   return (

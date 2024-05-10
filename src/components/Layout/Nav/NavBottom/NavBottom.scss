@@ -1,0 +1,27 @@
+// Nav Bottom ************************************************
+.nav-bottom {
+  height: 85px;
+  display: flex;
+  width: 100%;
+  background-color: var(--bg-root);
+  justify-content: center;
+  align-items: center;
+
+  .nav-bottom-item {
+    width: var(--widthdefault);
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+    .nav-bottom-logo-img {
+      width: 120px;
+      height: 50px;
+      display: block;
+
+      .shopee-logo {
+        width: 100%;
+        color: white;
+      }
+    }
+  }
+}

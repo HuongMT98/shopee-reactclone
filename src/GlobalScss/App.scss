@@ -73,3 +73,10 @@ li {
 .w20 {
   width: 20%;
 }
+.invalid {
+  color: var(--color-red);
+}
+.invalid-input {
+  border: 1px solid red;
+  background: rgb(250, 224, 224);
+}
