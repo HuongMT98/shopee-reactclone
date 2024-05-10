@@ -1,3 +1,22 @@
-.purchasepage-container {
+.purchase-page {
   padding-top: var(--paddingtop-layout);
+  width: 100%;
+  background: var(--gb-all);
+
+  .purchase-page-container-wrap {
+    display: flex;
+    justify-content: center;
+    padding-top: var(--paddingtop-route);
+
+    .purchase-page-page-container {
+      width: var(--widthdefault);
+      display: flex;
+      flex-direction: row;
+
+      .purchase-page-content {
+        width: 100%;
+        position: relative;
+      }
+    }
+  }
 }

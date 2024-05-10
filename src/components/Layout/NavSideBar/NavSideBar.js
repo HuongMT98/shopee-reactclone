@@ -34,7 +34,9 @@ function NavSideBar() {
                     <p>{item.name}</p>
                     <div className='edit'>
                       <FontAwesomeIcon icon={faPen} />
-                      <Link>Edit Profile</Link>
+                      <Link to='/info' className='edit-link'>
+                        Edit Profile
+                      </Link>
                     </div>
                   </div>
                 </div>
@@ -58,28 +60,30 @@ function NavSideBar() {
               <NavLink to='/info'>Profile</NavLink>
             </li>
             <li>
-              <NavLink to='/info'>Banks & Cards</NavLink>
+              <NavLink to='/info/bank'>Banks & Cards</NavLink>
             </li>
             <li>
-              <NavLink to='/info'>Addresses</NavLink>
+              <NavLink to='/info/address'>Addresses</NavLink>
             </li>
             <li>
-              <NavLink to='/info'>Change Password</NavLink>
+              <NavLink to='/info/password'>Change Password</NavLink>
             </li>
             <li>
-              <NavLink to='/info'>Notification Settings</NavLink>
+              <NavLink to='/notification'>Notification Settings</NavLink>
             </li>
             <li>
-              <NavLink to='/info'>Privacy Settings</NavLink>
+              <NavLink to='/info/privacy'>Privacy Settings</NavLink>
             </li>
           </ul>
           <div className='nav-sidebar-bottom-title'>
             <img src={img3} alt='' />
-            <Link className='navsidebar-bottom-titleaccount'>My Purchase</Link>
+            <Link className='navsidebar-bottom-titleaccount' to='/purchase'>
+              My Purchase
+            </Link>
           </div>
           <div className='nav-sidebar-bottom-title'>
             <img src={img4} alt='' />
-            <Link className='navsidebar-bottom-titleaccount'>
+            <Link className='navsidebar-bottom-titleaccount' to='/notification'>
               Notifications
             </Link>
           </div>

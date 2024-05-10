@@ -1,16 +1,15 @@
-import axios from "axios"
 import { useEffect, useState } from "react"
 import { Link } from "react-router-dom"
+import ApiCarousel from "../../../../Api/ApiCarousel"
 
 function SliderShowAds() {
   const [data, setData] = useState([])
 
   useEffect(() => {
-    axios
-      .get("http://localhost:5200/carouselbanner")
-      .then((res) => setData(res.data))
-      .catch((err) => console.log(err))
-  })
+    ApiCarousel().then((data) => {
+      setData(data)
+    })
+  }, [])
 
   return (
     <>

@@ -1,16 +1,15 @@
-import axios from "axios"
 import { useEffect, useState } from "react"
 import { Link } from "react-router-dom"
+import ApiProduct from "../../../../Api/ApiProduct"
 
 function BodyWrapItemContent() {
   const [data, setData] = useState([])
   const [visible, setVisible] = useState(12)
 
   useEffect(() => {
-    axios
-      .get("http://localhost:5200/products")
-      .then((res) => setData(res.data))
-      .catch((err) => console.log(err))
+    ApiProduct().then((data) => {
+      setData(data)
+    })
   }, [])
 
   const handleLoadMore = () => {

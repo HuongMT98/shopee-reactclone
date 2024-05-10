@@ -11,6 +11,12 @@ import SettingInfoPage from "./pages/SettingInfoPage/SettingInfoPage"
 import Categories from "./pages/Categories/Categories"
 import Voucher from "./pages/Voucher/Voucher"
 import SignUpPage from "./pages/SignUpPage/SignUpPage"
+import PurchaseToPay from "./pages/PurchasePage/PurchaseToPay/PurchaseToPay"
+import PurchaseToShip from "./pages/PurchasePage/PurchaseToShip/PurchaseToShip"
+import PurchaseToCancel from "./pages/PurchasePage/PurchaseToCancel/PurchaseToCancel"
+import PurchaseToComplete from "./pages/PurchasePage/PurchaseToComplete/PurchaseToComplete"
+import PurchaseToReceive from "./pages/PurchasePage/PurchaseToReceive/PurchaseToReceive"
+import PurchaseToRefund from "./pages/PurchasePage/PurchaseToRefund/PurchaseToRefund"
 
 const root = ReactDOM.createRoot(document.getElementById("root"))
 root.render(
@@ -25,6 +31,12 @@ root.render(
       <Route path='/categories' element={<Categories />} />
       <Route path='/voucher' element={<Voucher />} />
       <Route path='/signup' element={<SignUpPage />} />
+      <Route path='/purchase/topay' element={<PurchaseToPay />} />
+      <Route path='/purchase/tocancel' element={<PurchaseToCancel />} />
+      <Route path='/purchase/tocomplete' element={<PurchaseToComplete />} />
+      <Route path='/purchase/toreceive' element={<PurchaseToReceive />} />
+      <Route path='/purchase/torefund' element={<PurchaseToRefund />} />{" "}
+      <Route path='/purchase/toship' element={<PurchaseToShip />} />
     </Routes>
   </BrowserRouter>
 )

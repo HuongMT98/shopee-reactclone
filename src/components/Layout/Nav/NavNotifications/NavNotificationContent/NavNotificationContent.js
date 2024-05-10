@@ -2,16 +2,15 @@ import { useEffect, useState } from "react"
 import shoppeNotification1 from "../../../../../Assets/Notification/shoppe-notification-1.jpg"
 import shoppeNotification2 from "../../../../../Assets/Notification/shoppe-notification-2.png"
 import shoppeNotification3 from "../../../../../Assets/Notification/shoppe-notification-3.png"
-import axios from "axios"
+import ApiUser from "../../../../../Api/ApiUser"
 
 function NavNotificationContent() {
   const [data, setData] = useState([])
   useEffect(() => {
-    axios
-      .get("http://localhost:5200/user")
-      .then((res) => setData(res.data))
-      .catch((err) => console.log(err))
-  })
+    ApiUser().then((data) => {
+      setData(data)
+    })
+  }, [])
   const userName = data.map((item) => item.name)
 
   const notifications = [

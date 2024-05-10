@@ -17,16 +17,16 @@ import {
   faCircleQuestion,
   faGlobe,
 } from "@fortawesome/free-solid-svg-icons"
+import ApiUser from "../../../Api/ApiUser"
 
 function Nav() {
   const [isLogin, setIsLogin] = useState(true)
   const [user, setUser] = useState([])
 
   useEffect(() => {
-    axios
-      .get("http://localhost:5200/user")
-      .then((res) => setUser(res.data))
-      .catch((err) => console.log(err))
+    ApiUser().then((data) => {
+      setUser(data)
+    })
   }, [])
 
   const languageChoice = [
