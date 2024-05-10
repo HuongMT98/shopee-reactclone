@@ -408,5 +408,31 @@
       "id": "2",
       "image": "https://cf.shopee.vn/file/vn-50009109-e429b445be8e1f4fdafb3d01dc0f8394_xhdpi"
     }
+  ],
+  "navhotsearch": [
+    {
+      "id": "1",
+      "title": "Đồng hồ nam"
+    },
+    {
+      "id": "2",
+      "title": "Nồi Lẩu Điện Mini"
+    },
+    {
+      "id": "3",
+      "title": "Kiện Hàng Boom Công Nghệ"
+    },
+    {
+      "id": "4",
+      "title": "Giường Lười"
+    },
+    {
+      "id": "5",
+      "title": "Phụ Kiện PC Gaming"
+    },
+    {
+      "id": "6",
+      "title": "Máy Lạnh Mini 12v"
+    }
   ]
 }
