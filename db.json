@@ -442,5 +442,151 @@
       "image": "",
       "content": ""
     }
+  ],
+  "flashsale": [
+    {
+      "id": "1",
+      "image": "https://paulaschoice.vn/wp-content/uploads/2019/08/7700.jpg",
+      "price": "1600000",
+      "selloff": "20%"
+    },
+    {
+      "id": "2",
+      "image": "https://down-vn.img.susercontent.com/file/cn-11134208-7r98o-lmx0n532cbms73",
+      "price": "232000",
+      "selloff": "50%"
+    },
+    {
+      "id": "3",
+      "image": "https://cdn.vuahanghieu.com/unsafe/0x0/left/top/smart/filters:quality(90)/https://admin.vuahanghieu.com/upload/news/content/2023/08/phoi-do-style-trung-quoc-nu-5-jpg-1693293796-29082023142316.jpg",
+      "price": "203000",
+      "selloff": "52%"
+    },
+    {
+      "id": "4",
+      "image": "https://yeepvn.sgp1.digitaloceanspaces.com/2023/12/sg-11134201-7rbnl-ln3vuy8hn9kl35_tn.jpg",
+      "price": "410000",
+      "selloff": "50%"
+    },
+    {
+      "id": "5",
+      "image": "https://img.lazcdn.com/g/p/e53d87553dbf14ef9183ece051b68b77.jpg_720x720q80.jpg",
+      "price": "190000",
+      "selloff": "54%"
+    },
+    {
+      "id": "6",
+      "image": "https://cf.shopee.vn/file/eccc59d723926ccdbaa79f85659601d8",
+      "price": "49000",
+      "selloff": "82%"
+    },
+    {
+      "id": "7",
+      "image": "https://salt.tikicdn.com/cache/w300/ts/product/ac/fe/f9/10f85303b0bc1f1a117fd0dba0eeca55.jpg",
+      "price": "438000",
+      "selloff": "55%"
+    },
+    {
+      "id": "8",
+      "image": "https://down-vn.img.susercontent.com/file/sg-11134201-7rbkq-lqedmk6m0tc4fc",
+      "price": "270000",
+      "selloff": "47%"
+    },
+    {
+      "id": "9",
+      "image": "https://cf.shopee.vn/file/cn-11134207-7r98o-lo68mtf5w7xf01",
+      "price": "30000",
+      "selloff": "40%"
+    },
+    {
+      "id": "10",
+      "image": "https://down-vn.img.susercontent.com/file/cn-11134207-7r98o-lnql4el78tjca7_tn",
+      "price": "230000",
+      "selloff": "47%"
+    },
+    {
+      "id": "9",
+      "image": "https://down-vn.img.susercontent.com/file/cn-11134207-7r98o-lu8n93g29xfofe_tn",
+      "price": "288000",
+      "selloff": "50%"
+    },
+    {
+      "id": "10",
+      "image": "https://down-vn.img.susercontent.com/file/cn-11134207-7r98o-lo67ndnkpgrn17_tn",
+      "price": "93000",
+      "selloff": "56%"
+    },
+    {
+      "id": "11",
+      "image": "https://down-vn.img.susercontent.com/file/sg-11134201-7rcd5-lti0xzxqz82kf7",
+      "price": "215000",
+      "selloff": "47%"
+    },
+    {
+      "id": "12",
+      "image": "https://down-vn.img.susercontent.com/file/cn-11134211-7r98o-lmjzsu5b5n3673",
+      "price": "220000",
+      "selloff": "60%"
+    },
+    {
+      "id": "13",
+      "image": "https://down-vn.img.susercontent.com/file/vn-11134201-23030-k3sqv2ahllovad",
+      "price": "230000",
+      "selloff": "50%"
+    },
+    {
+      "id": "14",
+      "image": "https://down-vn.img.susercontent.com/file/sg-11134201-7rccv-lt6l2mnr3egbeb",
+      "price": "223000",
+      "selloff": "49%"
+    },
+    {
+      "id": "15",
+      "image": "https://down-vn.img.susercontent.com/file/cn-11134207-7r98o-lua41126exrn13",
+      "price": "180000",
+      "selloff": "45%"
+    },
+    {
+      "id": "16",
+      "image": "https://down-vn.img.susercontent.com/file/vn-11134202-7r98o-loxxi50sopjice",
+      "price": "198000",
+      "selloff": "31%"
+    },
+    {
+      "id": "17",
+      "image": "https://salt.tikicdn.com/cache/w1200/ts/product/18/94/45/9e02bb7b67f89173d73233250291e2d0.jpg",
+      "price": "560000",
+      "selloff": "30%"
+    },
+    {
+      "id": "18",
+      "image": "https://down-vn.img.susercontent.com/file/4da6e050c3ee293068e8f905a3e7bb6b",
+      "price": "378000",
+      "selloff": "49%"
+    },
+    {
+      "id": "19",
+      "image": "https://m.media-amazon.com/images/I/61mpMH5TzkL._AC_SL1500_.jpg",
+      "price": "1500000",
+      "selloff": "43%"
+    },
+    {
+      "id": "20",
+      "image": "https://down-vn.img.susercontent.com/file/cn-11134207-7r98o-ltyosqj8trb831_tn.webp",
+      "price": "265000",
+      "selloff": "41%"
+    },
+    {
+      "id": "21",
+      "image": "https://vn-test-11.slatic.net/p/41247b943ef8b03f1f536b8a72553559.jpg",
+      "price": "300000",
+      "selloff": "36%"
+    },
+    {
+      "id": "22",
+      "image": "https://down-vn.img.susercontent.com/file/sg-11134201-7rceh-ltapezm669iq42_tn",
+      "price": "415000",
+      "selloff": "51%"
+    }
   ]
 }

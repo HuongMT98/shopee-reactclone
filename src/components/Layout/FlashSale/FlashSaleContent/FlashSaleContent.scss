@@ -1,0 +1,37 @@
+.slider-flashsale {
+  .slider-flashsale-item {
+    position: relative;
+
+    .slider-flashsale-img {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      img {
+        width: 170px;
+        height: 170px;
+        object-fit: cover;
+      }
+    }
+    .slider-flashsale-price {
+      display: flex;
+      justify-content: center;
+      margin: 1rem 0;
+
+      p {
+        color: red;
+        font-size: 17px;
+      }
+    }
+    .slider-flashsale-selloff {
+      position: absolute;
+      top: 0;
+      right: 0;
+      width: max-content;
+      height: auto;
+      background: yellow;
+      color: red;
+      text-align: center;
+    }
+  }
+}

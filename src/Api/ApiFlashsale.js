@@ -1,6 +1,6 @@
-const API_URL = "http://localhost:5200/carouselbanner"
+const API_URL = "http://localhost:5200/flashsale"
 
-async function ApiCarousel() {
+async function ApiFlashsale() {
   try {
     const response = await fetch(API_URL)
     if (!response.ok) {
@@ -14,4 +14,4 @@ async function ApiCarousel() {
   }
 }
 
-export default ApiCarousel
+export default ApiFlashsale

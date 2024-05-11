@@ -101,49 +101,6 @@
               }
             }
           }
-
-          .slider-flashsale-wrap-all {
-            position: relative;
-            padding: 0 1rem;
-
-            .slider-flashsale-item {
-              .slider-flashsale-img {
-                img {
-                  width: 100%;
-                }
-
-                .slider-flashsale-img-context {
-                  position: absolute;
-                  top: 0;
-
-                  img {
-                    width: 100%;
-                  }
-                }
-                .slider-flashsale-img-sale {
-                  position: absolute;
-                  top: 0;
-                  right: 0;
-                  width: 3rem;
-                  text-align: center;
-                  background: var(--flashsale-bg);
-
-                  p {
-                    color: var(--bg-root);
-                  }
-                }
-              }
-              .slider-flashsale-price {
-                margin-top: 2rem;
-                color: red;
-                text-align: center;
-
-                p {
-                  font-size: 18px;
-                }
-              }
-            }
-          }
         }
         .slider-flashsale-banner {
           margin-top: 3rem;
