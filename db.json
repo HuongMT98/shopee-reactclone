@@ -434,5 +434,13 @@
       "id": "6",
       "title": "Máy Lạnh Mini 12v"
     }
+  ],
+  "notifications": [
+    {
+      "id": "",
+      "title": "",
+      "image": "",
+      "content": ""
+    }
   ]
 }

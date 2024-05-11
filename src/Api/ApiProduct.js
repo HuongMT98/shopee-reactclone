@@ -1,6 +1,6 @@
 const API_URL = "http://localhost:5200/products"
 
-async function fetchProducts() {
+async function ApiProduct() {
   try {
     const response = await fetch(API_URL)
     if (!response.ok) {
@@ -14,4 +14,4 @@ async function fetchProducts() {
   }
 }
 
-export default fetchProducts
+export default ApiProduct

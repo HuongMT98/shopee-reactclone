@@ -1,6 +1,6 @@
-const API_URL = "http://localhost:5200/user"
+const API_URL = "http://localhost:5200/notifications"
 
-async function ApiUser() {
+async function ApiNotification() {
   try {
     const response = await fetch(API_URL)
     if (!response.ok) {
@@ -14,4 +14,4 @@ async function ApiUser() {
   }
 }
 
-export default ApiUser
+export default ApiNotification
