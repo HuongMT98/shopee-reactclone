@@ -7,6 +7,7 @@ import FlashSale from "./components/Layout/FlashSale/FlashSale"
 import ShopeeMall from "./components/Layout/ShopeeMall/ShopeeMall"
 import BodyWrapItem from "./components/Layout/BodyWrapItem/BodyWrapItem"
 import Footer from "./components/Layout/Footer/Footer"
+import ScrollToTopBtn from "./untils/scrollToTopBtn"
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
       <ShopeeMall />
       <BodyWrapItem />
       <Footer />
+      <ScrollToTopBtn />
     </>
   )
 }

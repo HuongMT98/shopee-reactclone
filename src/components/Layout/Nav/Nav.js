@@ -1,7 +1,6 @@
 import { Link, NavLink } from "react-router-dom"
 import "../Nav/Nav.scss"
 import Tippy from "@tippyjs/react"
-import axios from "axios"
 import "tippy.js/dist/tippy.css"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faFacebook, faInstagram } from "@fortawesome/free-brands-svg-icons"

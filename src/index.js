@@ -23,7 +23,7 @@ root.render(
   <BrowserRouter>
     <Routes>
       <Route path='/' element={<App />} />
-      <Route path='cart' element={<Cart />} />
+      <Route path='/cart' element={<Cart />} />
       <Route path='/notification' element={<Notification />} />
       <Route path='/flashsale' element={<FlashSalePage />} />
       <Route path='/purchase' element={<PurchasePage />} />

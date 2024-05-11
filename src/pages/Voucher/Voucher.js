@@ -2,6 +2,7 @@ import FooterBottom from "../../components/Layout/Footer/FooterBottom/FooterBott
 import FooterInfo from "../../components/Layout/Footer/FooterInfo/FooterInfo"
 import FooterPolicy from "../../components/Layout/Footer/FooterPolicy/FooterPolicy"
 import Nav from "../../components/Layout/Nav/Nav"
+import ScrollToTopBtn from "../../untils/scrollToTopBtn"
 import "./Voucher.scss"
 function Voucher() {
   return (
@@ -13,6 +14,7 @@ function Voucher() {
       <FooterBottom />
       <FooterInfo />
       <FooterPolicy />
+      <ScrollToTopBtn />
     </>
   )
 }
