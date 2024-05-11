@@ -17,6 +17,7 @@ import PurchaseToCancel from "./pages/PurchasePage/PurchaseToCancel/PurchaseToCa
 import PurchaseToComplete from "./pages/PurchasePage/PurchaseToComplete/PurchaseToComplete"
 import PurchaseToReceive from "./pages/PurchasePage/PurchaseToReceive/PurchaseToReceive"
 import PurchaseToRefund from "./pages/PurchasePage/PurchaseToRefund/PurchaseToRefund"
+import ScrollToTopBtn from "./untils/scrollToTopBtn"
 
 const root = ReactDOM.createRoot(document.getElementById("root"))
 root.render(
@@ -35,9 +36,10 @@ root.render(
       <Route path='/purchase/tocancel' element={<PurchaseToCancel />} />
       <Route path='/purchase/tocomplete' element={<PurchaseToComplete />} />
       <Route path='/purchase/toreceive' element={<PurchaseToReceive />} />
-      <Route path='/purchase/torefund' element={<PurchaseToRefund />} />{" "}
+      <Route path='/purchase/torefund' element={<PurchaseToRefund />} />
       <Route path='/purchase/toship' element={<PurchaseToShip />} />
     </Routes>
+    <ScrollToTopBtn />
   </BrowserRouter>
 )
 
