@@ -18,6 +18,8 @@ import PurchaseToComplete from "./pages/PurchasePage/PurchaseToComplete/Purchase
 import PurchaseToReceive from "./pages/PurchasePage/PurchaseToReceive/PurchaseToReceive"
 import PurchaseToRefund from "./pages/PurchasePage/PurchaseToRefund/PurchaseToRefund"
 import ScrollToTopBtn from "./untils/scrollToTopBtn"
+import ProductsPage from "./pages/ProductsPage/ProductsPage"
+import ProductsPageDetail from "./pages/ProductsPage/ProductsPageDetail/ProductsPageDetail"
 
 const root = ReactDOM.createRoot(document.getElementById("root"))
 root.render(
@@ -26,6 +28,7 @@ root.render(
       <Route path='/' element={<App />} />
       <Route path='/cart' element={<Cart />} />
       <Route path='/notification' element={<Notification />} />
+      {/* Router Flashsale Nest Router V6*/}
       <Route
         path='/flashsale'
         element={<FlashSalePage />}
@@ -41,7 +44,10 @@ root.render(
         <Route path='purchaseRefund' element={<PurchaseToRefund />} />
         <Route path='purchaseShip' element={<PurchaseToShip />} />
       </Route>
-      {/* Router Purchase Nest Router V6 End*/}
+      <Route path='/product' element={<ProductsPage />}>
+        <Route path=':id' element={<ProductsPageDetail />} />
+      </Route>
+
       <Route path='/info' element={<SettingInfoPage />} />
       <Route path='/categories' element={<Categories />} />
       <Route path='/voucher' element={<Voucher />} />
