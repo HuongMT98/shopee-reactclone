@@ -27,17 +27,19 @@ root.render(
       <Route path='/cart' element={<Cart />} />
       <Route path='/notification' element={<Notification />} />
       <Route path='/flashsale' element={<FlashSalePage />} />
-      <Route path='/purchase' element={<PurchasePage />} />
+      {/* Router Purchase Nest Router V6*/}
+      <Route path='/purchase' element={<PurchasePage />}>
+        <Route path='topay' element={<PurchaseToPay />} />
+        <Route path='tocancel' element={<PurchaseToCancel />} />
+        <Route path='tocomplete' element={<PurchaseToComplete />} />
+        <Route path='toreceive' element={<PurchaseToReceive />} />
+        <Route path='torefund' element={<PurchaseToRefund />} />
+        <Route path='toship' element={<PurchaseToShip />} />
+      </Route>
       <Route path='/info' element={<SettingInfoPage />} />
       <Route path='/categories' element={<Categories />} />
       <Route path='/voucher' element={<Voucher />} />
       <Route path='/signup' element={<SignUpPage />} />
-      <Route path='/purchase/topay' element={<PurchaseToPay />} />
-      <Route path='/purchase/tocancel' element={<PurchaseToCancel />} />
-      <Route path='/purchase/tocomplete' element={<PurchaseToComplete />} />
-      <Route path='/purchase/toreceive' element={<PurchaseToReceive />} />
-      <Route path='/purchase/torefund' element={<PurchaseToRefund />} />
-      <Route path='/purchase/toship' element={<PurchaseToShip />} />
     </Routes>
     <ScrollToTopBtn />
   </BrowserRouter>

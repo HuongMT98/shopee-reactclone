@@ -1,6 +1,6 @@
 const API_URL = "http://localhost:5200/flashsale"
 
-async function ApiFlashsale() {
+async function ApiFlashsales() {
   try {
     const response = await fetch(API_URL)
     if (!response.ok) {
@@ -14,4 +14,4 @@ async function ApiFlashsale() {
   }
 }
 
-export default ApiFlashsale
+export default ApiFlashsales

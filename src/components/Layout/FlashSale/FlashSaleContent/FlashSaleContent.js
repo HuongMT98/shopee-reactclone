@@ -1,7 +1,7 @@
 import Slider from "react-slick"
 import { NavLink } from "react-router-dom"
 import React, { useEffect, useState } from "react"
-import ApiFlashsale from "../../../../Api/ApiFlashsale"
+import ApiFlashsales from "../../../../Api/ApiFlashsales"
 import flashsalebanner from "../../../../Assets/FlashSale/flashsalebanner.png"
 import formatNumber from "../../../../untils/fomatNumber"
 import "./FlashSaleContent.scss"
@@ -14,7 +14,7 @@ function FlashSaleContent() {
   useEffect(() => {
     async function fetchData() {
       try {
-        const response = await ApiFlashsale()
+        const response = await ApiFlashsales()
         setData(response)
       } catch (error) {
         console.error("Error fetching data:", error)
