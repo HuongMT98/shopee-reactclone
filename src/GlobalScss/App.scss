@@ -12,6 +12,10 @@ li {
   list-style: none;
 }
 
+p {
+  margin-top: 0 !important;
+}
+
 *::-webkit-scrollbar {
   height: 8px;
   width: 8px;

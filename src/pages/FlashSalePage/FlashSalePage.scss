@@ -1,3 +1,89 @@
 .flashsalepage-container {
   margin-top: 8rem;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  background: var(--gb-all);
+
+  .flashsalepage-wrap {
+    width: var(--widthdefault);
+    display: grid;
+    gap: 15px;
+    grid-template-columns: repeat(4, 1fr);
+    margin: 1rem 0;
+
+    .flashsalepage-item {
+      width: 100%;
+      background: var(--bg-primary);
+      transition: transform 0.5s;
+
+      &:hover {
+        cursor: pointer;
+        transform: translateY(-4px);
+      }
+
+      .flashsalepage-img-wrap {
+        width: 100%;
+        padding: 5px;
+
+        .flashsalepage-img {
+          width: 100%;
+          height: min(280px);
+          object-fit: cover;
+        }
+      }
+
+      .flashsalepage-info {
+        width: 100%;
+        height: max-content;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 0 10px;
+        color: var(--bg-root);
+
+        .flashsalepage-name {
+          font-size: 18px;
+          text-transform: capitalize;
+          height: 50px;
+          max-height: 50px;
+          overflow: hidden;
+          color: black;
+          padding: 0 5px;
+        }
+
+        .flashsalepage-rating {
+          color: var(--bg-root);
+        }
+        .flashsalepage-price-wrap {
+          display: flex;
+          width: 90%;
+
+          .flashsalepage-price {
+            font-size: 15px;
+            opacity: 0.5;
+            color: black;
+            text-decoration: line-through;
+          }
+
+          .flashsalepage-selloff-wrap {
+            display: flex;
+            background: var(--flashsale-bg);
+            align-items: center;
+            margin-left: 5px;
+
+            .flashsalepage-selloff {
+              color: var(--bg-root);
+            }
+          }
+        }
+
+        .flashsalepage-selloff-price {
+          width: 100%;
+          font-size: 1.3rem;
+          display: flex;
+        }
+      }
+    }
+  }
 }

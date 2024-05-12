@@ -1,11 +1,14 @@
+import "./PurchasePage.scss"
+// ==> Import COMPONENT
 import FooterBottom from "../../components/Layout/Footer/FooterBottom/FooterBottom"
 import FooterInfo from "../../components/Layout/Footer/FooterInfo/FooterInfo"
 import FooterPolicy from "../../components/Layout/Footer/FooterPolicy/FooterPolicy"
 import Nav from "../../components/Layout/Nav/Nav"
 import NavSideBar from "../../components/Layout/NavSideBar/NavSideBar"
-import "./PurchasePage.scss"
 import PurchasePageContent from "./PurchasePageContent/PurchasePageContent"
 import PurchaseSearch from "./PurchasePageContent/PurchaseSearch/PurchaseSearch"
+import { Outlet } from "react-router-dom"
+
 function PurchasePage() {
   return (
     <>
@@ -20,6 +23,9 @@ function PurchasePage() {
               <div className='purchase-page-content'>
                 <PurchasePageContent />
                 <PurchaseSearch />
+                {/* Render Child component here */}
+                <Outlet />
+                {/* Render Child component here */}
               </div>
             </div>
           </div>

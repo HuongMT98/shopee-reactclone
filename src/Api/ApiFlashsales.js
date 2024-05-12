@@ -1,4 +1,4 @@
-const API_URL = "http://localhost:5200/flashsale"
+const API_URL = "http://localhost:5200/flashsales"
 
 async function ApiFlashsales() {
   try {

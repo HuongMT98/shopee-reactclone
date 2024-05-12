@@ -38,7 +38,7 @@ function FlashSaleContent() {
         <Slider {...settings}>
           {data.map((item) => (
             <div key={item.id} className='slider-flashsale-item'>
-              <NavLink to={`/flashsale/${item.id}`}>
+              <NavLink to={`/flashsale`}>
                 <div className='slider-flashsale-img'>
                   <img src={item.image} alt='' />
                 </div>

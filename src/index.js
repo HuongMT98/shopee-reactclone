@@ -26,16 +26,22 @@ root.render(
       <Route path='/' element={<App />} />
       <Route path='/cart' element={<Cart />} />
       <Route path='/notification' element={<Notification />} />
-      <Route path='/flashsale' element={<FlashSalePage />} />
+      <Route
+        path='/flashsale'
+        element={<FlashSalePage />}
+        children={[<Route path='flashsalepage' element={<FlashSalePage />} />]}
+      />
+
       {/* Router Purchase Nest Router V6*/}
       <Route path='/purchase' element={<PurchasePage />}>
-        <Route path='topay' element={<PurchaseToPay />} />
-        <Route path='tocancel' element={<PurchaseToCancel />} />
-        <Route path='tocomplete' element={<PurchaseToComplete />} />
-        <Route path='toreceive' element={<PurchaseToReceive />} />
-        <Route path='torefund' element={<PurchaseToRefund />} />
-        <Route path='toship' element={<PurchaseToShip />} />
+        <Route path='purchasePay' element={<PurchaseToPay />} />
+        <Route path='purchaseCancel' element={<PurchaseToCancel />} />
+        <Route path='purchaseComplete' element={<PurchaseToComplete />} />
+        <Route path='purchaseReceive' element={<PurchaseToReceive />} />
+        <Route path='purchaseRefund' element={<PurchaseToRefund />} />
+        <Route path='purchaseShip' element={<PurchaseToShip />} />
       </Route>
+      {/* Router Purchase Nest Router V6 End*/}
       <Route path='/info' element={<SettingInfoPage />} />
       <Route path='/categories' element={<Categories />} />
       <Route path='/voucher' element={<Voucher />} />

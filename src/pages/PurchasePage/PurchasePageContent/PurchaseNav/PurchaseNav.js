@@ -10,22 +10,22 @@ function PurchaseNav() {
               <NavLink to='/purchase'>All</NavLink>
             </div>
             <div className='list-nav'>
-              <NavLink to='/purchase/topay'>To Pay</NavLink>
+              <NavLink to='purchasePay'>To Pay</NavLink>
             </div>
             <div className='list-nav'>
-              <NavLink to='/purchase/toship'>To Ship</NavLink>
+              <NavLink to='purchaseShip'>To Ship</NavLink>
             </div>
             <div className='list-nav'>
-              <NavLink to='/purchase/toreceive'>To Receive</NavLink>
+              <NavLink to='purchaseReceive'>To Receive</NavLink>
             </div>
             <div className='list-nav'>
-              <NavLink to='/purchase/tocomplete'>Completed</NavLink>
+              <NavLink to='purchaseComplete'>Completed</NavLink>
             </div>
             <div className='list-nav'>
-              <NavLink to='/purchase/tocancel'>Cancelled</NavLink>
+              <NavLink to='purchaseCancel'>Cancelled</NavLink>
             </div>
             <div className='list-nav'>
-              <NavLink to='/purchase/torefund'>Return Refund</NavLink>
+              <NavLink to='purchaseRefund'>Return Refund</NavLink>
             </div>
           </div>
         </div>

@@ -1,16 +1,18 @@
 import { useEffect, useState } from "react"
 import "./SettingInfoContentPage.scss"
-import axios from "axios"
+// import axios from "axios"
 import SettingInfoContentPageLeft from "./SettingInfoContentPageLeft/SettingInfoContentPageLeft"
 import SettingInfoContentPageRight from "./SettingInfoContentPageRight/SettingInfoContentPageRight"
 import SettingInfoContentPageMid from "./SettingInfoContentPageMid/SettingInfoContentPageMid"
+import ApiUser from "../../../Api/ApiUser"
+
 function SettingInfoContentPage() {
   const [user, setUser] = useState([])
+
   useEffect(() => {
-    axios
-      .get("http://localhost:5200/user")
-      .then((res) => setUser(res.data))
-      .catch((err) => console.log(err))
+    ApiUser().then((data) => {
+      setUser(data)
+    })
   }, [])
 
   return (
