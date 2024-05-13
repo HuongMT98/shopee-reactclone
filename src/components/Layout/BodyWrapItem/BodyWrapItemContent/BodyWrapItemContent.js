@@ -8,10 +8,18 @@ function BodyWrapItemContent() {
   const [visible, setVisible] = useState(24)
 
   useEffect(() => {
-    ApiProduct().then((data) => {
-      setData(data)
-    })
+    async function fetchData() {
+      try {
+        const response = await ApiProduct()
+        setData(response.sort(() => Math.random() - 0.5))
+      } catch (error) {
+        console.error("Error fetching data:", error)
+      }
+    }
+    fetchData()
   }, [])
+
+  //dùng data để render UI
 
   const handleLoadMore = () => {
     setVisible((prevVisible) => prevVisible + 12)
