@@ -5,7 +5,7 @@ import "./GlobalScss/App.scss"
 import { BrowserRouter, Route, Routes } from "react-router-dom"
 import Cart from "./pages/Cart/Cart"
 import Notification from "./pages/Notification/Notification"
-import FlashSalePage from "./pages/FlashSalePage/FlashSale"
+import FlashSalePage from "./pages/FlashSalePage/FlashSalePage"
 import PurchasePage from "./pages/PurchasePage/PurchasePage"
 import SettingInfoPage from "./pages/SettingInfoPage/SettingInfoPage"
 import Categories from "./pages/Categories/Categories"
@@ -33,19 +33,7 @@ root.render(
         element={<Notification />}
       />
 
-      {/* Router Flashsale Nest Router V6*/}
-      <Route
-        key='flashsale'
-        path='/flashsale'
-        element={<FlashSalePage />}
-        children={[
-          <Route
-            key='flashsalepage'
-            path='flashsalepage'
-            element={<FlashSalePage />}
-          />,
-        ]}
-      />
+      <Route key='flashsale' path='/flashsale' element={<FlashSalePage />} />
 
       {/* Router Purchase Nest Router V6*/}
       <Route key='purchase' path='/purchase' element={<PurchasePage />}>

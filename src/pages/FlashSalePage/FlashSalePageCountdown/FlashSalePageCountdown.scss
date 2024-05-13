@@ -1,0 +1,15 @@
+.timer {
+  p {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .timebox {
+      background-color: black;
+      margin: 0 3px;
+      color: white;
+      padding: 0.2rem;
+      border-radius: 3px;
+    }
+  }
+}

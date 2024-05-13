@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react"
+import "./CoundownFlashSale.scss"
 
 const CoundownFlashSale = () => {
   const [days, setDays] = useState(0)

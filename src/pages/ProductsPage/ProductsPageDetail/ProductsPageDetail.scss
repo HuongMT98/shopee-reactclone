@@ -23,9 +23,256 @@
 
       .products-page-detail-info {
         width: 60%;
+        padding: 0 1rem;
 
         .products-page-detail-name {
-          font-size: 20px;
+          font-size: 1.5rem;
+          height: 50px;
+          font-weight: 100;
+          width: 100%;
+          overflow: hidden;
+        }
+
+        .products-page-detail-rating {
+          display: flex;
+          width: 100%;
+          height: 30px;
+          align-items: center;
+          font-size: 18px;
+          justify-content: space-between;
+
+          .products-page-detail-rating-wrap {
+            display: flex;
+
+            .products-page-detail-rating-text {
+              text-decoration: underline;
+              font-weight: 100;
+              padding: 0 5px;
+              color: var(--color-red);
+            }
+            .products-page-detail-rating-star {
+              color: var(--color-red);
+            }
+          }
+        }
+
+        .products-page-detail-report {
+          font-size: 16px;
+          opacity: 0.6;
+
+          a {
+            color: var(--color-black);
+          }
+        }
+
+        .products-page-detail-coundownwrap {
+          background: var(--gb-all);
+
+          .products-page-detail-coundown {
+            display: flex;
+            background: red;
+            align-items: center;
+            justify-content: space-between;
+            padding: 0.2rem 1rem;
+
+            .products-page-detail-coundown-text {
+              color: var(--bg-primary);
+              font-size: 1.3rem;
+              font-weight: 600;
+            }
+          }
+
+          .products-page-detail-price-wrap {
+            display: flex;
+
+            .products-page-detail-price-old {
+              font-size: 17px;
+              text-decoration: line-through;
+              opacity: 0.6;
+              padding: 0 1rem;
+            }
+            .products-page-detail-price-new {
+              font-size: 2rem;
+              color: red;
+              font-weight: 100;
+              display: flex;
+              align-items: center;
+              justify-content: center;
+
+              .price-new-discount {
+                .discount {
+                  background-color: var(--color-red);
+                  color: var(--bg-primary);
+                  padding: 0 0.5rem;
+                  display: flex;
+                  height: 1rem;
+                  align-items: center;
+                  justify-content: center;
+                  font-size: 14px;
+                  margin-left: 1rem;
+                }
+              }
+            }
+          }
+        }
+
+        .products-page-detail-voucher {
+          width: 100%;
+          margin: var(--margin-detail-page);
+
+          .products-page-detail-voucher-wrap {
+            width: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+
+            .voucher-text {
+              font-size: 15px;
+              font-weight: 200;
+              opacity: 0.8;
+            }
+            .voucher-percent {
+              display: flex;
+              justify-content: space-between;
+              align-items: center;
+              width: 40%;
+
+              .voucher-percent-detail {
+                width: 2.5rem;
+                text-align: center;
+                background: pink;
+                color: red;
+                font-size: 16px;
+                border: 1px dashed;
+              }
+            }
+          }
+        }
+
+        .products-page-detail-addon {
+          width: 100%;
+          margin: var(--margin-detail-page);
+
+          .products-page-detail-addon-wrap {
+            width: 50%;
+            display: flex;
+            align-items: center;
+
+            .products-page-detail-addon-title {
+              .addon-title {
+                font-size: 15px;
+                font-weight: 200;
+                opacity: 0.8;
+                padding-right: 2rem;
+              }
+            }
+
+            .products-page-detail-addon-text {
+              .addon-text {
+                font-size: 15px;
+                color: var(--color-red);
+                background-color: pink;
+                padding: 2px 1rem;
+                font-weight: 500;
+              }
+            }
+          }
+        }
+
+        .products-page-detail-shipping {
+          width: 100%;
+          margin: var(--margin-detail-page);
+
+          .products-page-detail-shipping-wrap {
+            width: max-content;
+            display: flex;
+            justify-content: space-between;
+
+            .shipping-title {
+              font-size: 15px;
+              font-weight: 200;
+              opacity: 0.8;
+              padding-right: 2rem;
+            }
+
+            .shipping-text {
+              display: flex;
+              flex-direction: column;
+              line-height: 2;
+
+              .shipping-info {
+                .shipping-icon {
+                  color: red;
+                  margin: 0 0.5rem;
+                }
+                .question {
+                  font-size: 16px;
+                  margin: 0 0.5rem;
+                }
+              }
+
+              .shipping-location {
+                .shipping-location-wrap {
+                  display: flex;
+                  align-items: center;
+                }
+              }
+            }
+          }
+        }
+
+        .products-page-detail-quatity {
+          display: flex;
+          height: 3rem;
+          align-items: center;
+          justify-content: space-between;
+          width: 30%;
+
+          .quatity {
+            font-size: 15px;
+            font-weight: 200;
+            opacity: 0.8;
+            padding-right: 2rem;
+          }
+
+          .quatity-wrap {
+            height: 2rem;
+            display: flex;
+
+            .chakra-stack {
+              .chakra-button {
+                width: 2.5rem !important;
+                height: 100%;
+                border-radius: 5px;
+                background: transparent;
+                border: 1px solid;
+              }
+
+              input {
+                width: 3rem !important;
+                height: 100%;
+                text-align: center;
+              }
+            }
+          }
+        }
+
+        .products-page-detail-btn-wrap {
+          width: 50%;
+          display: flex;
+          height: 3rem;
+          justify-content: space-between;
+          margin: 1rem 0;
+
+          .products-page-detail-btn {
+            width: 50%;
+            margin: 0 0.5rem;
+            border-radius: 5px;
+
+            &:hover {
+              opacity: 0.8;
+            }
+          }
         }
       }
     }

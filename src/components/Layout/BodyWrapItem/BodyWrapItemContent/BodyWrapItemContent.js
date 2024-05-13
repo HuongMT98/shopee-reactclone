@@ -5,7 +5,7 @@ import formatNumber from "../../../../untils/fomatNumber"
 
 function BodyWrapItemContent() {
   const [data, setData] = useState([])
-  const [visible, setVisible] = useState(12)
+  const [visible, setVisible] = useState(24)
 
   useEffect(() => {
     ApiProduct().then((data) => {
@@ -31,7 +31,7 @@ function BodyWrapItemContent() {
               <p className='bodywrapitem-item-name'>{item.name}</p>
               <div className='bodywrapitem-item-infosell'>
                 <p className='bodywrapitem-item-price'>
-                  {formatNumber(item.price)}
+                  đ{formatNumber(item.price)}
                 </p>
                 <p className='bodywrapitem-item-sold'>{item.sold} sold</p>
               </div>

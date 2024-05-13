@@ -6,8 +6,8 @@
       "price": 180000,
       "color": ["Nâu xám", "Đen", "Trắng", "Đỏ mận", "Nâu", "Đen"],
       "image": "https://img.ws.mms.shopee.vn/vn-11134207-7r98o-lq13ywo38rmaf2",
-      "selloff": "39%",
-      "rating": "4.8",
+      "discount": "39",
+      "rating": "4.5",
       "sold": 100
     },
     {
@@ -16,8 +16,8 @@
       "price": 159000,
       "color": ["Xanh Nhạt", "Đen trơn", "Xám"],
       "image": "https://zizoou.com/cdn/shop/products/Quan-Baggy-Jean-nam-nu-2b-1-Quan-ong-rong-xanh-classic-ZiZoou-Store_grande.jpg?v=1680283265",
-      "selloff": "39%",
-      "rating": "4.8",
+      "discount": "39",
+      "rating": "4.2",
       "sold": 100
     },
     {
@@ -26,7 +26,7 @@
       "price": 136200,
       "color": ["Xanh Nhạt", "Đen trơn", "Xám"],
       "image": "https://down-vn.img.susercontent.com/file/vn-11134207-7qukw-lkenpykzun54e1",
-      "selloff": "35%",
+      "discount": "35",
       "rating": "4.8",
       "sold": 100
     },
@@ -36,7 +36,7 @@
       "price": 145000,
       "color": ["Xanh Nhạt", "Đen trơn", "Xám"],
       "image": "https://bizweb.dktcdn.net/thumb/1024x1024/100/471/821/products/73a9c08fdfec39ab3d98b0320041c278.png?v=1670255506977",
-      "selloff": "41%",
+      "discount": "41",
       "rating": "4.8",
       "sold": 100
     },
@@ -46,8 +46,8 @@
       "price": 26000,
       "color": ["Đen", "Trắng", "Vàng", "Đỏ"],
       "image": "https://down-vn.img.susercontent.com/file/86ca567fbf115fcd124531b59248ebf3",
-      "selloff": "60%",
-      "rating": "4.8",
+      "discount": "60",
+      "rating": "2.8",
       "sold": 100
     },
     {
@@ -56,7 +56,7 @@
       "price": 29700,
       "color": ["Đen", "Trắng", "Vàng", "Đỏ"],
       "image": "https://img.ws.mms.shopee.vn/ab69281f2bd354a7091430e3940e290f",
-      "selloff": "25%",
+      "discount": "25",
       "rating": "4.8",
       "sold": 100
     },
@@ -66,7 +66,7 @@
       "price": 61000,
       "color": ["Đen", "Trắng", "Vàng", "Đỏ"],
       "image": "https://img.ws.mms.shopee.vn/463288d7dd430e3d0f00fc4ccd693a7c",
-      "selloff": "42%",
+      "discount": "42",
       "rating": "4.8",
       "sold": 100
     },
@@ -76,7 +76,7 @@
       "price": 58000,
       "color": ["Đen", "Trắng", "Vàng", "Đỏ"],
       "image": "https://down-vn.img.susercontent.com/file/cn-11134207-7r98o-ltnohe99oiwd5d_tn.webp",
-      "selloff": "30%",
+      "discount": "30",
       "rating": "4.8",
       "sold": 100
     },
@@ -86,7 +86,7 @@
       "price": 8999,
       "color": ["Đen", "Trắng", "Vàng", "Đỏ"],
       "image": "https://down-vn.img.susercontent.com/file/vn-11134207-7r98o-lt2892iey4eca6",
-      "selloff": "15%",
+      "discount": "15",
       "rating": "4.8",
       "sold": 100
     },
@@ -96,7 +96,7 @@
       "price": 99000,
       "color": ["Đen", "Trắng", "Vàng", "Đỏ"],
       "image": "https://encrypted-tbn0.gstatic.com/shopping?q=tbn:ANd9GcTzkU5cbTfspaJrpXXLH1Htyd9oIvDApGK5I0nFkciyUEV28PV87HvxtZ2b0CvS92NwegUkEjhR8ldrJk6tz3s9-yk3H9WzPko91oo6Ef1DOs4FOooknt6f&usqp=CAE",
-      "selloff": "25%",
+      "discount": "25",
       "rating": "4.8",
       "sold": 100
     },
@@ -106,7 +106,7 @@
       "price": 99000,
       "color": ["Đen", "Trắng", "Vàng", "Đỏ"],
       "image": "https://img.ws.mms.shopee.vn/sg-11134201-22110-jtnklcl0z0jv76",
-      "selloff": "25%",
+      "discount": "25",
       "rating": "4.8",
       "sold": 100
     },
@@ -116,7 +116,7 @@
       "price": 145000,
       "color": ["Đen", "Trắng", "Vàng", "Đỏ"],
       "image": "https://down-vn.img.susercontent.com/file/vn-11134207-7qukw-lf9a1nhhdobb9c_tn",
-      "selloff": "30%",
+      "discount": "30",
       "rating": "4.8",
       "sold": 100
     },
@@ -126,7 +126,7 @@
       "price": 230000,
       "color": ["Đen", "Trắng", "Vàng", "Đỏ"],
       "image": "https://down-vn.img.susercontent.com/file/sg-11134201-22120-sg9ilxi1mzkv9d",
-      "selloff": "40%",
+      "discount": "40",
       "rating": "4.8",
       "sold": 100
     },
@@ -136,7 +136,7 @@
       "price": 12000,
       "color": ["Đen", "Trắng", "Vàng", "Đỏ"],
       "image": "https://down-vn.img.susercontent.com/file/f5fe5f49df65cbbca8e6e056c02963fa",
-      "selloff": "42%",
+      "discount": "42",
       "rating": "4.8",
       "sold": 100
     },
@@ -146,7 +146,7 @@
       "price": 55000,
       "color": ["Đen", "Trắng", "Vàng", "Đỏ"],
       "image": "https://down-vn.img.susercontent.com/file/vn-11134207-7r98o-lt0miw1wnidg40",
-      "selloff": "35%",
+      "discount": "35",
       "rating": "4.8",
       "sold": 100
     },
@@ -156,7 +156,7 @@
       "price": 6000,
       "color": ["Đen", "Trắng", "Vàng", "Đỏ"],
       "image": "https://down-vn.img.susercontent.com/vn-11134207-7r98o-ltcjyrowk3wka3",
-      "selloff": "55%",
+      "discount": "55",
       "rating": "4.8",
       "sold": 100
     },
@@ -166,7 +166,7 @@
       "price": 92000,
       "color": ["Đen", "Trắng", "Vàng", "Đỏ"],
       "image": "https://down-vn.img.susercontent.com/file/26d6631faeec494f946f377dcdfbdb79",
-      "selloff": "45%",
+      "discount": "45",
       "rating": "4.8",
       "sold": 100
     },
@@ -176,7 +176,7 @@
       "price": 109000,
       "color": ["Đen", "Trắng", "Vàng", "Đỏ"],
       "image": "https://down-vn.img.susercontent.com/file/cn-11134207-7r98o-lqvmxnkwsmul34",
-      "selloff": "34%",
+      "discount": "34",
       "rating": "4.8",
       "sold": 100
     },
@@ -186,7 +186,7 @@
       "price": 13000,
       "color": ["Nâu xám", "Đen", "Trắng", "Đỏ mận", "Nâu", "Đen"],
       "image": "https://down-vn.img.susercontent.com/file/sg-11134201-7rcch-ltau2zibtbfb51_tn",
-      "selloff": "15%",
+      "discount": "15",
       "rating": "4.8",
       "sold": 100
     },
@@ -196,7 +196,7 @@
       "price": 11600,
       "color": ["Xanh Nhạt", "Đen trơn", "Xám"],
       "image": "https://down-vn.img.susercontent.com/file/sg-11134201-22110-tfixzbgd0hkv01_tn.webp",
-      "selloff": "25%",
+      "discount": "25",
       "rating": "4.8",
       "sold": 100
     },
@@ -206,7 +206,7 @@
       "price": 99000,
       "color": ["Xanh Nhạt", "Đen trơn", "Xám"],
       "image": "https://img.ws.mms.shopee.vn/vn-11134207-7qukw-ljioyzxe0j3oa1",
-      "selloff": "36%",
+      "discount": "36",
       "rating": "4.8",
       "sold": 100
     },
@@ -216,7 +216,7 @@
       "price": 99000,
       "color": ["Xanh Nhạt", "Đen trơn", "Xám"],
       "image": "https://yeepvn.sgp1.digitaloceanspaces.com/2023/05/sg-11134201-23020-setrpdpzjrnvec.jpg",
-      "selloff": "45%",
+      "discount": "45",
       "rating": "4.8",
       "sold": 100
     },
@@ -226,7 +226,7 @@
       "price": 179000,
       "color": ["Đen", "Trắng", "Vàng", "Đỏ"],
       "image": "https://img.ws.mms.shopee.vn/vn-11134207-7qukw-lf59we87ucev34",
-      "selloff": "40%",
+      "discount": "40",
       "rating": "4.8",
       "sold": 100
     },
@@ -236,7 +236,7 @@
       "price": 3500,
       "color": ["Đen", "Trắng", "Vàng", "Đỏ"],
       "image": "https://yeepvn.sgp1.digitaloceanspaces.com/2023/03/ff13485a8598290dd541565245745f36.jpg",
-      "selloff": "35%",
+      "discount": "35",
       "rating": "4.8",
       "sold": 100
     },
@@ -246,7 +246,7 @@
       "price": 48000,
       "color": ["Đen", "Trắng", "Vàng", "Đỏ"],
       "image": "https://vchatshop.s3.ap-southeast-1.amazonaws.com/uploads/all/D0hIiPCt9IQVrkWMXvMCfCeA00njfYWyam2MVe5n.png",
-      "selloff": "16%",
+      "discount": "16",
       "rating": "4.8",
       "sold": 100
     },
@@ -256,7 +256,7 @@
       "price": 28000,
       "color": ["Đen", "Trắng", "Vàng", "Đỏ"],
       "image": "https://img.ws.mms.shopee.vn/vn-11134207-7r98o-lqakv0va05kn82",
-      "selloff": "23%",
+      "discount": "23",
       "rating": "4.8",
       "sold": 100
     },
@@ -266,7 +266,7 @@
       "price": 83000,
       "color": ["Đen", "Trắng", "Vàng", "Đỏ"],
       "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR-ZMng-faEs6NiONU0THSRPMvvEqN1ggTJUVpOubNCUL5qFAtc0F217LBl5t1Z30L4LaI&usqp=CAU",
-      "selloff": "22%",
+      "discount": "22",
       "rating": "4.8",
       "sold": 100
     },
@@ -276,7 +276,7 @@
       "price": 16000,
       "color": ["Đen", "Trắng", "Vàng", "Đỏ"],
       "image": "https://down-vn.img.susercontent.com/file/vn-11134207-7r98o-lorsdtizema8bd",
-      "selloff": "48%",
+      "discount": "48",
       "rating": "4.8",
       "sold": 100
     },
@@ -286,7 +286,7 @@
       "price": 31000,
       "color": ["Đen", "Trắng", "Vàng", "Đỏ"],
       "image": "https://down-vn.img.susercontent.com/file/cn-11134301-7qukw-lk7scdx4c04dd1",
-      "selloff": "51%",
+      "discount": "51",
       "rating": "4.8",
       "sold": 100
     },
@@ -296,7 +296,7 @@
       "price": 69000,
       "color": ["Đen", "Trắng", "Vàng", "Đỏ"],
       "image": "https://img.ws.mms.shopee.vn/vn-11134207-7r98o-lrs9x1mbq8jo8c",
-      "selloff": "50%",
+      "discount": "50",
       "rating": "4.8",
       "sold": 100
     },
@@ -306,7 +306,7 @@
       "price": 75000,
       "color": ["Đen", "Trắng", "Vàng", "Đỏ"],
       "image": "https://salt.tikicdn.com/cache/w300/ts/product/84/6d/87/499a6ba93836dbc415951dce055f911e.jpg",
-      "selloff": "45%",
+      "discount": "45",
       "rating": "4.8",
       "sold": 100
     },
@@ -316,7 +316,7 @@
       "price": 109000,
       "color": ["Đen", "Trắng", "Vàng", "Đỏ"],
       "image": "https://down-vn.img.susercontent.com/file/sg-11134201-7rcdt-lqvmn7vclnla1f",
-      "selloff": "62%",
+      "discount": "62",
       "rating": "4.8",
       "sold": 100
     },
@@ -326,7 +326,7 @@
       "price": 119000,
       "color": ["Đen", "Trắng", "Vàng", "Đỏ"],
       "image": "https://down-vn.img.susercontent.com/file/vn-11134207-7r98o-lpuv44926n6aa0",
-      "selloff": "15%",
+      "discount": "15",
       "rating": "4.8",
       "sold": 100
     },
@@ -336,7 +336,7 @@
       "price": 69000,
       "color": ["Đen", "Trắng", "Vàng", "Đỏ"],
       "image": "https://down-vn.img.susercontent.com/file/vn-11134201-7r98o-lq58ihyfcyj675_tn",
-      "selloff": "66%",
+      "discount": "66",
       "rating": "4.8",
       "sold": 100
     },
@@ -346,7 +346,7 @@
       "price": 82600,
       "color": ["Đen", "Trắng", "Vàng", "Đỏ"],
       "image": "https://vn-test-11.slatic.net/p/a8c76a5b3eda39086e7e2bf1389c8ff2.jpg",
-      "selloff": "20%",
+      "discount": "20",
       "rating": "4.8",
       "sold": 100
     },
@@ -356,7 +356,7 @@
       "price": 145000,
       "color": ["Đen", "Trắng", "Vàng", "Đỏ"],
       "image": "https://down-vn.img.susercontent.com/file/sg-11134201-7rcc6-lr2snty57qzu49_tn",
-      "selloff": "16%",
+      "discount": "16",
       "rating": "4.8",
       "sold": 100
     },
@@ -366,7 +366,7 @@
       "price": 108000,
       "color": ["Đen", "Trắng", "Vàng", "Đỏ"],
       "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS5SmgzklxTp5AUAXs8xSEhfEZjrsPjOeJoyvLBVqyQ4w&s",
-      "selloff": "33%",
+      "discount": "33",
       "rating": "4.8",
       "sold": 100
     },
@@ -376,7 +376,7 @@
       "price": 43000,
       "color": ["Đen", "Trắng", "Vàng", "Đỏ"],
       "image": "https://down-vn.img.susercontent.com/file/cn-11134301-7r98o-lmjr3ge8lfxg2e",
-      "selloff": "14%",
+      "discount": "14",
       "rating": "4.8",
       "sold": 100
     },
@@ -386,7 +386,7 @@
       "price": 99000,
       "color": ["Đen", "Trắng", "Vàng", "Đỏ"],
       "image": "https://mochanstore.com/wp-content/uploads/2023/03/mochanstore.com-AO-POLO-UNISEX-NAM-NU-AO-THUN-CO-CO-TAY-LO-FORM-RONG-COTTON-ENJOY.jpg",
-      "selloff": "33%",
+      "discount": "33",
       "rating": "4.8",
       "sold": 100
     },
@@ -396,7 +396,7 @@
       "price": 139000,
       "color": ["Đen", "Trắng", "Vàng", "Đỏ"],
       "image": "https://down-vn.img.susercontent.com/file/vn-11134207-7qukw-lj9wpommmxhod9",
-      "selloff": "45%",
+      "discount": "45",
       "rating": "4.8",
       "sold": 100
     },
@@ -406,7 +406,7 @@
       "price": 149000,
       "color": ["Đen", "Trắng", "Vàng", "Đỏ"],
       "image": "https://down-vn.img.susercontent.com/sg-11134201-7rbk5-lmzewxxfis7u0b",
-      "selloff": "56%",
+      "discount": "56",
       "rating": "4.8",
       "sold": 100
     },
@@ -416,7 +416,7 @@
       "price": 145000,
       "color": ["Đen", "Trắng", "Vàng", "Đỏ"],
       "image": "https://down-vn.img.susercontent.com/file/sg-11134201-7rce0-ls84jaydm0mf90",
-      "selloff": "50%",
+      "discount": "50",
       "rating": "4.8",
       "sold": 100
     },
@@ -426,7 +426,7 @@
       "price": 89000,
       "color": ["Đen", "Trắng", "Vàng", "Đỏ"],
       "image": "https://down-vn.img.susercontent.com/file/sg-11134201-7rcef-lt87yz0xx3le39",
-      "selloff": "29%",
+      "discount": "29",
       "rating": "4.8",
       "sold": 100
     },
@@ -436,7 +436,7 @@
       "price": 159000,
       "color": ["Đen", "Trắng", "Vàng", "Đỏ"],
       "image": "https://down-vn.img.susercontent.com/file/vn-11134207-7r98o-lkuga58truwr63",
-      "selloff": "31%",
+      "discount": "31",
       "rating": "4.8",
       "sold": 100
     },
@@ -446,7 +446,7 @@
       "price": 22000,
       "color": ["Đen", "Trắng", "Vàng", "Đỏ"],
       "image": "https://img.ws.mms.shopee.vn/vn-11134207-7r98o-lmyz6emhkuzjeb",
-      "selloff": "19%",
+      "discount": "19",
       "rating": "4.8",
       "sold": 100
     },
@@ -456,7 +456,7 @@
       "price": 29100,
       "color": ["Đen", "Trắng", "Vàng", "Đỏ"],
       "image": "https://down-vn.img.susercontent.com/file/vn-11134207-7r98o-ltf2t9r1d0r1d7_tn",
-      "selloff": "28%",
+      "discount": "28",
       "rating": "4.8",
       "sold": 100
     },
@@ -466,7 +466,7 @@
       "price": 183000,
       "color": ["Đen", "Trắng", "Vàng", "Đỏ"],
       "image": "https://down-vn.img.susercontent.com/file/sg-11134201-7qvf4-lhfnyhcmtecu1b_tn",
-      "selloff": "22%",
+      "discount": "22",
       "rating": "4.8",
       "sold": 100
     },
@@ -476,7 +476,7 @@
       "price": 145000,
       "color": ["Đen", "Trắng", "Vàng", "Đỏ"],
       "image": "https://down-vn.img.susercontent.com/file/cn-11134207-7r98o-lmsuc2ianz1e6a",
-      "selloff": "45%",
+      "discount": "45",
       "rating": "4.8",
       "sold": 100
     },
@@ -486,7 +486,7 @@
       "name": "Tinh chất tăng cường làm trắng da",
       "price": 1600000,
       "color": ["Đen", "Trắng", "Vàng", "Đỏ"],
-      "selloff": "20%",
+      "discount": "20",
       "rating": "4.8",
       "sold": 100
     },
@@ -496,7 +496,7 @@
       "price": 232000,
       "color": ["Đen", "Trắng", "Vàng", "Đỏ"],
       "name": "Túi đeo chéo nữ",
-      "selloff": "50%",
+      "discount": "50",
       "rating": "4.9"
     },
     {
@@ -505,7 +505,7 @@
       "price": 203000,
       "color": ["Đen", "Trắng", "Vàng", "Đỏ"],
       "name": "Áo droptop hàn nữ",
-      "selloff": "52%",
+      "discount": "52",
       "rating": "4.5"
     },
     {
@@ -514,7 +514,7 @@
       "price": 410000,
       "color": ["Đen", "Trắng", "Vàng", "Đỏ"],
       "name": "Sneaker nữ",
-      "selloff": "50%",
+      "discount": "50",
       "rating": "4.7"
     },
     {
@@ -523,7 +523,7 @@
       "price": 190000,
       "color": ["Đen", "Trắng", "Vàng", "Đỏ"],
       "name": "Áo phông nam",
-      "selloff": "54%",
+      "discount": "54",
       "rating": "4.6"
     },
     {
@@ -532,7 +532,7 @@
       "price": 49000,
       "color": ["Đen", "Trắng", "Vàng", "Đỏ"],
       "name": "Khô gà lá chanh",
-      "selloff": "82%",
+      "discount": "82",
       "rating": "4.9"
     },
     {
@@ -541,7 +541,7 @@
       "price": 438000,
       "color": ["Đen", "Trắng", "Vàng", "Đỏ"],
       "name": "Loa bluetooth Lenovo",
-      "selloff": "55%",
+      "discount": "55",
       "rating": "4.8"
     },
     {
@@ -550,7 +550,7 @@
       "price": 270000,
       "color": ["Đen", "Trắng", "Vàng", "Đỏ"],
       "name": "Áo Unisex nam",
-      "selloff": "47%",
+      "discount": "47",
       "rating": "4.9"
     },
     {
@@ -559,7 +559,7 @@
       "price": 30000,
       "color": ["Đen", "Trắng", "Vàng", "Đỏ"],
       "name": "Túi đeo chéo nữ mini",
-      "selloff": "40%",
+      "discount": "40",
       "rating": "4.9"
     },
     {
@@ -568,7 +568,7 @@
       "price": 230000,
       "color": ["Đen", "Trắng", "Vàng", "Đỏ"],
       "name": "Lẩu điện mini",
-      "selloff": "47%",
+      "discount": "47",
       "rating": "4.9"
     },
     {
@@ -577,7 +577,7 @@
       "price": 288000,
       "color": ["Đen", "Trắng", "Vàng", "Đỏ"],
       "name": "Sneaker nữ hàn",
-      "selloff": "50%",
+      "discount": "50",
       "rating": "4.9"
     },
     {
@@ -586,7 +586,7 @@
       "price": 93000,
       "color": ["Đen", "Trắng", "Vàng", "Đỏ"],
       "name": "Túi đeo chéo nữ quảng châu",
-      "selloff": "56%",
+      "discount": "56",
       "rating": "4.9"
     },
     {
@@ -595,7 +595,7 @@
       "price": 215000,
       "color": ["Đen", "Trắng", "Vàng", "Đỏ"],
       "name": "Áo nữ mặc nhà",
-      "selloff": "47%",
+      "discount": "47",
       "rating": "4.9"
     },
     {
@@ -604,7 +604,7 @@
       "price": 220000,
       "color": ["Đen", "Trắng", "Vàng", "Đỏ"],
       "name": "Hộp cơm văn phòng dễ thương",
-      "selloff": "60%",
+      "discount": "60",
       "rating": "4.9"
     },
     {
@@ -613,7 +613,7 @@
       "price": 230000,
       "color": ["Đen", "Trắng", "Vàng", "Đỏ"],
       "name": "Quần ống rộng nữ hàn quốc",
-      "selloff": "50%",
+      "discount": "50",
       "rating": "4"
     },
     {
@@ -622,7 +622,7 @@
       "price": 223000,
       "color": ["Đen", "Trắng", "Vàng", "Đỏ"],
       "name": "Áo sơ mi trể vai nữ",
-      "selloff": "49%",
+      "discount": "49",
       "rating": "4.5"
     },
     {
@@ -631,7 +631,7 @@
       "price": 180000,
       "color": ["Đen", "Trắng", "Vàng", "Đỏ"],
       "name": "Váy nũ Zheng Zhi",
-      "selloff": "45%",
+      "discount": "45",
       "rating": "4.9"
     },
     {
@@ -640,7 +640,7 @@
       "price": 198000,
       "color": ["Đen", "Trắng", "Vàng", "Đỏ"],
       "name": "Áo nữ cổ chữ V trung quốc hàng đẹp",
-      "selloff": "31%",
+      "discount": "31",
       "rating": "4"
     },
     {
@@ -649,7 +649,7 @@
       "price": 560000,
       "color": ["Đen", "Trắng", "Vàng", "Đỏ"],
       "name": "Sữa rửa mặt La Roche Posay",
-      "selloff": "30%",
+      "discount": "30",
       "rating": "4.5"
     },
     {
@@ -658,7 +658,7 @@
       "price": 378000,
       "color": ["Đen", "Trắng", "Vàng", "Đỏ"],
       "name": "Giày cao gót nữ phong cách Trung Quốc",
-      "selloff": "49%",
+      "discount": "49",
       "rating": "4.9"
     },
     {
@@ -667,7 +667,7 @@
       "price": 1500000,
       "color": ["Đen", "Trắng", "Vàng", "Đỏ"],
       "name": "Chuột bluetooth hàng nhập khẩu",
-      "selloff": "43%",
+      "discount": "43",
       "rating": "4.9"
     },
     {
@@ -676,7 +676,7 @@
       "price": 265000,
       "color": ["Đen", "Trắng", "Vàng", "Đỏ"],
       "name": "Giày lolita nữ",
-      "selloff": "41%",
+      "discount": "41",
       "rating": "4.9"
     },
     {
@@ -685,7 +685,7 @@
       "price": 300000,
       "color": ["Đen", "Trắng", "Vàng", "Đỏ"],
       "name": "Kem dưỡng thuần chay",
-      "selloff": "36%",
+      "discount": "36",
       "rating": "4"
     },
     {
@@ -694,7 +694,7 @@
       "price": 415000,
       "color": ["Đen", "Trắng", "Vàng", "Đỏ"],
       "name": "Quần nữ ống rộng",
-      "selloff": "51%",
+      "discount": "51",
       "rating": "5"
     }
   ],

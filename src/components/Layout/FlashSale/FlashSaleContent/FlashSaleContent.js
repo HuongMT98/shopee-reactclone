@@ -16,13 +16,15 @@ function FlashSaleContent() {
     async function fetchData() {
       try {
         const response = await ApiProduct()
-        setData(response)
+        setData(response.sort(() => Math.random() - 0.5))
       } catch (error) {
         console.error("Error fetching data:", error)
       }
     }
     fetchData()
   }, [])
+
+  //dùng data để render UI
 
   let settings = {
     dots: false,
@@ -44,12 +46,17 @@ function FlashSaleContent() {
                   <img src={item.image} alt='' />
                 </div>
                 <div className='slider-flashsale-price'>
-                  <p>đ{formatNumber(item.price)}</p>
+                  <p>
+                    đ
+                    {formatNumber(
+                      Math.round(item.price * (1 - item.discount / 100))
+                    )}
+                  </p>
                 </div>
                 <div className='slider-flashsale-selloff'>
                   <p>
                     <FontAwesomeIcon icon={faBolt} />
-                    {item.selloff}
+                    {item.discount}%
                   </p>
                 </div>
               </NavLink>

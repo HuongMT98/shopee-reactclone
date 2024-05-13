@@ -4,6 +4,36 @@
   display: flex;
   justify-content: center;
   background: var(--gb-all);
+  flex-direction: column;
+  align-items: center;
+
+  .flashsalepage-countdown {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 3rem;
+    background: var(--bg-primary);
+
+    .flashsalepage-countdown-wrap {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      width: var(--widthdefault);
+      justify-content: center;
+
+      .flashsalepage-img {
+        width: 8rem;
+        margin: 0 1rem;
+      }
+
+      .flashsalepage-title {
+        color: var(--color-black);
+        font-weight: 100;
+        font-size: 1.3rem;
+      }
+    }
+  }
 
   .flashsalepage-wrap {
     width: var(--widthdefault);
@@ -40,7 +70,9 @@
         flex-direction: column;
         align-items: flex-start;
         padding: 0 10px;
+        margin: 1rem 0;
         color: var(--bg-root);
+        position: relative;
 
         .flashsalepage-name {
           font-size: 18px;
@@ -84,6 +116,32 @@
           display: flex;
         }
       }
+
+      .flashsalepage-btnbuy {
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        width: 6rem;
+        height: 2.5rem;
+        background-color: red;
+        color: white;
+        font-size: 18px;
+        margin: 0 1rem 0 0;
+      }
+    }
+  }
+  .flashsalepage-btn {
+    width: 15%;
+    height: 3rem;
+    border: 1px solid rgb(231, 227, 227);
+    border-radius: 10px;
+    margin: 1rem 0;
+    background-color: rgb(231, 227, 227);
+    transition: 1s;
+
+    &:hover {
+      cursor: pointer;
+      background-color: rgb(240, 228, 228);
     }
   }
 }
