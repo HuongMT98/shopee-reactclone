@@ -701,14 +701,14 @@
   "user": [
     {
       "id": "1",
-      "name": "Nguyễn Hoàn Thiên Mai",
-      "username": "Mai Nguyễn",
-      "email": "ThienMai2k4@example.com",
-      "birthday": "7/7/2004",
-      "image": "https://kenh14cdn.com/thumb_w/660/203336854389633024/2023/7/8/photo-9-16888099662661094157342.jpg",
+      "name": "Châu Khải Như Huỳnh",
+      "username": "Châu Huỳnh",
+      "email": "ChauHuynhBea@example.com",
+      "birthday": "2/5/2004",
+      "image": "https://i.pinimg.com/736x/7a/6d/e8/7a6de85b8a231b9b138f1696c58cde7f.jpg",
       "gender": "Female",
-      "phone": "0123456789",
-      "address": "123 Main St, Anytown, CA 94123",
+      "phone": "0987654321",
+      "address": "456 Oak St, Anytown, CA 94123",
       "role": "User"
     }
   ],

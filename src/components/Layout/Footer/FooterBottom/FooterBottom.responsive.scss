@@ -1,0 +1,31 @@
+/* Mobile: */
+@media screen and (max-width: 739px) {
+}
+
+/* Tablet */
+@media screen and (min-width: 740px) and (max-width: 1023px) {
+  .footer-bottom-container {
+    max-width: 1023px;
+
+    .footer-bottom {
+      width: 95%;
+
+      .footer-bottom-wrap {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        justify-items: center;
+
+        .footer-bottom-item {
+          display: flex;
+          align-items: center;
+
+          .footer-bottom-title {
+          }
+        }
+      }
+    }
+  }
+}
+/* Destop/PC */
+@media screen and (min-width: 1024px) {
+}

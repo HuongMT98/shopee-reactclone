@@ -1,4 +1,5 @@
 import { NavLink } from "react-router-dom"
+import "./FooterBottom.responsive.scss"
 import img1 from "../../../../Assets/FooterBottom/footer-bottom1.png"
 import img2 from "../../../../Assets/FooterBottom/footer-bottom2.png"
 import img3 from "../../../../Assets/FooterBottom/footer-bottom3.png"

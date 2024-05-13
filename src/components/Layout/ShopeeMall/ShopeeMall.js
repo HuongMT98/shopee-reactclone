@@ -1,4 +1,5 @@
 import "./ShopeeMall.scss"
+import "./ShopeeMall.responsive.scss"
 import ShopeeMallAutoCarousel from "./ShopeeMallTitle/ShopeeMallCarousel/ShopeeMallCarousel"
 import ShopeeMallTitle from "./ShopeeMallTitle/ShopeeMallTitle"
 

@@ -1,4 +1,5 @@
 import "./BodyWrapItem.scss"
+import "./BodyWrapItem.responsive.scss"
 import BodyWrapItemContent from "./BodyWrapItemContent/BodyWrapItemContent"
 import BodyWrapItemTitle from "./BodyWrapItemTitle/BodyWrapItemTitle"
 function BodyWrapItem() {

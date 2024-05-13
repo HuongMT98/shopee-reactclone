@@ -1,4 +1,5 @@
 import "./SliderShow.scss"
+import "./SliderShow.responsive.scss"
 import SliderShowAds from "./SliderShowAds/SliderShowAds"
 import SliderShowCarousel from "./SliderShowCarousel/SliderShowCarousel"
 

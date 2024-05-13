@@ -1,0 +1,25 @@
+/* Mobile: */
+@media screen and (max-width: 739px) {
+}
+
+/* Tablet */
+@media screen and (min-width: 740px) and (max-width: 1023px) {
+  .footer-categories-container {
+    max-width: 1023px;
+    .footer-categories {
+      width: 95%;
+      .footer-categories-list {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 1rem;
+        width: 100%;
+        .footer-categories-item {
+          width: 100%;
+        }
+      }
+    }
+  }
+}
+/* Destop/PC */
+@media screen and (min-width: 1024px) {
+}

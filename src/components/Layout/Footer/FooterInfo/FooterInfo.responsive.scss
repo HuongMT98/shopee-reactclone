@@ -1,0 +1,25 @@
+/* Mobile: */
+@media screen and (max-width: 739px) {
+}
+
+/* Tablet */
+@media screen and (min-width: 740px) and (max-width: 1023px) {
+  .footer-info-container {
+    max-width: 1023px;
+    .footer-info {
+      width: 95%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      .footer-info-title {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+      }
+    }
+  }
+}
+/* Destop/PC */
+@media screen and (min-width: 1024px) {
+}

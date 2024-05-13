@@ -1,0 +1,36 @@
+/* Mobile: */
+@media screen and (max-width: 739px) {
+}
+
+/* Tablet */
+@media screen and (min-width: 740px) and (max-width: 1023px) {
+  .flash-sale-container {
+    .flash-sale-wrap {
+      max-width: 740px;
+      .flash-sale {
+        .flash-sale-title {
+        }
+        .flash-sale-content {
+          .slider-flashsale {
+            .slick-slider {
+              .slider-flashsale-item {
+                .slider-flashsale-img {
+                  img {
+                  }
+                }
+              }
+            }
+            .slider-flashsale-banner {
+              img {
+                width: 100%;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+/* Destop/PC */
+@media screen and (min-width: 1024px) {
+}

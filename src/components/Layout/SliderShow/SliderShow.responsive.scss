@@ -1,0 +1,29 @@
+/* Mobile: */
+@media screen and (max-width: 739px) {
+}
+
+/* Tablet */
+@media screen and (min-width: 740px) and (max-width: 1023px) {
+  .slider-wrap {
+    max-width: 1023px;
+    height: max-content;
+    .slider-container {
+      width: 95%;
+      display: flex;
+      flex-direction: column;
+      height: max-content;
+      .slider-carousel {
+        width: 100%;
+      }
+      .slider-ads {
+        width: 100%;
+        display: none !important;
+        .slider-ads-wrap {
+        }
+      }
+    }
+  }
+}
+/* Destop/PC */
+@media screen and (min-width: 1024px) {
+}

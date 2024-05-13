@@ -33,6 +33,33 @@ function FlashSaleContent() {
     slidesToShow: 6,
     slidesToScroll: 5,
     gap: 10,
+    responsive: [
+      {
+        breakpoint: 1023,
+        settings: {
+          slidesToShow: 4,
+          slidesToScroll: 4,
+          gap: 10,
+          infinite: true,
+          dots: true,
+        },
+      },
+      {
+        breakpoint: 600,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 2,
+          initialSlide: 2,
+        },
+      },
+      {
+        breakpoint: 480,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+        },
+      },
+    ],
   }
 
   return (

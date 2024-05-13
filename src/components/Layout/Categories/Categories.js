@@ -1,4 +1,5 @@
 import "./Categories.scss"
+import "./Categories.responsive.scss"
 import CategoriesSlider from "./CategoriesSlider/CategoriesSlider"
 
 function Categories() {

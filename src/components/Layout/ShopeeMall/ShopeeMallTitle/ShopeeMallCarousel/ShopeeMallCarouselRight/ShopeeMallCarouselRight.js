@@ -102,6 +102,17 @@ function ShopeeMallCarouselRight() {
     rows: 2,
     slidesPerRow: 4,
     swipeToSlide: true,
+    responsive: [
+      {
+        breakpoint: 1023,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 2,
+          infinite: true,
+          dots: true,
+        },
+      },
+    ],
   }
   return (
     <>

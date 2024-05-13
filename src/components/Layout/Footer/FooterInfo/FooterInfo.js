@@ -1,4 +1,5 @@
 import { NavLink } from "react-router-dom"
+import "./FooterInfo.responsive.scss"
 
 function FooterInfo() {
   return (

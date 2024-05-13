@@ -1,0 +1,16 @@
+/* Mobile: */
+@media screen and (max-width: 739px) {
+}
+
+/* Tablet */
+@media screen and (min-width: 740px) and (max-width: 1023px) {
+  .footer-container {
+    max-width: 1023px;
+    .footer-wrap {
+      width: 95%;
+    }
+  }
+}
+/* Destop/PC */
+@media screen and (min-width: 1024px) {
+}

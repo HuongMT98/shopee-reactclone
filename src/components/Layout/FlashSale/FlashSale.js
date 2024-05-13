@@ -1,4 +1,5 @@
 import "./FlashSale.scss"
+import "./FlashSale.responsive.scss"
 import flashSaveImg from "../../../Assets/flashsale.png"
 import CountdownFlashSale from "./CoundownFlashSale/CoundownFlashSale"
 import FlashSaleContent from "./FlashSaleContent/FlashSaleContent"

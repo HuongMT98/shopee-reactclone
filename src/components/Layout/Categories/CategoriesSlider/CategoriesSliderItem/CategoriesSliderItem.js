@@ -27,7 +27,6 @@ import img26 from "../../../../../Assets/Categories/categories26.png"
 import img27 from "../../../../../Assets/Categories/categories27.png"
 
 import Slider from "react-slick"
-import { NavLink } from "react-bootstrap"
 import { Link } from "react-router-dom"
 
 function CategoriesSliderItem() {
@@ -177,6 +176,16 @@ function CategoriesSliderItem() {
     rows: 2,
     slidesPerRow: 1,
     swipeToSlide: true,
+    responsive: [
+      {
+        breakpoint: 1023,
+        settings: {
+          slidesToShow: 6,
+          slidesToScroll: 4,
+          infinite: true,
+        },
+      },
+    ],
   }
 
   return (
