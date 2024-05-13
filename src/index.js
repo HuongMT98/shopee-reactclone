@@ -20,12 +20,15 @@ import PurchaseToRefund from "./pages/PurchasePage/PurchaseToRefund/PurchaseToRe
 import ScrollToTopBtn from "./untils/scrollToTopBtn"
 import ProductsPage from "./pages/ProductsPage/ProductsPage"
 import ProductsPageDetail from "./pages/ProductsPage/ProductsPageDetail/ProductsPageDetail"
+import NotFound from "./components/Layout/NotFound/NotFound"
 
 const root = ReactDOM.createRoot(document.getElementById("root"))
 root.render(
   <BrowserRouter>
     <Routes>
       <Route key='home' path='/' element={<App />} />
+
+      <Route key='*' path='/*' element={<NotFound />} />
       <Route key='cart' path='/cart' element={<Cart />} />
       <Route
         key='notification'
