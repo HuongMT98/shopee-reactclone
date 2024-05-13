@@ -1,7 +1,12 @@
+import Nav from "../../components/Layout/Nav/Nav"
+
 function Categories() {
   return (
     <>
-      <div></div>
+      <Nav />
+      <div>
+        <div></div>
+      </div>
     </>
   )
 }

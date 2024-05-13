@@ -11,6 +11,9 @@ import StarRating from "../../untils/StarRating"
 import ScrollToTop from "../../untils/ScrollToTop"
 import formatNumber from "../../untils/fomatNumber"
 import FlashSalePageCountdown from "./FlashSalePageCountdown/FlashSalePageCountdown"
+import FooterBottom from "../../components/Layout/Footer/FooterBottom/FooterBottom"
+import FooterInfo from "../../components/Layout/Footer/FooterInfo/FooterInfo"
+import FooterPolicy from "../../components/Layout/Footer/FooterPolicy/FooterPolicy"
 
 function FlashSalePage() {
   const [data, setData] = useState([])
@@ -98,7 +101,9 @@ function FlashSalePage() {
         )}
       </div>
 
-      <Footer />
+      <FooterBottom />
+      <FooterInfo />
+      <FooterPolicy />
     </>
   )
 }
