@@ -3,386 +3,699 @@
     {
       "id": "1",
       "name": "Áo Polo Phối cổ SPION Local Brand polo unisex nam nữ oversize - KNC 192",
-      "price": "đ125.000",
+      "price": 180000,
       "color": ["Nâu xám", "Đen", "Trắng", "Đỏ mận", "Nâu", "Đen"],
       "image": "https://img.ws.mms.shopee.vn/vn-11134207-7r98o-lq13ywo38rmaf2",
+      "selloff": "39%",
+      "rating": "4.8",
       "sold": 100
     },
     {
       "id": "2",
       "name": "Quần Jean Nam Baggy Màu Trơn Ống Rộng Guu Studio",
-      "price": "₫159.000",
+      "price": 159000,
       "color": ["Xanh Nhạt", "Đen trơn", "Xám"],
       "image": "https://zizoou.com/cdn/shop/products/Quan-Baggy-Jean-nam-nu-2b-1-Quan-ong-rong-xanh-classic-ZiZoou-Store_grande.jpg?v=1680283265",
+      "selloff": "39%",
+      "rating": "4.8",
       "sold": 100
     },
     {
       "id": "3",
       "name": "Á,o Sơ Mi Nam Ngắn Tay Phối Cà Vạt Oversize , Áo Sơ Mi Nam Caravat Form Rộng, Basic, Phong Cách Hàn Quốc-By ZONEF [SMC]",
-      "price": "₫136.220",
+      "price": 136200,
       "color": ["Xanh Nhạt", "Đen trơn", "Xám"],
       "image": "https://down-vn.img.susercontent.com/file/vn-11134207-7qukw-lkenpykzun54e1",
+      "selloff": "35%",
+      "rating": "4.8",
       "sold": 100
     },
     {
       "id": "4",
       "name": "Quần tây nam Hàn Quốc",
-      "price": "₫145.000",
+      "price": 145000,
       "color": ["Xanh Nhạt", "Đen trơn", "Xám"],
       "image": "https://bizweb.dktcdn.net/thumb/1024x1024/100/471/821/products/73a9c08fdfec39ab3d98b0320041c278.png?v=1670255506977",
+      "selloff": "41%",
+      "rating": "4.8",
       "sold": 100
     },
     {
       "id": "5",
       "name": "Tai nghe có dây",
-      "price": "đ26.000",
+      "price": 26000,
       "color": ["Đen", "Trắng", "Vàng", "Đỏ"],
       "image": "https://down-vn.img.susercontent.com/file/86ca567fbf115fcd124531b59248ebf3",
+      "selloff": "60%",
+      "rating": "4.8",
       "sold": 100
     },
     {
       "id": "6",
       "name": "Quần short nam unisex màu đen vải thun cào có bigsize đến 98kg",
-      "price": "₫29.700 ",
+      "price": 29700,
       "color": ["Đen", "Trắng", "Vàng", "Đỏ"],
       "image": "https://img.ws.mms.shopee.vn/ab69281f2bd354a7091430e3940e290f",
+      "selloff": "25%",
+      "rating": "4.8",
       "sold": 100
     },
     {
       "id": "7",
       "name": "(có size 28kg-90kg) áo thun nam ,nữ lỡ tay,áo phông rộng",
-      "price": "₫61.000",
+      "price": 61000,
       "color": ["Đen", "Trắng", "Vàng", "Đỏ"],
       "image": "https://img.ws.mms.shopee.vn/463288d7dd430e3d0f00fc4ccd693a7c",
+      "selloff": "42%",
+      "rating": "4.8",
       "sold": 100
     },
     {
       "id": "8",
       "name": "Myers áo phông nam Áo Thun phông áo nam thun Áo Thun Form Rộng Ngắn Tay Unisex MTX24408GO 14Z240403",
-      "price": "₫58.000",
+      "price": 58000,
       "color": ["Đen", "Trắng", "Vàng", "Đỏ"],
       "image": "https://down-vn.img.susercontent.com/file/cn-11134207-7r98o-ltnohe99oiwd5d_tn.webp",
+      "selloff": "30%",
+      "rating": "4.8",
       "sold": 100
     },
     {
       "id": "9",
       "name": "Bó hoa gấu bông loopy, gấu dâu làm quà tặng dễ thương, xinh xắn MIUSHOP",
-      "price": "₫8.999",
+      "price": 8999,
       "color": ["Đen", "Trắng", "Vàng", "Đỏ"],
       "image": "https://down-vn.img.susercontent.com/file/vn-11134207-7r98o-lt2892iey4eca6",
+      "selloff": "15%",
+      "rating": "4.8",
       "sold": 100
     },
     {
       "id": "10",
       "name": "Q,uần jean trắng nam ống suông rộng Bigsize ,quần baggy nam phom xuông dáng đứng vải jeans bò cao cấp 20WE SR01 hottrend",
-      "price": "₫99.000",
+      "price": 99000,
       "color": ["Đen", "Trắng", "Vàng", "Đỏ"],
       "image": "https://encrypted-tbn0.gstatic.com/shopping?q=tbn:ANd9GcTzkU5cbTfspaJrpXXLH1Htyd9oIvDApGK5I0nFkciyUEV28PV87HvxtZ2b0CvS92NwegUkEjhR8ldrJk6tz3s9-yk3H9WzPko91oo6Ef1DOs4FOooknt6f&usqp=CAE",
+      "selloff": "25%",
+      "rating": "4.8",
       "sold": 100
     },
     {
       "id": "11",
       "name": "Áo sơ mi nam Basic chất kaki cao cấp cực đẹp",
-      "price": "₫99.000",
+      "price": 99000,
       "color": ["Đen", "Trắng", "Vàng", "Đỏ"],
       "image": "https://img.ws.mms.shopee.vn/sg-11134201-22110-jtnklcl0z0jv76",
+      "selloff": "25%",
+      "rating": "4.8",
       "sold": 100
     },
     {
       "id": "12",
       "name": "Quần đùi nam nữ GUMA, quần Short ngố Cao Cấp Thời Trang Lịch Lãm, Trẻ Trung, Sang Trọng.",
-      "price": "₫145.000",
+      "price": 145000,
       "color": ["Đen", "Trắng", "Vàng", "Đỏ"],
       "image": "https://down-vn.img.susercontent.com/file/vn-11134207-7qukw-lf9a1nhhdobb9c_tn",
+      "selloff": "30%",
+      "rating": "4.8",
       "sold": 100
     },
     {
       "id": "13",
       "name": "K,huyên Tai Dạng Kẹp Không Cần Xỏ Lỗ Phong Cách Hip hop Thời Trang Cho Nam Và Nữ",
-      "price": "đ23000",
+      "price": 230000,
       "color": ["Đen", "Trắng", "Vàng", "Đỏ"],
       "image": "https://down-vn.img.susercontent.com/file/sg-11134201-22120-sg9ilxi1mzkv9d",
+      "selloff": "40%",
+      "rating": "4.8",
       "sold": 100
     },
     {
       "id": "14",
       "name": "Kính Mát Phân Cực Phong Cách Hàn Quốc Thời Trang Cho Nam Và Nữ",
-      "price": "đ12000",
+      "price": 12000,
       "color": ["Đen", "Trắng", "Vàng", "Đỏ"],
       "image": "https://down-vn.img.susercontent.com/file/f5fe5f49df65cbbca8e6e056c02963fa",
+      "selloff": "42%",
+      "rating": "4.8",
       "sold": 100
     },
     {
       "id": "15",
       "name": "Quần Short Nam Dáng Rộng Phong Cách Retro Mỹ Thời Trang Mùa Hè Mới",
-      "price": "₫55.000",
+      "price": 55000,
       "color": ["Đen", "Trắng", "Vàng", "Đỏ"],
       "image": "https://down-vn.img.susercontent.com/file/vn-11134207-7r98o-lt0miw1wnidg40",
+      "selloff": "35%",
+      "rating": "4.8",
       "sold": 100
     },
     {
       "id": "16",
       "name": "Ly giữ nhiệt Americano Inox 304 Cao Cấp Không Gỉ 3 màu XÁM,BẠC,SỮA,Tặng ống hút siêu tiện lợi 600ml hàng đẹp (loại xịn).",
-      "price": "₫6.000",
+      "price": 6000,
       "color": ["Đen", "Trắng", "Vàng", "Đỏ"],
       "image": "https://down-vn.img.susercontent.com/vn-11134207-7r98o-ltcjyrowk3wka3",
+      "selloff": "55%",
+      "rating": "4.8",
       "sold": 100
     },
     {
       "id": "17",
       "name": "Áo sơ mi tay ngắn thời trang nam nữ",
-      "price": "₫92.000",
+      "price": 92000,
       "color": ["Đen", "Trắng", "Vàng", "Đỏ"],
       "image": "https://down-vn.img.susercontent.com/file/26d6631faeec494f946f377dcdfbdb79",
+      "selloff": "45%",
+      "rating": "4.8",
       "sold": 100
     },
     {
       "id": "18",
       "name": "Quần baggy nam ống rộng màu kem form chuẩn Hàn Quốc QD18",
-      "price": "₫109.000",
+      "price": 109000,
       "color": ["Đen", "Trắng", "Vàng", "Đỏ"],
       "image": "https://down-vn.img.susercontent.com/file/cn-11134207-7r98o-lqvmxnkwsmul34",
+      "selloff": "34%",
+      "rating": "4.8",
       "sold": 100
     },
     {
       "id": "19",
       "name": "Đồng hồ điện tử màn hình LED với thiết kế tối giản phong cách Hàn Quốc",
-      "price": "₫13.000",
+      "price": 13000,
       "color": ["Nâu xám", "Đen", "Trắng", "Đỏ mận", "Nâu", "Đen"],
       "image": "https://down-vn.img.susercontent.com/file/sg-11134201-7rcch-ltau2zibtbfb51_tn",
+      "selloff": "15%",
+      "rating": "4.8",
       "sold": 100
     },
     {
       "id": "20",
       "name": "Khuyên Tai Dạng Kẹp Bằng Thép Titan Hình Tam Giác Ngôi Sao Phong Cách punk Hiphop Chống Dị Ứng Thời Trang",
-      "price": "₫11.600",
+      "price": 11600,
       "color": ["Xanh Nhạt", "Đen trơn", "Xám"],
       "image": "https://down-vn.img.susercontent.com/file/sg-11134201-22110-tfixzbgd0hkv01_tn.webp",
+      "selloff": "25%",
+      "rating": "4.8",
       "sold": 100
     },
     {
       "id": "21",
       "name": "Áo Polo Basic Unisex Chất Cotton Thoáng Mát, Áo Thun Có Cổ Nam Nữ Oversize Phối Chỉ Nổi Phong Cách Hàn Quốc  ",
-      "price": "₫99.000",
+      "price": 99000,
       "color": ["Xanh Nhạt", "Đen trơn", "Xám"],
       "image": "https://img.ws.mms.shopee.vn/vn-11134207-7qukw-ljioyzxe0j3oa1",
+      "selloff": "36%",
+      "rating": "4.8",
       "sold": 100
     },
     {
       "id": "22",
       "name": "Áo Sơ Mi Lụa Lạnh Tay Dài Dáng Rộng Thoải Mái Phong Cách Hàn Quốc Hợp Thời Trang Cho Nữ",
-      "price": "₫99.000",
+      "price": 99000,
       "color": ["Xanh Nhạt", "Đen trơn", "Xám"],
       "image": "https://yeepvn.sgp1.digitaloceanspaces.com/2023/05/sg-11134201-23020-setrpdpzjrnvec.jpg",
+      "selloff": "45%",
+      "rating": "4.8",
       "sold": 100
     },
     {
       "id": "23",
       "name": "Áo sơ mi TERI Tay lỡ có túi tặng kèm Cà Vạt Nam Nữ Unisex màu 5 màu Hot trend Form Rộng - vải lụa dày dặn, thoáng mát",
-      "price": "₫179.000",
+      "price": 179000,
       "color": ["Đen", "Trắng", "Vàng", "Đỏ"],
       "image": "https://img.ws.mms.shopee.vn/vn-11134207-7qukw-lf59we87ucev34",
+      "selloff": "40%",
+      "rating": "4.8",
       "sold": 100
     },
     {
       "id": "24",
       "name": "Khuyên Tai Dạng Kẹp Không Cần Bấm Lỗ Bằng Thép Không Gỉ",
-      "price": " ₫3.500 ",
+      "price": 3500,
       "color": ["Đen", "Trắng", "Vàng", "Đỏ"],
       "image": "https://yeepvn.sgp1.digitaloceanspaces.com/2023/03/ff13485a8598290dd541565245745f36.jpg",
+      "selloff": "35%",
+      "rating": "4.8",
       "sold": 100
     },
     {
       "id": "25",
       "name": "Tai Nghe Bluetooth 5.3 Không Dây HIFI HK3 TWS Chất Lượng Cao",
-      "price": "₫48.000",
+      "price": 48000,
       "color": ["Đen", "Trắng", "Vàng", "Đỏ"],
       "image": "https://vchatshop.s3.ap-southeast-1.amazonaws.com/uploads/all/D0hIiPCt9IQVrkWMXvMCfCeA00njfYWyam2MVe5n.png",
+      "selloff": "16%",
+      "rating": "4.8",
       "sold": 100
     },
     {
       "id": "26",
       "name": "Tẩy da chết cho mặt, cho body Cocoon Chiết xuất cà phê Đắk Lắk, cấp ẩm cho da, giúp da mềm mịn",
-      "price": "₫28.000",
+      "price": 28000,
       "color": ["Đen", "Trắng", "Vàng", "Đỏ"],
       "image": "https://img.ws.mms.shopee.vn/vn-11134207-7r98o-lqakv0va05kn82",
+      "selloff": "23%",
+      "rating": "4.8",
       "sold": 100
     },
     {
       "id": "27",
       "name": "Loa Bluetooth Bass Căng Mini 4 FLIP6 FLIP8 - Loa Pin Khỏe Kháng Nước Tốt - Nghe Nhạc Cực Đỉnh Có Hỗ Trợ Tua Bài Hát",
-      "price": "₫83.000",
+      "price": 83000,
       "color": ["Đen", "Trắng", "Vàng", "Đỏ"],
       "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR-ZMng-faEs6NiONU0THSRPMvvEqN1ggTJUVpOubNCUL5qFAtc0F217LBl5t1Z30L4LaI&usqp=CAU",
+      "selloff": "22%",
+      "rating": "4.8",
       "sold": 100
     },
     {
       "id": "28",
       "name": "Cốc thuỷ tinh trong suốt kèm nắp gấu sang trọng long lanh có quai cầm chắc chắn - LA592",
-      "price": "₫16.000",
+      "price": 16000,
       "color": ["Đen", "Trắng", "Vàng", "Đỏ"],
       "image": "https://down-vn.img.susercontent.com/file/vn-11134207-7r98o-lorsdtizema8bd",
+      "selloff": "48%",
+      "rating": "4.8",
       "sold": 100
     },
     {
       "id": "29",
       "name": "Thắt Lưng Bằng Vải canvas Kiểu Dáng Đơn Giản Phong Cách Cao Bồi Cho Nam",
-      "price": "₫31.000",
+      "price": 31000,
       "color": ["Đen", "Trắng", "Vàng", "Đỏ"],
       "image": "https://down-vn.img.susercontent.com/file/cn-11134301-7qukw-lk7scdx4c04dd1",
+      "selloff": "51%",
+      "rating": "4.8",
       "sold": 100
     },
     {
       "id": "30",
       "name": "Quần đùi nam nữ phối kẻ sọc + logo chất cotton dệt tổ ong mặc thoải mái Quần short Unisex nam nữ đều mặc được-A02",
-      "price": "₫69.000",
+      "price": 69000,
       "color": ["Đen", "Trắng", "Vàng", "Đỏ"],
       "image": "https://img.ws.mms.shopee.vn/vn-11134207-7r98o-lrs9x1mbq8jo8c",
+      "selloff": "50%",
+      "rating": "4.8",
       "sold": 100
     },
     {
       "id": "31",
       "name": "Quần Short Nam Tây Âu Vải Tuyết Mưa Dày Dặn Phối Đai Lưng Thun Phong Cách Hàn Quốc Thời Trang Zenkonu SHORT NAM 050",
-      "price": "₫,75.000",
+      "price": 75000,
       "color": ["Đen", "Trắng", "Vàng", "Đỏ"],
       "image": "https://salt.tikicdn.com/cache/w300/ts/product/84/6d/87/499a6ba93836dbc415951dce055f911e.jpg",
+      "selloff": "45%",
+      "rating": "4.8",
       "sold": 100
     },
     {
       "id": "32",
       "name": "Áo Sơ Mi Nam Dài Tay Phong Cách Retro Nhật Bản Mới 2024 0594",
-      "price": "₫109.000",
+      "price": 109000,
       "color": ["Đen", "Trắng", "Vàng", "Đỏ"],
       "image": "https://down-vn.img.susercontent.com/file/sg-11134201-7rcdt-lqvmn7vclnla1f",
+      "selloff": "62%",
+      "rating": "4.8",
       "sold": 100
     },
     {
       "id": "33",
       "name": "Quần jean nam nữ baggy ống rộng phom Suông Chỉnh Eo Chất Bò cao cấp",
-      "price": "₫119.000",
+      "price": 119000,
       "color": ["Đen", "Trắng", "Vàng", "Đỏ"],
       "image": "https://down-vn.img.susercontent.com/file/vn-11134207-7r98o-lpuv44926n6aa0",
+      "selloff": "15%",
+      "rating": "4.8",
       "sold": 100
     },
     {
       "id": "34",
       "name": "Giày CHUNKY tây công sở nam , Giày đốc nam tăng chiều cao 5cm lịch lãm.",
-      "price": "₫69.000",
+      "price": 69000,
       "color": ["Đen", "Trắng", "Vàng", "Đỏ"],
       "image": "https://down-vn.img.susercontent.com/file/vn-11134201-7r98o-lq58ihyfcyj675_tn",
+      "selloff": "66%",
+      "rating": "4.8",
       "sold": 100
     },
     {
       "id": "35",
       "name": "[HCM-giá sỉ-hàng nhập giao ngay] sandal nam nữ, dép quai hậu học sinh sinh viên siêu hót trend",
-      "price": "₫82.600",
+      "price": 82600,
       "color": ["Đen", "Trắng", "Vàng", "Đỏ"],
       "image": "https://vn-test-11.slatic.net/p/a8c76a5b3eda39086e7e2bf1389c8ff2.jpg",
+      "selloff": "20%",
+      "rating": "4.8",
       "sold": 100
     },
     {
       "id": "36",
       "name": "Mùa hè Đơn Giản Thường Ngày Nam / Nữ Phong Cách Bông Tai Kẹp In Hình Plus Kích Thước Áo Thun Tay Ngắn Rời",
-      "price": "₫145.000",
+      "price": 145000,
       "color": ["Đen", "Trắng", "Vàng", "Đỏ"],
       "image": "https://down-vn.img.susercontent.com/file/sg-11134201-7rcc6-lr2snty57qzu49_tn",
+      "selloff": "16%",
+      "rating": "4.8",
       "sold": 100
     },
     {
       "id": "37",
       "name": "Quần Jean Phố Cao Cấp Hợp Thời Trang Nam 2024 Dạo Phố Rời Thẳng Rửa Tất Cả Trận Đấu Quần Ống Rộng 0782",
-      "price": "₫108.000",
+      "price": 108000,
       "color": ["Đen", "Trắng", "Vàng", "Đỏ"],
       "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS5SmgzklxTp5AUAXs8xSEhfEZjrsPjOeJoyvLBVqyQ4w&s",
+      "selloff": "33%",
+      "rating": "4.8",
       "sold": 100
     },
     {
       "id": "38",
       "name": "Set 5 Đôi Vớ Cổ Trung Họa Tiết Biểu Cảm Hoạt Hình Dễ Thương Dành Cho Nữ",
-      "price": "₫43.000",
+      "price": 43000,
       "color": ["Đen", "Trắng", "Vàng", "Đỏ"],
       "image": "https://down-vn.img.susercontent.com/file/cn-11134301-7r98o-lmjr3ge8lfxg2e",
+      "selloff": "14%",
+      "rating": "4.8",
       "sold": 100
     },
     {
       "id": "39",
       "name": "Áo Thun Nam Nữ Thêu Hình APT Unisex Áo Polo From Rộng Tay Lửng Mùa Hè 2024 Chất Liệu Nhung Tăm Mềm Mịn",
-      "price": "₫99.000",
+      "price": 99000,
       "color": ["Đen", "Trắng", "Vàng", "Đỏ"],
       "image": "https://mochanstore.com/wp-content/uploads/2023/03/mochanstore.com-AO-POLO-UNISEX-NAM-NU-AO-THUN-CO-CO-TAY-LO-FORM-RONG-COTTON-ENJOY.jpg",
+      "selloff": "33%",
+      "rating": "4.8",
       "sold": 100
     },
     {
       "id": "40",
       "name": "Tai Nghe Coumi Ice Drop Pro - Bluetooth 5.2, Chip Aptx Qualcom 3046, Game Mode 60MS (THANH LÝ PIN YẾU, KHÔNG BẢO HÀNH)",
-      "price": "₫139.000",
+      "price": 139000,
       "color": ["Đen", "Trắng", "Vàng", "Đỏ"],
       "image": "https://down-vn.img.susercontent.com/file/vn-11134207-7qukw-lj9wpommmxhod9",
+      "selloff": "45%",
+      "rating": "4.8",
       "sold": 100
     },
     {
       "id": "41",
       "name": "Xiaozhubangchu keycaps Mario bàn phím cơ 124 phím keycaps chất lượng cao kết hợp",
-      "price": "₫149.000",
+      "price": 149000,
       "color": ["Đen", "Trắng", "Vàng", "Đỏ"],
       "image": "https://down-vn.img.susercontent.com/sg-11134201-7rbk5-lmzewxxfis7u0b",
+      "selloff": "56%",
+      "rating": "4.8",
       "sold": 100
     },
     {
       "id": "42",
       "name": "Áo Sơ Mi Vải Lanh Nam Áo Sơ Mi Tay Ngắn Nam Cổ Đứng Vải Lanh Cotton Tay Ba Phần Tư Phiên Bản Hàn Quốc Rất Cổ Tích Puffer Đẹp",
-      "price": "₫145.000",
+      "price": 145000,
       "color": ["Đen", "Trắng", "Vàng", "Đỏ"],
       "image": "https://down-vn.img.susercontent.com/file/sg-11134201-7rce0-ls84jaydm0mf90",
+      "selloff": "50%",
+      "rating": "4.8",
       "sold": 100
     },
     {
       "id": "43",
       "name": "M-5xl Quần Short Bóng Rổ Nam Phong Cách Mỹ Retro In Chữ Quần Chạy Bộ Quần Short Thể Thao Bóng Rổ Quần Ngắn Mùa Hè ",
-      "price": "₫89.000",
+      "price": 89000,
       "color": ["Đen", "Trắng", "Vàng", "Đỏ"],
       "image": "https://down-vn.img.susercontent.com/file/sg-11134201-7rcef-lt87yz0xx3le39",
+      "selloff": "29%",
+      "rating": "4.8",
       "sold": 100
     },
     {
       "id": "44",
       "name": "Quần âu nam ống rộng JONATO, quần nam ống suông phong cách hàn quốc trẻ trung năng động",
-      "price": "₫159.000",
+      "price": 159000,
       "color": ["Đen", "Trắng", "Vàng", "Đỏ"],
       "image": "https://down-vn.img.susercontent.com/file/vn-11134207-7r98o-lkuga58truwr63",
+      "selloff": "31%",
+      "rating": "4.8",
       "sold": 100
     },
     {
       "id": "45",
       "name": "Quần Ống Rộng Tổ Ong Unisex Hot Tren 2023 Cạp Cao Lưng Thun Dây Rút Phối Chữ MA98",
-      "price": "₫22.000",
+      "price": 22000,
       "color": ["Đen", "Trắng", "Vàng", "Đỏ"],
       "image": "https://img.ws.mms.shopee.vn/vn-11134207-7r98o-lmyz6emhkuzjeb",
+      "selloff": "19%",
+      "rating": "4.8",
       "sold": 100
     },
     {
       "id": "46",
       "name": "Loa Bluetooth SK-2036 cực chất, Có Sẵn 2 Micro Không Dây, Hát Karaoke Nghe Nhạc Bass Cực Đỉnh-",
-      "price": "₫29.100",
+      "price": 29100,
       "color": ["Đen", "Trắng", "Vàng", "Đỏ"],
       "image": "https://down-vn.img.susercontent.com/file/vn-11134207-7r98o-ltf2t9r1d0r1d7_tn",
+      "selloff": "28%",
+      "rating": "4.8",
       "sold": 100
     },
     {
       "id": "47",
       "name": "Quần Dài Ống Đứng Màu Trơn Thời Trang Nam Trẻ Trung",
-      "price": "₫183.000",
+      "price": 183000,
       "color": ["Đen", "Trắng", "Vàng", "Đỏ"],
       "image": "https://down-vn.img.susercontent.com/file/sg-11134201-7qvf4-lhfnyhcmtecu1b_tn",
+      "selloff": "22%",
+      "rating": "4.8",
       "sold": 100
     },
     {
       "id": "48",
       "name": "Sữa Rửa Mặt Làm Trắng Da A299",
-      "price": "₫145.000",
+      "price": 145000,
       "color": ["Đen", "Trắng", "Vàng", "Đỏ"],
       "image": "https://down-vn.img.susercontent.com/file/cn-11134207-7r98o-lmsuc2ianz1e6a",
+      "selloff": "45%",
+      "rating": "4.8",
       "sold": 100
+    },
+    {
+      "id": "49",
+      "image": "https://paulaschoice.vn/wp-content/uploads/2019/08/7700.jpg",
+      "name": "Tinh chất tăng cường làm trắng da",
+      "price": 1600000,
+      "color": ["Đen", "Trắng", "Vàng", "Đỏ"],
+      "selloff": "20%",
+      "rating": "4.8",
+      "sold": 100
+    },
+    {
+      "id": "50",
+      "image": "https://down-vn.img.susercontent.com/file/cn-11134208-7r98o-lmx0n532cbms73",
+      "price": 232000,
+      "color": ["Đen", "Trắng", "Vàng", "Đỏ"],
+      "name": "Túi đeo chéo nữ",
+      "selloff": "50%",
+      "rating": "4.9"
+    },
+    {
+      "id": "51",
+      "image": "https://cf.shopee.vn/file/cn-11134207-7r98o-lm2u923dn8dee2_tn",
+      "price": 203000,
+      "color": ["Đen", "Trắng", "Vàng", "Đỏ"],
+      "name": "Áo droptop hàn nữ",
+      "selloff": "52%",
+      "rating": "4.5"
+    },
+    {
+      "id": "52",
+      "image": "https://yeepvn.sgp1.digitaloceanspaces.com/2023/12/sg-11134201-7rbnl-ln3vuy8hn9kl35_tn.jpg",
+      "price": 410000,
+      "color": ["Đen", "Trắng", "Vàng", "Đỏ"],
+      "name": "Sneaker nữ",
+      "selloff": "50%",
+      "rating": "4.7"
+    },
+    {
+      "id": "53",
+      "image": "https://img.lazcdn.com/g/p/e53d87553dbf14ef9183ece051b68b77.jpg_720x720q80.jpg",
+      "price": 190000,
+      "color": ["Đen", "Trắng", "Vàng", "Đỏ"],
+      "name": "Áo phông nam",
+      "selloff": "54%",
+      "rating": "4.6"
+    },
+    {
+      "id": "54",
+      "image": "https://cf.shopee.vn/file/eccc59d723926ccdbaa79f85659601d8",
+      "price": 49000,
+      "color": ["Đen", "Trắng", "Vàng", "Đỏ"],
+      "name": "Khô gà lá chanh",
+      "selloff": "82%",
+      "rating": "4.9"
+    },
+    {
+      "id": "55",
+      "image": "https://salt.tikicdn.com/cache/w300/ts/product/ac/fe/f9/10f85303b0bc1f1a117fd0dba0eeca55.jpg",
+      "price": 438000,
+      "color": ["Đen", "Trắng", "Vàng", "Đỏ"],
+      "name": "Loa bluetooth Lenovo",
+      "selloff": "55%",
+      "rating": "4.8"
+    },
+    {
+      "id": "56",
+      "image": "https://down-vn.img.susercontent.com/file/sg-11134201-7rbkq-lqedmk6m0tc4fc",
+      "price": 270000,
+      "color": ["Đen", "Trắng", "Vàng", "Đỏ"],
+      "name": "Áo Unisex nam",
+      "selloff": "47%",
+      "rating": "4.9"
+    },
+    {
+      "id": "57",
+      "image": "https://cf.shopee.vn/file/cn-11134207-7r98o-lo68mtf5w7xf01",
+      "price": 30000,
+      "color": ["Đen", "Trắng", "Vàng", "Đỏ"],
+      "name": "Túi đeo chéo nữ mini",
+      "selloff": "40%",
+      "rating": "4.9"
+    },
+    {
+      "id": "58",
+      "image": "https://down-vn.img.susercontent.com/file/cn-11134207-7r98o-lnql4el78tjca7_tn",
+      "price": 230000,
+      "color": ["Đen", "Trắng", "Vàng", "Đỏ"],
+      "name": "Lẩu điện mini",
+      "selloff": "47%",
+      "rating": "4.9"
+    },
+    {
+      "id": "59",
+      "image": "https://down-vn.img.susercontent.com/file/cn-11134207-7r98o-lu8n93g29xfofe_tn",
+      "price": 288000,
+      "color": ["Đen", "Trắng", "Vàng", "Đỏ"],
+      "name": "Sneaker nữ hàn",
+      "selloff": "50%",
+      "rating": "4.9"
+    },
+    {
+      "id": "60",
+      "image": "https://down-vn.img.susercontent.com/file/cn-11134207-7r98o-lo67ndnkpgrn17_tn",
+      "price": 93000,
+      "color": ["Đen", "Trắng", "Vàng", "Đỏ"],
+      "name": "Túi đeo chéo nữ quảng châu",
+      "selloff": "56%",
+      "rating": "4.9"
+    },
+    {
+      "id": "61",
+      "image": "https://down-vn.img.susercontent.com/file/sg-11134201-7rcd5-lti0xzxqz82kf7",
+      "price": 215000,
+      "color": ["Đen", "Trắng", "Vàng", "Đỏ"],
+      "name": "Áo nữ mặc nhà",
+      "selloff": "47%",
+      "rating": "4.9"
+    },
+    {
+      "id": "62",
+      "image": "https://down-vn.img.susercontent.com/file/cn-11134211-7r98o-lmjzsu5b5n3673",
+      "price": 220000,
+      "color": ["Đen", "Trắng", "Vàng", "Đỏ"],
+      "name": "Hộp cơm văn phòng dễ thương",
+      "selloff": "60%",
+      "rating": "4.9"
+    },
+    {
+      "id": "63",
+      "image": "https://down-vn.img.susercontent.com/file/vn-11134201-23030-k3sqv2ahllovad",
+      "price": 230000,
+      "color": ["Đen", "Trắng", "Vàng", "Đỏ"],
+      "name": "Quần ống rộng nữ hàn quốc",
+      "selloff": "50%",
+      "rating": "4"
+    },
+    {
+      "id": "64",
+      "image": "https://down-vn.img.susercontent.com/file/sg-11134201-7rccv-lt6l2mnr3egbeb",
+      "price": 223000,
+      "color": ["Đen", "Trắng", "Vàng", "Đỏ"],
+      "name": "Áo sơ mi trể vai nữ",
+      "selloff": "49%",
+      "rating": "4.5"
+    },
+    {
+      "id": "65",
+      "image": "https://down-vn.img.susercontent.com/file/cn-11134207-7r98o-lua41126exrn13",
+      "price": 180000,
+      "color": ["Đen", "Trắng", "Vàng", "Đỏ"],
+      "name": "Váy nũ Zheng Zhi",
+      "selloff": "45%",
+      "rating": "4.9"
+    },
+    {
+      "id": "66",
+      "image": "https://down-vn.img.susercontent.com/file/vn-11134202-7r98o-loxxi50sopjice",
+      "price": 198000,
+      "color": ["Đen", "Trắng", "Vàng", "Đỏ"],
+      "name": "Áo nữ cổ chữ V trung quốc hàng đẹp",
+      "selloff": "31%",
+      "rating": "4"
+    },
+    {
+      "id": "67",
+      "image": "https://salt.tikicdn.com/cache/w1200/ts/product/18/94/45/9e02bb7b67f89173d73233250291e2d0.jpg",
+      "price": 560000,
+      "color": ["Đen", "Trắng", "Vàng", "Đỏ"],
+      "name": "Sữa rửa mặt La Roche Posay",
+      "selloff": "30%",
+      "rating": "4.5"
+    },
+    {
+      "id": "68",
+      "image": "https://down-vn.img.susercontent.com/file/4da6e050c3ee293068e8f905a3e7bb6b",
+      "price": 378000,
+      "color": ["Đen", "Trắng", "Vàng", "Đỏ"],
+      "name": "Giày cao gót nữ phong cách Trung Quốc",
+      "selloff": "49%",
+      "rating": "4.9"
+    },
+    {
+      "id": "69",
+      "image": "https://m.media-amazon.com/images/I/61mpMH5TzkL._AC_SL1500_.jpg",
+      "price": 1500000,
+      "color": ["Đen", "Trắng", "Vàng", "Đỏ"],
+      "name": "Chuột bluetooth hàng nhập khẩu",
+      "selloff": "43%",
+      "rating": "4.9"
+    },
+    {
+      "id": "70",
+      "image": "https://down-vn.img.susercontent.com/file/cn-11134207-7r98o-ltyosqj8trb831_tn.webp",
+      "price": 265000,
+      "color": ["Đen", "Trắng", "Vàng", "Đỏ"],
+      "name": "Giày lolita nữ",
+      "selloff": "41%",
+      "rating": "4.9"
+    },
+    {
+      "id": "71",
+      "image": "https://vn-test-11.slatic.net/p/41247b943ef8b03f1f536b8a72553559.jpg",
+      "price": 300000,
+      "color": ["Đen", "Trắng", "Vàng", "Đỏ"],
+      "name": "Kem dưỡng thuần chay",
+      "selloff": "36%",
+      "rating": "4"
+    },
+    {
+      "id": "72",
+      "image": "https://down-vn.img.susercontent.com/file/sg-11134201-7rceh-ltapezm669iq42_tn",
+      "price": 415000,
+      "color": ["Đen", "Trắng", "Vàng", "Đỏ"],
+      "name": "Quần nữ ống rộng",
+      "selloff": "51%",
+      "rating": "5"
     }
   ],
   "user": [
@@ -441,200 +754,6 @@
       "title": "",
       "image": "",
       "content": ""
-    }
-  ],
-  "flashsales": [
-    {
-      "id": "1",
-      "image": "https://paulaschoice.vn/wp-content/uploads/2019/08/7700.jpg",
-      "name": "Tinh chất tăng cường làm trắng da",
-      "price": "1600000",
-      "selloff": "20%",
-      "rating": "4.8"
-    },
-    {
-      "id": "2",
-      "image": "https://down-vn.img.susercontent.com/file/cn-11134208-7r98o-lmx0n532cbms73",
-      "price": "232000",
-      "name": "Túi đeo chéo nữ",
-      "selloff": "50%",
-      "rating": "4.9"
-    },
-    {
-      "id": "3",
-      "image": "https://cf.shopee.vn/file/cn-11134207-7r98o-lm2u923dn8dee2_tn",
-      "price": "203000",
-      "name": "Áo droptop hàn nữ",
-      "selloff": "52%",
-      "rating": "4.5"
-    },
-    {
-      "id": "4",
-      "image": "https://yeepvn.sgp1.digitaloceanspaces.com/2023/12/sg-11134201-7rbnl-ln3vuy8hn9kl35_tn.jpg",
-      "price": "410000",
-      "name": "Sneaker nữ",
-      "selloff": "50%",
-      "rating": "4.7"
-    },
-    {
-      "id": "5",
-      "image": "https://img.lazcdn.com/g/p/e53d87553dbf14ef9183ece051b68b77.jpg_720x720q80.jpg",
-      "price": "190000",
-      "name": "Áo phông nam",
-      "selloff": "54%",
-      "rating": "4.6"
-    },
-    {
-      "id": "6",
-      "image": "https://cf.shopee.vn/file/eccc59d723926ccdbaa79f85659601d8",
-      "price": "49000",
-      "name": "Khô gà lá chanh",
-      "selloff": "82%",
-      "rating": "4.9"
-    },
-    {
-      "id": "7",
-      "image": "https://salt.tikicdn.com/cache/w300/ts/product/ac/fe/f9/10f85303b0bc1f1a117fd0dba0eeca55.jpg",
-      "price": "438000",
-      "name": "Loa bluetooth Lenovo",
-      "selloff": "55%",
-      "rating": "4.8"
-    },
-    {
-      "id": "8",
-      "image": "https://down-vn.img.susercontent.com/file/sg-11134201-7rbkq-lqedmk6m0tc4fc",
-      "price": "270000",
-      "name": "Áo Unisex nam",
-      "selloff": "47%",
-      "rating": "4.9"
-    },
-    {
-      "id": "9",
-      "image": "https://cf.shopee.vn/file/cn-11134207-7r98o-lo68mtf5w7xf01",
-      "price": "30000",
-      "name": "Túi đeo chéo nữ mini",
-      "selloff": "40%",
-      "rating": "4.9"
-    },
-    {
-      "id": "10",
-      "image": "https://down-vn.img.susercontent.com/file/cn-11134207-7r98o-lnql4el78tjca7_tn",
-      "price": "230000",
-      "name": "Lẩu điện mini",
-      "selloff": "47%",
-      "rating": "4.9"
-    },
-    {
-      "id": "11",
-      "image": "https://down-vn.img.susercontent.com/file/cn-11134207-7r98o-lu8n93g29xfofe_tn",
-      "price": "288000",
-      "name": "Sneaker nữ hàn",
-      "selloff": "50%",
-      "rating": "4.9"
-    },
-    {
-      "id": "12",
-      "image": "https://down-vn.img.susercontent.com/file/cn-11134207-7r98o-lo67ndnkpgrn17_tn",
-      "price": "93000",
-      "name": "Túi đeo chéo nữ quảng châu",
-      "selloff": "56%",
-      "rating": "4.9"
-    },
-    {
-      "id": "13",
-      "image": "https://down-vn.img.susercontent.com/file/sg-11134201-7rcd5-lti0xzxqz82kf7",
-      "price": "215000",
-      "name": "Áo nữ mặc nhà",
-      "selloff": "47%",
-      "rating": "4.9"
-    },
-    {
-      "id": "14",
-      "image": "https://down-vn.img.susercontent.com/file/cn-11134211-7r98o-lmjzsu5b5n3673",
-      "price": "220000",
-      "name": "Hộp cơm văn phòng dễ thương",
-      "selloff": "60%",
-      "rating": "4.9"
-    },
-    {
-      "id": "15",
-      "image": "https://down-vn.img.susercontent.com/file/vn-11134201-23030-k3sqv2ahllovad",
-      "price": "230000",
-      "name": "Quần ống rộng nữ hàn quốc",
-      "selloff": "50%",
-      "rating": "4"
-    },
-    {
-      "id": "16",
-      "image": "https://down-vn.img.susercontent.com/file/sg-11134201-7rccv-lt6l2mnr3egbeb",
-      "price": "223000",
-      "name": "Áo sơ mi trể vai nữ",
-      "selloff": "49%",
-      "rating": "4.5"
-    },
-    {
-      "id": "17",
-      "image": "https://down-vn.img.susercontent.com/file/cn-11134207-7r98o-lua41126exrn13",
-      "price": "180000",
-      "name": "Váy nũ Zheng Zhi",
-      "selloff": "45%",
-      "rating": "4.9"
-    },
-    {
-      "id": "18",
-      "image": "https://down-vn.img.susercontent.com/file/vn-11134202-7r98o-loxxi50sopjice",
-      "price": "198000",
-      "name": "Áo nữ cổ chữ V trung quốc hàng đẹp",
-      "selloff": "31%",
-      "rating": "4"
-    },
-    {
-      "id": "19",
-      "image": "https://salt.tikicdn.com/cache/w1200/ts/product/18/94/45/9e02bb7b67f89173d73233250291e2d0.jpg",
-      "price": "560000",
-      "name": "Sữa rửa mặt La Roche Posay",
-      "selloff": "30%",
-      "rating": "4.5"
-    },
-    {
-      "id": "20",
-      "image": "https://down-vn.img.susercontent.com/file/4da6e050c3ee293068e8f905a3e7bb6b",
-      "price": "378000",
-      "name": "Giày cao gót nữ phong cách Trung Quốc",
-      "selloff": "49%",
-      "rating": "4.9"
-    },
-    {
-      "id": "21",
-      "image": "https://m.media-amazon.com/images/I/61mpMH5TzkL._AC_SL1500_.jpg",
-      "price": "1500000",
-      "name": "Chuột bluetooth hàng nhập khẩu",
-      "selloff": "43%",
-      "rating": "4.9"
-    },
-    {
-      "id": "22",
-      "image": "https://down-vn.img.susercontent.com/file/cn-11134207-7r98o-ltyosqj8trb831_tn.webp",
-      "price": "265000",
-      "name": "Giày lolita nữ",
-      "selloff": "41%",
-      "rating": "4.9"
-    },
-    {
-      "id": "23",
-      "image": "https://vn-test-11.slatic.net/p/41247b943ef8b03f1f536b8a72553559.jpg",
-      "price": "300000",
-      "name": "Kem dưỡng thuần chay",
-      "selloff": "36%",
-      "rating": "4"
-    },
-    {
-      "id": "24",
-      "image": "https://down-vn.img.susercontent.com/file/sg-11134201-7rceh-ltapezm669iq42_tn",
-      "price": "415000",
-      "name": "Quần nữ ống rộng",
-      "selloff": "51%",
-      "rating": "4.5"
     }
   ]
 }

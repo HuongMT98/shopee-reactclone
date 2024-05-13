@@ -25,33 +25,75 @@ const root = ReactDOM.createRoot(document.getElementById("root"))
 root.render(
   <BrowserRouter>
     <Routes>
-      <Route path='/' element={<App />} />
-      <Route path='/cart' element={<Cart />} />
-      <Route path='/notification' element={<Notification />} />
+      <Route key='home' path='/' element={<App />} />
+      <Route key='cart' path='/cart' element={<Cart />} />
+      <Route
+        key='notification'
+        path='/notification'
+        element={<Notification />}
+      />
+
       {/* Router Flashsale Nest Router V6*/}
       <Route
+        key='flashsale'
         path='/flashsale'
         element={<FlashSalePage />}
-        children={[<Route path='flashsalepage' element={<FlashSalePage />} />]}
+        children={[
+          <Route
+            key='flashsalepage'
+            path='flashsalepage'
+            element={<FlashSalePage />}
+          />,
+        ]}
       />
 
       {/* Router Purchase Nest Router V6*/}
-      <Route path='/purchase' element={<PurchasePage />}>
-        <Route path='purchasePay' element={<PurchaseToPay />} />
-        <Route path='purchaseCancel' element={<PurchaseToCancel />} />
-        <Route path='purchaseComplete' element={<PurchaseToComplete />} />
-        <Route path='purchaseReceive' element={<PurchaseToReceive />} />
-        <Route path='purchaseRefund' element={<PurchaseToRefund />} />
-        <Route path='purchaseShip' element={<PurchaseToShip />} />
-      </Route>
-      <Route path='/product' element={<ProductsPage />}>
-        <Route path=':id' element={<ProductsPageDetail />} />
+      <Route key='purchase' path='/purchase' element={<PurchasePage />}>
+        <Route
+          key='purchasePay'
+          path='purchasePay'
+          element={<PurchaseToPay />}
+        />
+        <Route
+          key='purchaseCancel'
+          path='purchaseCancel'
+          element={<PurchaseToCancel />}
+        />
+        <Route
+          key='purchaseComplete'
+          path='purchaseComplete'
+          element={<PurchaseToComplete />}
+        />
+        <Route
+          key='purchaseReceive'
+          path='purchaseReceive'
+          element={<PurchaseToReceive />}
+        />
+        <Route
+          key='purchaseRefund'
+          path='purchaseRefund'
+          element={<PurchaseToRefund />}
+        />
+        <Route
+          key='purchaseShip'
+          path='purchaseShip'
+          element={<PurchaseToShip />}
+        />
       </Route>
 
-      <Route path='/info' element={<SettingInfoPage />} />
-      <Route path='/categories' element={<Categories />} />
-      <Route path='/voucher' element={<Voucher />} />
-      <Route path='/signup' element={<SignUpPage />} />
+      {/* Router Product Nest Router V6*/}
+      <Route key='product' path='/product' element={<ProductsPage />}>
+        <Route
+          key='productDetail'
+          path=':productId'
+          element={<ProductsPageDetail />}
+        />
+      </Route>
+
+      <Route key='info' path='/info' element={<SettingInfoPage />} />
+      <Route key='categories' path='/categories' element={<Categories />} />
+      <Route key='voucher' path='/voucher' element={<Voucher />} />
+      <Route key='signup' path='/signup' element={<SignUpPage />} />
     </Routes>
     <ScrollToTopBtn />
   </BrowserRouter>

@@ -12,10 +12,4 @@ function RatingStar(rating) {
 
   return result
 }
-
-// Example usage:
-console.log(RatingStar(3)) // Output: ★★★☆☆
-console.log(RatingStar(4)) // Output: ★★★★☆
-console.log(RatingStar(5)) // Output: ★★★★★
-
 export default RatingStar

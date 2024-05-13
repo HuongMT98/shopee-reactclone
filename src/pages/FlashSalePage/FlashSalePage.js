@@ -1,23 +1,24 @@
 import Footer from "../../components/Layout/Footer/Footer"
 import "./FlashSalePage.scss"
 import Nav from "../../components/Layout/Nav/Nav"
-import ApiFlashsales from "../../Api/ApiFlashsales"
+import ApiProduct from "../../Api/ApiProduct"
 import { useEffect, useState } from "react"
 import { NavLink } from "react-router-dom"
-import formatNumber from "../../untils/fomatNumber"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faBolt } from "@fortawesome/free-solid-svg-icons"
 import StarRating from "../../untils/StarRating"
-import CalcSellofPrice from "../../untils/CalcSellofPrice"
 import ScrollToTop from "../../untils/ScrollToTop"
+import formatNumber from "../../untils/fomatNumber"
 
 function FlashSalePage() {
   const [data, setData] = useState([])
+
   useEffect(() => {
-    ApiFlashsales().then((data) => {
+    ApiProduct().then((data) => {
       setData(data)
     })
   }, [])
+
   return (
     <>
       <Nav />
@@ -27,7 +28,7 @@ function FlashSalePage() {
           {data.map((item) => {
             return (
               <div className='flashsalepage-item' key={item.id}>
-                <NavLink to={`/product/${item.name}`}>
+                <NavLink to={`/product/${item.id}`}>
                   <div className='flashsalepage-img-wrap'>
                     <img
                       className='flashsalepage-img'
@@ -50,7 +51,7 @@ function FlashSalePage() {
                       </div>
                     </div>
                     <div className='flashsalepage-selloff-price'>
-                      đ<CalcSellofPrice price={formatNumber(item.price)} />
+                      đ{formatNumber(item.price)}
                     </div>
                   </div>
                 </NavLink>

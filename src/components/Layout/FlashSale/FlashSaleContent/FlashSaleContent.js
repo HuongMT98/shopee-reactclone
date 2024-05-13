@@ -1,20 +1,21 @@
 import Slider from "react-slick"
 import { NavLink } from "react-router-dom"
 import React, { useEffect, useState } from "react"
-import ApiFlashsales from "../../../../Api/ApiFlashsales"
 import flashsalebanner from "../../../../Assets/FlashSale/flashsalebanner.png"
 import formatNumber from "../../../../untils/fomatNumber"
 import "./FlashSaleContent.scss"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faBolt } from "@fortawesome/free-solid-svg-icons"
+import ApiProduct from "../../../../Api/ApiProduct"
 
 function FlashSaleContent() {
   const [data, setData] = useState([])
+  const [visible, setVisible] = useState(16)
 
   useEffect(() => {
     async function fetchData() {
       try {
-        const response = await ApiFlashsales()
+        const response = await ApiProduct()
         setData(response)
       } catch (error) {
         console.error("Error fetching data:", error)
@@ -36,7 +37,7 @@ function FlashSaleContent() {
     <>
       <div className='slider-flashsale'>
         <Slider {...settings}>
-          {data.map((item) => (
+          {data.slice(0, visible).map((item) => (
             <div key={item.id} className='slider-flashsale-item'>
               <NavLink to={`/flashsale`}>
                 <div className='slider-flashsale-img'>

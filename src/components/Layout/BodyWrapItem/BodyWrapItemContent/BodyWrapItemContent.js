@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react"
 import { Link } from "react-router-dom"
 import ApiProduct from "../../../../Api/ApiProduct"
+import formatNumber from "../../../../untils/fomatNumber"
 
 function BodyWrapItemContent() {
   const [data, setData] = useState([])
@@ -24,12 +25,14 @@ function BodyWrapItemContent() {
             <Link
               key={item.id}
               className='bodywrapitem-item'
-              to={`/product/${item.name}`}
+              to={`/product/${item.id}`}
             >
               <img src={item.image} alt='' />
               <p className='bodywrapitem-item-name'>{item.name}</p>
               <div className='bodywrapitem-item-infosell'>
-                <p className='bodywrapitem-item-price'>{item.price}</p>
+                <p className='bodywrapitem-item-price'>
+                  {formatNumber(item.price)}
+                </p>
                 <p className='bodywrapitem-item-sold'>{item.sold} sold</p>
               </div>
             </Link>

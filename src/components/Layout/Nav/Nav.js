@@ -103,10 +103,10 @@ function Nav() {
                 arrow={true}
               >
                 <NavLink className={"language"}>
-                  <buton>
+                  <button>
                     <FontAwesomeIcon icon={faGlobe} className='icon' />
                     English
-                  </buton>
+                  </button>
                   <FontAwesomeIcon icon={faAngleDown} className='icon' />
                 </NavLink>
               </Tippy>

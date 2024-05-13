@@ -2,6 +2,7 @@ import { Outlet } from "react-router-dom"
 import Nav from "../../components/Layout/Nav/Nav"
 import "./ProductsPage.scss"
 import ScrollToTop from "../../untils/ScrollToTop"
+import Footer from "../../components/Layout/Footer/Footer"
 
 function ProductsPage() {
   return (
@@ -11,6 +12,7 @@ function ProductsPage() {
       <div className='products'>
         <div className='products-container'>
           <Outlet />
+          <Footer />
         </div>
       </div>
     </>
