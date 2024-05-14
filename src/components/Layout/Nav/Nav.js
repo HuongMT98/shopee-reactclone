@@ -19,7 +19,7 @@ import {
 } from "@fortawesome/free-solid-svg-icons"
 import ApiUser from "../../../Api/ApiUser"
 import { useDispatch, useSelector } from "react-redux"
-import { login, logout } from "../../../Redux/store"
+import { logout, login } from "../../../Redux/store"
 
 function Nav() {
   const dispatch = useDispatch()
