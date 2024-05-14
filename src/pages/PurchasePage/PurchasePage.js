@@ -1,4 +1,5 @@
 import "./PurchasePage.scss"
+import "./PurchasePage.responsive.scss"
 // ==> Import COMPONENT
 import FooterBottom from "../../components/Layout/Footer/FooterBottom/FooterBottom"
 import FooterInfo from "../../components/Layout/Footer/FooterInfo/FooterInfo"

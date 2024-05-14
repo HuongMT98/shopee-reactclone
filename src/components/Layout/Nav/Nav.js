@@ -1,5 +1,6 @@
 import { Link, NavLink } from "react-router-dom"
 import "../Nav/Nav.scss"
+import "./Nav.responsive.scss"
 import Tippy from "@tippyjs/react"
 import "tippy.js/dist/tippy.css"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
@@ -23,10 +24,18 @@ function Nav() {
   const [user, setUser] = useState([])
 
   useEffect(() => {
-    ApiUser().then((data) => {
-      setUser(data)
-    })
+    async function fetchData() {
+      try {
+        const response = await ApiUser()
+        setUser(response.sort(() => Math.random() - 0.5))
+      } catch (error) {
+        console.error("Error fetching data:", error)
+      }
+    }
+    fetchData()
   }, [])
+
+  //dùng data để render UI
 
   const languageChoice = [
     {
@@ -119,7 +128,7 @@ function Nav() {
                 interactive={true}
               >
                 <NavLink className='user'>
-                  {user.map((item) => (
+                  {user.slice(0, 1).map((item) => (
                     <div className='user-wrap' key={item.id}>
                       <img src={item.image} alt='' className='user-img' />
                       <p>{item.name}</p>

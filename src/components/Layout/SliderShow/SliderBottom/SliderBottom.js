@@ -1,4 +1,5 @@
 import DataSliderBottom from "./DataSliderBottom/DataSliderBottom"
+import "./SliderBottom.responsive.scss"
 
 function SliderBottom() {
   return (

@@ -4,10 +4,12 @@
 
 /* Tablet */
 @media screen and (min-width: 740px) and (max-width: 1023px) {
-  .categories-container {
+  .flashsalepage-container {
     max-width: 1023px;
-    .categories {
-      width: 93%;
+    .flashsalepage-wrap {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      width: 100%;
     }
   }
 }

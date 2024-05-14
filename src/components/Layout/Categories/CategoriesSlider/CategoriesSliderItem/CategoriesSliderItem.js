@@ -182,7 +182,7 @@ function CategoriesSliderItem() {
         settings: {
           slidesToShow: 6,
           slidesToScroll: 4,
-          infinite: true,
+          infinite: false,
         },
       },
     ],

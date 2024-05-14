@@ -4,10 +4,16 @@
 
 /* Tablet */
 @media screen and (min-width: 740px) and (max-width: 1023px) {
-  .categories-container {
+  .products-page-detail {
     max-width: 1023px;
-    .categories {
-      width: 93%;
+    .products-page-detail-container {
+      width: 98%;
+      padding: 0;
+      .products-page-detail-wrap {
+        .products-page-detail-info {
+          width: 60%;
+        }
+      }
     }
   }
 }

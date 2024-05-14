@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react"
 import { NavLink, useParams } from "react-router-dom"
 import "./ProductsPageDetail.scss"
+import "./ProductsPageDetail.responsive.scss"
 import formatNumber from "../../../untils/fomatNumber"
 import StarRating from "../../../untils/StarRating"
 import CoundownFlashSale from "../../../components/Layout/FlashSale/CoundownFlashSale/CoundownFlashSale"

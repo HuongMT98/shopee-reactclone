@@ -1,0 +1,40 @@
+/* Mobile: */
+@media screen and (max-width: 739px) {
+}
+
+/* Tablet */
+@media screen and (min-width: 740px) and (max-width: 1023px) {
+  .nav-wrap {
+    max-width: 1023px;
+    .nav {
+      width: 100%;
+      .nav-item {
+        width: 100%;
+      }
+    }
+    .nav-bottom {
+      width: 100%;
+      .nav-bottom-item {
+        width: 98%;
+        .nav-bottom-logo-img {
+          width: 20%;
+        }
+        .nav-search {
+          width: 60%;
+          .nav-hot-search {
+            display: none;
+          }
+        }
+        .nav-cart {
+          width: 20%;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+        }
+      }
+    }
+  }
+}
+/* Destop/PC */
+@media screen and (min-width: 1024px) {
+}

@@ -5,6 +5,7 @@ import Nav from "../../components/Layout/Nav/Nav"
 import NavSideBar from "../../components/Layout/NavSideBar/NavSideBar"
 import SettingInfoContentPage from "./SettingInfoContentPage/SettingInfoContentPage"
 import "./SettingInfoPage.scss"
+import "./SettingInfoPage.responsive.scss"
 
 function SettingInfoPage() {
   return (

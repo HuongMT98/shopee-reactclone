@@ -106,8 +106,10 @@ function ShopeeMallCarouselRight() {
       {
         breakpoint: 1023,
         settings: {
-          slidesToShow: 2,
+          slidesToShow: 1,
+          slidesPerRow: 2,
           slidesToScroll: 2,
+          rows: 2,
           infinite: true,
           dots: true,
         },

@@ -1,5 +1,9 @@
 .nav-sidebar-container {
   width: 180px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
   .nav-sidebar {
     // NavSide Bar User
     .nav-sidebar-user {

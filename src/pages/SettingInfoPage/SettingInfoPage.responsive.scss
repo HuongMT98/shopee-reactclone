@@ -1,0 +1,61 @@
+/* Mobile: */
+@media screen and (max-width: 739px) {
+}
+
+/* Tablet */
+@media screen and (min-width: 740px) and (max-width: 1023px) {
+  .setting-info-page {
+    max-width: 1023px;
+    .setting-info-page-container-wrap {
+      width: 100%;
+      .setting-info-page-container {
+        width: 100%;
+        .setting-info-page-content {
+          width: 100%;
+          .setting-info-content-body {
+            .setting-info-content-body-container {
+              width: 100%;
+              .settinginfoleft {
+                display: flex;
+                align-items: center;
+              }
+              .settinginfomid {
+                padding: 0 5px;
+              }
+              .settinginforight {
+                .settinginforight-wrap {
+                  width: 100%;
+                  .settinginforight-container {
+                    display: flex;
+                    align-items: center;
+                    img {
+                      width: 7rem;
+                      height: auto;
+                    }
+                    .settinginforight-info {
+                      width: 100%;
+                      display: flex;
+                      flex-direction: row;
+                      align-items: center;
+
+                      .settinginforight-infonametitle {
+                        padding: 0;
+                      }
+
+                      .settinginforight-infoname {
+                        font-size: 12px;
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+/* Destop/PC */
+@media screen and (min-width: 1024px) {
+}
