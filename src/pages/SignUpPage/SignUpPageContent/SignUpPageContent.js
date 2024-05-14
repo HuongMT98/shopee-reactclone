@@ -2,13 +2,23 @@ import { useState } from "react"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import img from "../../../Assets/shopeesignupbanner.png"
 import "./SignUpPageContent.scss"
+import { login, logout } from "../../../Redux/store"
 import { faFacebook, faGoogle } from "@fortawesome/free-brands-svg-icons"
 import { Link } from "react-router-dom"
+import { useDispatch, useSelector } from "react-redux"
 
 function SignUpPageContent() {
   const [phoneNumber, setPhoneNumber] = useState("")
   const [isPhoneNumberValid, setIsPhoneNumberValid] = useState(true)
   const [isFormSubmitted, setIsFormSubmitted] = useState(false)
+  const dispatch = useDispatch()
+  const isLogin = useSelector((state) => state.isLogin)
+
+  const handleClickLogin = () => {
+    dispatch(isLogin ? logout() : login())
+    // Save the login status to local storage
+    localStorage.setItem("isLogin", JSON.stringify(isLogin))
+  }
 
   const handlePhoneNumberChange = (event) => {
     const inputValue = event.target.value
@@ -87,7 +97,10 @@ function SignUpPageContent() {
                 </div>
                 <div className='signuppage-content-form-login'>
                   <p className='signuppage-content-form-login-text'>
-                    Have an account? <Link>Log In</Link>
+                    Have an account?{" "}
+                    <button onClick={handleClickLogin}>
+                      <Link>Log In</Link>
+                    </button>
                   </p>
                 </div>
               </div>

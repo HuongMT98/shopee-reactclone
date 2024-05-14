@@ -1,7 +1,7 @@
 import { useDispatch, useSelector } from "react-redux"
+import { login, logout } from "../../../../../Redux/store"
 import img from "../../../../../Assets/Notification/NotificationLogOut.png"
 import "./NavNotificationLogout.scss"
-import { login, logout } from "../../../../../Redux/store"
 import { Link } from "react-router-dom"
 function NavNotificationLogout() {
   const dispatch = useDispatch()
