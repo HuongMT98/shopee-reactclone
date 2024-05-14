@@ -20,7 +20,7 @@ import {
 import ApiUser from "../../../Api/ApiUser"
 
 function Nav() {
-  const [isLogin, setIsLogin] = useState(true)
+  const [isLogin, setIsLogin] = useState(false)
   const [user, setUser] = useState([])
 
   useEffect(() => {

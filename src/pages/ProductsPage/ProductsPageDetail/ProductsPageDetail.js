@@ -18,7 +18,6 @@ import NumberInputQuatity from "../../../untils/NumberInputQuatity"
 function ProductsPageDetail() {
   const [product, setProduct] = useState({})
   const { productId } = useParams()
-  const [itemCart, setItemCart] = useState([])
 
   useEffect(() => {
     const getProductDetail = async () => {
