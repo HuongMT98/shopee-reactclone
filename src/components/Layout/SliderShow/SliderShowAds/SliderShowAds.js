@@ -29,12 +29,16 @@ function SliderShowAds() {
             </div>
           ))} */}
           <div className='slider-ads-content'>
-            <Link to={`/voucher`}>
-              <img className='slider-ads-img' src={img1} alt='' />
-            </Link>
-            <Link to={`/voucher`}>
-              <img className='slider-ads-img' src={img2} alt='' />
-            </Link>
+            <div className='slider-ads-content-wrap'>
+              <Link to={`/voucher`}>
+                <img className='slider-ads-img' src={img1} alt='' />
+              </Link>
+            </div>
+            <div className='slider-ads-content-wrap'>
+              <Link to={`/voucher`}>
+                <img className='slider-ads-img' src={img2} alt='' />
+              </Link>
+            </div>
           </div>
         </div>
       </div>
