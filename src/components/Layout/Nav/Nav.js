@@ -18,9 +18,12 @@ import {
   faGlobe,
 } from "@fortawesome/free-solid-svg-icons"
 import ApiUser from "../../../Api/ApiUser"
+import { useDispatch, useSelector } from "react-redux"
+import { login, logout } from "../../../Redux/store"
 
 function Nav() {
-  const [isLogin, setIsLogin] = useState(false)
+  const dispatch = useDispatch()
+  const isLogin = useSelector((state) => state.isLogin)
   const [user, setUser] = useState([])
 
   useEffect(() => {
@@ -57,8 +60,11 @@ function Nav() {
   ))
 
   const handleClickLogin = () => {
-    setIsLogin(!isLogin)
+    dispatch(isLogin ? logout() : login())
     console.log(isLogin ? "Log Out Popup" : "Log In Popup")
+
+    // Save the login status to local storage
+    localStorage.setItem("isLogin", JSON.stringify(isLogin))
   }
 
   const handleClickSignUp = () => {
