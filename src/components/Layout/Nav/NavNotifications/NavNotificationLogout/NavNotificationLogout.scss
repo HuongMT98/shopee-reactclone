@@ -28,11 +28,19 @@
             width: 50%;
             height: 2rem;
             background: rgb(240, 236, 236);
-            transition: 0.3s;
+            transition: 0.1s;
 
             &:hover {
               background: rgb(224, 221, 221);
               color: var(--color-red);
+            }
+
+            a {
+              color: var(--color-black);
+
+              &:hover {
+                color: var(--bg-root);
+              }
             }
           }
         }

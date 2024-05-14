@@ -1,6 +1,21 @@
+import { useDispatch, useSelector } from "react-redux"
 import img from "../../../../../Assets/Notification/NotificationLogOut.png"
 import "./NavNotificationLogout.scss"
-function NavNotificationLogout({ handleClickLogin }, { handleClickSignUp }) {
+import { login, logout } from "../../../../../Redux/store"
+import { Link } from "react-router-dom"
+function NavNotificationLogout() {
+  const dispatch = useDispatch()
+  const isLogin = useSelector((state) => state.isLogin)
+  const handleClickLogin = () => {
+    dispatch(isLogin ? logout() : login())
+    // Save the login status to local storage
+    localStorage.setItem("isLogin", JSON.stringify(isLogin))
+  }
+
+  const handleClickSignUp = () => {
+    return console.log("Sign Up")
+  }
+
   return (
     <>
       <div className='notification-logout-container'>
@@ -10,8 +25,12 @@ function NavNotificationLogout({ handleClickLogin }, { handleClickSignUp }) {
             <p>Log in to view notifications</p>
           </div>
           <div className='notification-logout-btn'>
-            <button onClick={handleClickSignUp}>Sign Up</button>
-            <button onClick={handleClickLogin}>Log In</button>
+            <button onClick={handleClickSignUp}>
+              <Link to='/signup'>Sign Up</Link>
+            </button>
+            <button onClick={handleClickLogin}>
+              <Link>Log In</Link>
+            </button>
           </div>
         </div>
       </div>
