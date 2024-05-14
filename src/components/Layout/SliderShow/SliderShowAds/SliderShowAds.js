@@ -16,9 +16,9 @@ function SliderShowAds() {
   return (
     <>
       <div className='slider-ads-wrap'>
-        <div className='slider-ads-container'>
-          {/* {data.map((item) => (
-            <div className='slider-ads-content' key={item.id}>
+        <div className='slider-ads-content'>
+          {data.map((item) => (
+            <div className='slider-ads-content-wrap' key={item.id}>
               <Link to={`/voucher`}>
                 <img
                   className='slider-ads-img'
@@ -27,8 +27,8 @@ function SliderShowAds() {
                 />
               </Link>
             </div>
-          ))} */}
-          <div className='slider-ads-content'>
+          ))}
+          {/* <div className='slider-ads-content'>
             <div className='slider-ads-content-wrap'>
               <Link to={`/voucher`}>
                 <img className='slider-ads-img' src={img1} alt='' />
@@ -39,7 +39,7 @@ function SliderShowAds() {
                 <img className='slider-ads-img' src={img2} alt='' />
               </Link>
             </div>
-          </div>
+          </div> */}
         </div>
       </div>
     </>

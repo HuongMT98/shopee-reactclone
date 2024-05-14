@@ -67,24 +67,27 @@
     // Slider ADS **************************************
     .slider-ads {
       width: 35%;
+      height: 100%;
 
       .slider-ads-wrap {
         width: 100%;
-        height: 235px;
+        height: 100%;
 
-        .slider-ads-container {
-          height: 50%;
+        .slider-ads-content {
+          width: 100%;
+          height: 100%;
+          padding-left: 5px;
 
-          .slider-ads-content {
-            height: 100%;
-            display: block;
-            padding: 0 0 2px 3px;
-            .slider-ads-content-wrap {
-              padding: 0.1rem;
-              height: 100%;
-              .slider-ads-img {
+          .slider-ads-content-wrap {
+            width: 100%;
+            height: 50%;
+            padding: 2px 0;
+
+            a {
+              img {
                 width: 100%;
                 height: 100%;
+                object-fit: cover;
               }
             }
           }
