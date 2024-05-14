@@ -190,13 +190,9 @@ function Nav() {
               {/* Account  */}
               <div className='nav-info-account'>
                 <Link to='/signup'>
-                  <button onClick={handleClickSignUp} isLogin={isLogin}>
-                    Sign Up
-                  </button>
+                  <button onClick={handleClickSignUp}>Sign Up</button>
                 </Link>
-                <button onClick={handleClickLogin} isLogin={isLogin}>
-                  Login
-                </button>
+                <button onClick={handleClickLogin}>Login</button>
               </div>
             </nav>
           )}

@@ -13,12 +13,43 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faBolt, faQuestionCircle } from "@fortawesome/free-solid-svg-icons"
 import { faCartFlatbed } from "@fortawesome/free-solid-svg-icons/faCartFlatbed"
 import { faTruck } from "@fortawesome/free-solid-svg-icons/faTruck"
-import NumberInputQuatity from "../../../untils/NumberInputQuatity"
+import { Button, HStack, Input } from "@chakra-ui/react"
+import { useNumberInput } from "@mui/base/unstable_useNumberInput/useNumberInput"
+import { useDispatch } from "react-redux"
+import { addToCart } from "../../../Redux/actions"
 
 function ProductsPageDetail() {
   const [product, setProduct] = useState({})
   const { productId } = useParams()
+  const [quantity, setQuantity] = useState(1)
+  const [giaSauKhiGiam, setGiaSauKhiGiam] = useState(0)
+  const dispatch = useDispatch()
 
+  // Setting của thư viện
+  const { getInputProps, getIncrementButtonProps, getDecrementButtonProps } =
+    useNumberInput({
+      step: 1,
+      defaultValue: 1,
+      min: 1,
+      max: 99,
+    })
+  const dec = getDecrementButtonProps()
+  const inc = getIncrementButtonProps()
+  // custom setting khi click với nút +/-
+  const input = getInputProps({
+    onChange: (e) => setQuantity(Number(e.target.value)),
+  })
+
+  // Dùng Useeffect tính toán số tiền sau khi giảm giá và cũng để lưu trong redux
+  useEffect(() => {
+    const calculateGiaSauKhiGiam = () => {
+      const gia = Math.round(product.price * (1 - product.discount / 100))
+      setGiaSauKhiGiam(gia)
+    }
+    calculateGiaSauKhiGiam()
+  }, [product.price, product.discount])
+
+  // Rest API lấy sản phẩm và render ra giao diện
   useEffect(() => {
     const getProductDetail = async () => {
       const result = await fetch(`http://localhost:5200/products/${productId}`)
@@ -32,6 +63,36 @@ function ProductsPageDetail() {
     return <div>Loading...</div>
   }
 
+  // Hàm thêm sản phẩm khi click vào nút trên UI
+  const handleAddToCart = (e) => {
+    e.preventDefault()
+    dispatch(
+      addToCart({
+        id: product.id,
+        name: product.name,
+        price: giaSauKhiGiam,
+        image: product.image,
+        discount: product.discount,
+        quatity: quantity,
+      })
+    )
+    console.log(
+      "Add To Cart :" + quantity,
+      product.name,
+      "Price :" + giaSauKhiGiam
+    )
+  }
+
+  const handleAddItem = (e) => {
+    e.preventDefault()
+    setQuantity(quantity + 1)
+  }
+  const handleDecreaseItem = (e) => {
+    e.preventDefault()
+    setQuantity(quantity - 1)
+  }
+
+  // Render ra giao diện
   return (
     <div className='products-page-detail'>
       <div className='products-page-detail-container'>
@@ -67,10 +128,7 @@ function ProductsPageDetail() {
                   đ{formatNumber(product.price)}
                 </h2>
                 <h2 className='products-page-detail-price-new'>
-                  đ
-                  {formatNumber(
-                    Math.round(product.price * (1 - product.discount / 100))
-                  )}
+                  đ {giaSauKhiGiam}
                   <div className='price-new-discount'>
                     {product.discount > 0 ? (
                       <span className='discount'>{product.discount}% OFF</span>
@@ -138,11 +196,27 @@ function ProductsPageDetail() {
             <div className='products-page-detail-quatity'>
               <p className='quatity'>Quantity</p>
               <div className='quatity-wrap'>
-                <NumberInputQuatity />
+                <HStack maxW='150px'>
+                  <Button {...dec} onClick={handleDecreaseItem}>
+                    -
+                  </Button>
+                  <Input
+                    {...input}
+                    value={quantity}
+                    onChange={(e) => setQuantity(Number(e.target.value))}
+                  />
+                  <Button {...inc} onClick={handleAddItem}>
+                    +
+                  </Button>
+                </HStack>
               </div>
             </div>
             <div className='products-page-detail-btn-wrap'>
-              <button className='products-page-detail-btn btn-cart'>
+              <button
+                className='products-page-detail-btn btn-cart'
+                onClick={handleAddToCart}
+                type='button'
+              >
                 Add to cart
               </button>
               <button className='products-page-detail-btn btn-buy'>

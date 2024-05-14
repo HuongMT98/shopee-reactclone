@@ -78,7 +78,7 @@ function NavSideBar() {
           <div className='nav-sidebar-bottom-title'>
             <img src={img3} alt='' />
             <Link className='navsidebar-bottom-titleaccount' to='/purchase'>
-              My Purchase
+              My Purchases
             </Link>
           </div>
           <div className='nav-sidebar-bottom-title'>
