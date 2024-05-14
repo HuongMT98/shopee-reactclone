@@ -61,8 +61,6 @@ function Nav() {
 
   const handleClickLogin = () => {
     dispatch(isLogin ? logout() : login())
-    console.log(isLogin ? "Log Out Popup" : "Log In Popup")
-
     // Save the login status to local storage
     localStorage.setItem("isLogin", JSON.stringify(isLogin))
   }

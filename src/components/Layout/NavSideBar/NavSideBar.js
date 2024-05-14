@@ -47,7 +47,7 @@ function NavSideBar() {
         <div className='nav-sidebar-bottom'>
           <div className='nav-sidebar-bottom-title'>
             <img src={img1} alt='' />
-            <Link className='navsidebar-bottom-titleaccount'>
+            <Link className='navsidebar-bottom-titleaccount' to='/sale'>
               5.5 Brands Sale
             </Link>
           </div>
