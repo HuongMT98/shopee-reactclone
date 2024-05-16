@@ -24,6 +24,9 @@ function reducer(state = initState, action) {
     case "CLEAR_CART":
       return { ...state, renderCart: [] }
 
+    case "UPDATE_CART":
+      return { ...state, renderCart: action.payload }
+
     default:
       return state
   }

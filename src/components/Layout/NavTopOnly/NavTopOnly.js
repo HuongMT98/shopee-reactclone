@@ -17,7 +17,7 @@ import { faFacebook, faInstagram } from "@fortawesome/free-brands-svg-icons"
 import DownloadApp from "../Nav/DownloadApp/DownloadApp"
 import ApiUser from "../../../Api/ApiUser"
 import "./NavTopOnly.scss"
-import LOGO from "../../../Assets/LOGO.svg"
+import LOGO from "./NavLogoTopOnly/LOGO"
 
 function NavTopOnly() {
   const dispatch = useDispatch()
@@ -195,12 +195,17 @@ function NavTopOnly() {
       </nav>
       <div className='nav-logo'>
         <div className='nav-logo-wrap'>
-          <div>
+          <div className='nav-logo-container'>
             <div className='logo'>
               <NavLink to='/'>
-                <img src={LOGO} alt='' />
-                <p>Shopee</p>
+                <LOGO />
+                <div className='logo-text'>
+                  <p>Shopee</p>
+                </div>
               </NavLink>
+            </div>
+            <div className='search'>
+              <div></div>
             </div>
           </div>
         </div>

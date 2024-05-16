@@ -1,7 +1,55 @@
 .nav-logo {
   width: 100%;
+  display: flex;
+  justify-content: center;
+  height: 100px;
 
   .nav-logo-wrap {
-    width: var(--widthdefault);
+    width: 100%;
+    display: flex;
+    justify-content: center;
+
+    .nav-logo-container {
+      width: var(--widthdefault);
+      height: 100%;
+
+      .logo {
+        display: flex;
+        height: 100%;
+        align-items: center;
+        flex-direction: row;
+        width: 30%;
+        justify-content: space-between;
+
+        a {
+          display: contents;
+
+          .signup-logo {
+            width: 60%;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+          }
+
+          .logo-text {
+            width: 40%;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: red;
+
+            p {
+              font-size: 2.2rem;
+            }
+          }
+        }
+      }
+
+      .search {
+        width: 70%;
+      }
+    }
   }
 }

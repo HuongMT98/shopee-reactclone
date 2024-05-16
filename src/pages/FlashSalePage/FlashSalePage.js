@@ -14,7 +14,6 @@ import FlashSalePageCountdown from "./FlashSalePageCountdown/FlashSalePageCountd
 import FooterBottom from "../../components/Layout/Footer/FooterBottom/FooterBottom"
 import FooterInfo from "../../components/Layout/Footer/FooterInfo/FooterInfo"
 import FooterPolicy from "../../components/Layout/Footer/FooterPolicy/FooterPolicy"
-import NavBottom from "../../components/Layout/Nav/NavBottom/NavBottom"
 
 function FlashSalePage() {
   const [data, setData] = useState([])
@@ -31,6 +30,8 @@ function FlashSalePage() {
     }
     fetchData()
   }, [])
+
+  //dùng data để render UI
 
   //dùng data để render UI
 

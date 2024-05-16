@@ -32,8 +32,8 @@ function CartItem() {
             <div className='detail-wrap'>
               {uniqueCartItems.map((item) => {
                 return (
-                  <Link to={`/product/${item.id}`}>
-                    <div key={item.id} className='detail-item'>
+                  <Link key={item.id} to={`/product/${item.id}`}>
+                    <div className='detail-item'>
                       <div className='img'>
                         <img src={item.image} alt='' />
                       </div>
