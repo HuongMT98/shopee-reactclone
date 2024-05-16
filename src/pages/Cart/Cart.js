@@ -6,7 +6,8 @@ import "./Cart.scss"
 import NavTopOnly from "../../components/Layout/NavTopOnly/NavTopOnly"
 import formatNumber from "../../untils/fomatNumber"
 import { Button, HStack, Input, useNumberInput } from "@chakra-ui/react"
-import { useState } from "react"
+import { useEffect, useState } from "react"
+import ApiProduct from "../../Api/ApiProduct"
 
 function Cart() {
   const renderCart = useSelector((state) => state.renderCart)
@@ -15,33 +16,28 @@ function Cart() {
     renderCart.length > 0 ? renderCart[0].quantity : 1
   )
 
-  const { getInputProps, getIncrementButtonProps, getDecrementButtonProps } =
-    useNumberInput({
-      step: 1,
-      defaultValue: valueQuantity,
-      min: 1,
-      max: 99,
-      precision: 1,
-    })
-
-  const inc = getIncrementButtonProps({
-    onClick: () => setValueQuantity(valueQuantity + 1),
-  })
-
-  const dec = getDecrementButtonProps({
-    onClick: () => {
-      if (valueQuantity > 0) {
-        setValueQuantity(valueQuantity - 1)
-      } else {
-        dispatch({ type: "REMOVE_TO_CART", payload: renderCart })
-      }
-    },
+  const { getInputProps } = useNumberInput({
+    step: 1,
+    defaultValue: valueQuantity,
+    min: 1,
+    max: 99,
+    precision: 1,
   })
 
   const input = getInputProps({
     value: valueQuantity,
     onChange: (e) => setValueQuantity(Number(e.target.value)),
   })
+
+  const handleIncrement = (e) => {
+    e.preventDefault()
+    setValueQuantity(valueQuantity + 1)
+  }
+
+  const handleDecrement = (e) => {
+    e.preventDefault()
+    setValueQuantity(valueQuantity - 1)
+  }
 
   const handleRemove = (e, itemId) => {
     e.preventDefault()
@@ -54,21 +50,12 @@ function Cart() {
     dispatch({ type: "CLEAR_CART" })
   }
 
-  const processedCart = renderCart.reduce((acc, item) => {
-    const lastItem = acc[acc.length - 1]
-    if (!lastItem || lastItem.id !== item.id) {
-      return [...acc, { ...item, quantity: item.quantity }]
-    }
-    lastItem.quantity += item.quantity
-    return acc
-  }, [])
-
   return (
     <>
       <NavTopOnly />
       <div className='cart-container'>
         <div className='cart-container-wrap'>
-          {processedCart.map((item) => (
+          {renderCart.map((item) => (
             <div key={item.id} className='cart-product-wrap'>
               <div className='cart-product-item'>
                 <div className='cart-product-left'>
@@ -83,9 +70,9 @@ function Cart() {
                   </div>
                   <div className='cart-product-quantity'>
                     <HStack maxW='320px'>
-                      <Button {...inc}>+</Button>
+                      <Button onClick={handleDecrement}>-</Button>
                       <Input {...input} value={valueQuantity} />
-                      <Button {...dec}>-</Button>
+                      <Button onClick={handleIncrement}>+</Button>
                     </HStack>
                   </div>
                   <div className='cart-product-totalprice'>

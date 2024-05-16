@@ -2,9 +2,9 @@
 const initState = {
   isLogin: JSON.parse(localStorage.getItem("isLogin")) || false,
 
-  renderCart: [
-    { id: 1, name: "", price: "", image: "", discount: "", quatity: "" },
-  ],
+  renderCart: [],
+
+  totalCart: [],
 }
 
 // Reducer function to handle state changes based on dispatched actions
@@ -25,7 +25,17 @@ function reducer(state = initState, action) {
       return { ...state, renderCart: [] }
 
     case "UPDATE_CART":
-      return { ...state, renderCart: action.payload }
+      return {
+        ...state,
+        renderCart: action.payload,
+        totalCart: action.payload,
+      }
+
+    case "TOTAL_CART":
+      return {
+        ...state,
+        totalCart: [...state.totalCart, action.payload],
+      }
 
     default:
       return state
