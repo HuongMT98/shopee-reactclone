@@ -1,5 +1,3 @@
-import { useEffect, useState } from "react"
-import { NavLink, useParams } from "react-router-dom"
 import "./ProductsPageDetail.scss"
 import "./ProductsPageDetail.responsive.scss"
 import formatNumber from "../../../untils/fomatNumber"
@@ -8,7 +6,8 @@ import CoundownFlashSale from "../../../components/Layout/FlashSale/CoundownFlas
 import Tippy from "@tippyjs/react"
 import VoucherRender from "../VoucherRender/VoucherRender"
 import HelpShipping from "./HelpShipping/HelpShipping"
-import GetLocation from "../../../untils/GetLocation"
+import { useEffect, useState } from "react"
+import { NavLink, useParams } from "react-router-dom"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faBolt, faQuestionCircle } from "@fortawesome/free-solid-svg-icons"
 import { faCartFlatbed } from "@fortawesome/free-solid-svg-icons/faCartFlatbed"
@@ -17,6 +16,7 @@ import { Button, HStack, Input } from "@chakra-ui/react"
 import { useNumberInput } from "@mui/base/unstable_useNumberInput/useNumberInput"
 import { useDispatch } from "react-redux"
 import { addToCart } from "../../../Redux/actions"
+import GetLocation from "../../../untils/GetLocation"
 
 function ProductsPageDetail() {
   const [product, setProduct] = useState({})
@@ -24,6 +24,7 @@ function ProductsPageDetail() {
   const [quantity, setQuantity] = useState(1)
   const [giaSauKhiGiam, setGiaSauKhiGiam] = useState(0)
   const dispatch = useDispatch()
+  const [cartItems, setCartItems] = useState([])
 
   // Setting của thư viện
   const { getInputProps, getIncrementButtonProps, getDecrementButtonProps } =
@@ -60,12 +61,21 @@ function ProductsPageDetail() {
   }, [productId])
 
   if (Object.keys(product).length === 0) {
-    return <div>Loading...</div>
+    return <div>Loading... product</div>
   }
 
   // Hàm thêm sản phẩm khi click vào nút trên UI
   const handleAddToCart = (e) => {
     e.preventDefault()
+    const newCartItem = {
+      id: product.id,
+      name: product.name,
+      price: giaSauKhiGiam,
+      image: product.image,
+      discount: product.discount,
+      quantity: quantity,
+    }
+    setCartItems([...cartItems, newCartItem])
     dispatch(
       addToCart({
         id: product.id,
@@ -73,16 +83,15 @@ function ProductsPageDetail() {
         price: giaSauKhiGiam,
         image: product.image,
         discount: product.discount,
-        quatity: quantity,
+        quantity: quantity,
       })
     )
     console.log(
-      "Add To Cart :" + quantity,
-      product.name,
-      "Price :" + giaSauKhiGiam
+      `Đã thêm vào giỏ hàng:  ${product.name} số lượng ${quantity} với giá ${
+        giaSauKhiGiam * quantity
+      }đ`
     )
   }
-
   const handleAddItem = (e) => {
     e.preventDefault()
     setQuantity(quantity + 1)
@@ -128,7 +137,7 @@ function ProductsPageDetail() {
                   đ{formatNumber(product.price)}
                 </h2>
                 <h2 className='products-page-detail-price-new'>
-                  đ {giaSauKhiGiam}
+                  đ {formatNumber(giaSauKhiGiam)}
                   <div className='price-new-discount'>
                     {product.discount > 0 ? (
                       <span className='discount'>{product.discount}% OFF</span>
@@ -186,7 +195,7 @@ function ProductsPageDetail() {
                         icon={faTruck}
                         className='shipping-icon'
                       />
-                      <p className='shipping-location-text'>Shipping to</p>
+                      <p className='shipping-location-text'>Shipping to: </p>
                       <GetLocation />
                     </div>
                   </div>

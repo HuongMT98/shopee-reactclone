@@ -9,3 +9,5 @@ export const removeToCart = (data) => ({
   type: "REMOVE_TO_CART",
   payload: data,
 })
+
+export const clearCart = () => ({ type: "CLEAR_CART" })

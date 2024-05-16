@@ -6,9 +6,9 @@
   cursor: pointer;
 
   .tippy-content {
-    min-height: 10rem;
     min-width: 25rem;
     position: relative;
+    padding: 0 0.5rem;
 
     .add-to-cartwrap {
       width: 100%;
@@ -23,6 +23,11 @@
   align-items: center;
   justify-content: space-between;
   height: 4rem;
+  height: 100%;
+  border-radius: 5px;
+  background-color: red;
+  color: white;
+  margin: 0 0.2rem 0.5rem 0;
 
   &:hover {
     background-color: #f1eaea85;

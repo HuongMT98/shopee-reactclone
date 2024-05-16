@@ -14,6 +14,7 @@ import FlashSalePageCountdown from "./FlashSalePageCountdown/FlashSalePageCountd
 import FooterBottom from "../../components/Layout/Footer/FooterBottom/FooterBottom"
 import FooterInfo from "../../components/Layout/Footer/FooterInfo/FooterInfo"
 import FooterPolicy from "../../components/Layout/Footer/FooterPolicy/FooterPolicy"
+import NavBottom from "../../components/Layout/Nav/NavBottom/NavBottom"
 
 function FlashSalePage() {
   const [data, setData] = useState([])
@@ -46,10 +47,10 @@ function FlashSalePage() {
           <div className='flashsalepage-countdown-wrap'>
             -----
             <img className='flashsalepage-img' src={imgFlashSale} alt='' />
+            <FlashSalePageCountdown />
             <h4 className='flashsalepage-title'>
               <FontAwesomeIcon icon={faClock} /> end in:
             </h4>
-            <FlashSalePageCountdown />
             -----
           </div>
         </div>

@@ -1,3 +1,37 @@
 .cart-container {
   margin-top: 8rem;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+
+  .cart-container-wrap {
+    width: var(--widthdefault);
+    display: flex;
+    flex-direction: column;
+
+    .cart-product-wrap {
+      height: 5rem;
+      display: flex;
+
+      .cart-product-item {
+        height: 5rem;
+        display: flex;
+        width: 100%;
+        align-items: center;
+
+        .cart-product-img {
+          height: 100%;
+
+          img {
+            height: 100%;
+          }
+        }
+      }
+    }
+
+    .btn-cart-clear {
+      width: 20%;
+      height: 3rem;
+    }
+  }
 }

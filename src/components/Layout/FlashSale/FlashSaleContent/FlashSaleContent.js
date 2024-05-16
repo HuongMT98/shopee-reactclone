@@ -13,15 +13,9 @@ function FlashSaleContent() {
   const [visible, setVisible] = useState(16)
 
   useEffect(() => {
-    async function fetchData() {
-      try {
-        const response = await ApiProduct()
-        setData(response.sort(() => Math.random() - 0.5))
-      } catch (error) {
-        console.error("Error fetching data:", error)
-      }
-    }
-    fetchData()
+    ApiProduct().then((data) => {
+      setData(data)
+    })
   }, [])
 
   //dùng data để render UI

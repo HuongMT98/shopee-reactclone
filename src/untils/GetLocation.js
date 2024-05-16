@@ -20,7 +20,7 @@ function GetLocation() {
     <div>
       {position.latitude && position.longitude ? (
         <p>
-          Latitude: {position.latitude}, Longitude: {position.longitude}
+          {position.latitude}, {position.longitude}
         </p>
       ) : (
         <p>Loading...</p>
