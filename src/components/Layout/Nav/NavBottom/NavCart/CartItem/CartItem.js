@@ -36,7 +36,7 @@ function CartItem() {
           </div>
           <div className='detail'>
             <div className='detail-wrap'>
-              {uniqueCartItems.map((item) => {
+              {uniqueCartItems.slice(0, 6).map((item) => {
                 return (
                   <Link key={item.id} to={`/product/${item.id}`}>
                     <div className='detail-item'>

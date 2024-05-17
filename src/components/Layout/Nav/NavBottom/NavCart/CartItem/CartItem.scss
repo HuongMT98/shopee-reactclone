@@ -34,9 +34,10 @@
   .detail {
     height: max-content;
     width: 100%;
+    overflow: scroll;
 
     .detail-wrap {
-      height: 100%;
+      height: calc(100% - 5rem);
       width: 100%;
 
       .detail-item {

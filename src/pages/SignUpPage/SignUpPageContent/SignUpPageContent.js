@@ -10,12 +10,18 @@ function SignUpPageContent() {
   const [isPhoneNumberValid, setIsPhoneNumberValid] = useState(true)
   const [isFormSubmitted, setIsFormSubmitted] = useState(false)
 
-  const handleClickLogin = () => {}
+  const handleClickLogin = () => {
+    window.location.href = "/"
+  }
 
   const handlePhoneNumberChange = (event) => {
     const inputValue = event.target.value
     setPhoneNumber(inputValue)
-    setIsPhoneNumberValid(inputValue.length > 0)
+    setIsPhoneNumberValid(
+      inputValue.length > 0 &&
+        inputValue.length <= 10 &&
+        /^[0-9]+$/.test(inputValue)
+    )
   }
 
   const handleSubmit = (event) => {
@@ -48,7 +54,9 @@ function SignUpPageContent() {
                       />
                       {isFormSubmitted && !isPhoneNumberValid && (
                         <div className='error-message invalid'>
-                          Please enter a valid phone number
+                          {phoneNumber.length > 10
+                            ? "Phone number cannot exceed 10 characters"
+                            : "Please enter a valid phone number"}
                         </div>
                       )}
                       <button type='submit' onClick={handleSubmit}>

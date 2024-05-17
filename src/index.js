@@ -21,11 +21,12 @@ import ScrollToTopBtn from "./untils/scrollToTopBtn"
 import ProductsPage from "./pages/ProductsPage/ProductsPage"
 import ProductsPageDetail from "./pages/ProductsPage/ProductsPageDetail/ProductsPageDetail"
 import NotFound from "./components/Layout/NotFound/NotFound"
+import store from "./Redux/store"
 import { Provider } from "react-redux"
 
 const root = ReactDOM.createRoot(document.getElementById("root"))
 root.render(
-  <Provider>
+  <Provider store={store}>
     <BrowserRouter>
       <Routes>
         <Route key='home' path='/' element={<App />} />

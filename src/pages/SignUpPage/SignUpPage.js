@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom"
-import LOGO from "../../components/Layout/Nav/NavBottom/NavLogo/LOGO"
+import LOGO from "./LOGO"
 import "./SignUpPage.scss"
 import SignUpPageContent from "./SignUpPageContent/SignUpPageContent"
 import FooterBottom from "../../components/Layout/Footer/FooterBottom/FooterBottom"

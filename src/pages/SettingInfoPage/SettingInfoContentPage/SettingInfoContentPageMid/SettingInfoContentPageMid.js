@@ -1,28 +1,37 @@
+import { Select } from "@chakra-ui/react"
+
 function SettingInfoContentPageMid({ user }) {
   return (
     <>
       {user.map((item) => (
         <div key={item.id} className='settingmidwrap'>
           <div className='settingtext'>
-            <p>{item.username}</p>
+            <p contentEditable>{item.username}</p>
           </div>
           <div>
             <input placeholder={item.name} />
           </div>
           <div>
-            <p>{item.email}</p>
+            <p contentEditable>{item.email}</p>
           </div>
           <div>
-            <p>{item.phone}</p>
+            <p contentEditable>{item.phone}</p>
           </div>
           <div>
-            <p>{item.gender}</p>
+            <p>
+              <Select placeholder={item.gender}>
+                <option value='option1'>Female</option>
+                <option value='option2'>Male</option>
+                <option value='option3'>Orther Gender</option>
+              </Select>
+            </p>
           </div>
           <div>
-            <p>{item.birthday}</p>
+            <p contentEditable>{item.birthday}</p>
           </div>
         </div>
       ))}
+      <button onClick={() => console.log("Save Edit")}>Save Edit</button>
     </>
   )
 }
