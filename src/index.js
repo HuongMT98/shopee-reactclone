@@ -22,11 +22,10 @@ import ProductsPage from "./pages/ProductsPage/ProductsPage"
 import ProductsPageDetail from "./pages/ProductsPage/ProductsPageDetail/ProductsPageDetail"
 import NotFound from "./components/Layout/NotFound/NotFound"
 import { Provider } from "react-redux"
-import store from "./Redux/store"
 
 const root = ReactDOM.createRoot(document.getElementById("root"))
 root.render(
-  <Provider store={store}>
+  <Provider>
     <BrowserRouter>
       <Routes>
         <Route key='home' path='/' element={<App />} />

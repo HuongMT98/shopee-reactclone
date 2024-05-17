@@ -1,7 +1,5 @@
 import { useEffect, useState } from "react"
-import { useDispatch, useSelector } from "react-redux"
 import { Link, NavLink } from "react-router-dom"
-import { login, logout } from "../../../Redux/actions"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import {
   faAngleDown,
@@ -20,9 +18,8 @@ import "./NavTopOnly.scss"
 import LOGO from "./NavLogoTopOnly/LOGO"
 
 function NavTopOnly() {
-  const dispatch = useDispatch()
-  const isLogin = useSelector((state) => state.isLogin)
   const [user, setUser] = useState([])
+  const [isLogin, setIsLogin] = useState(true)
 
   const languageChoice = [
     {
@@ -56,9 +53,7 @@ function NavTopOnly() {
   }, [])
 
   const handleClickLogin = () => {
-    dispatch(isLogin ? logout() : login())
-    // Save the login status to local storage
-    localStorage.setItem("isLogin", JSON.stringify(isLogin))
+    setIsLogin(!isLogin)
   }
 
   const handleClickSignUp = () => {

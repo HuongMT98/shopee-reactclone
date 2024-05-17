@@ -14,8 +14,6 @@ import { faCartFlatbed } from "@fortawesome/free-solid-svg-icons/faCartFlatbed"
 import { faTruck } from "@fortawesome/free-solid-svg-icons/faTruck"
 import { Button, HStack, Input } from "@chakra-ui/react"
 import { useNumberInput } from "@mui/base/unstable_useNumberInput/useNumberInput"
-import { useDispatch } from "react-redux"
-import { addToCart } from "../../../Redux/actions"
 import GetLocation from "../../../untils/GetLocation"
 
 function ProductsPageDetail() {
@@ -23,8 +21,6 @@ function ProductsPageDetail() {
   const { productId } = useParams()
   const [quantity, setQuantity] = useState(1)
   const [giaSauKhiGiam, setGiaSauKhiGiam] = useState(0)
-  const dispatch = useDispatch()
-  const [cartItems, setCartItems] = useState([])
 
   // Setting của thư viện
   const { getInputProps, getIncrementButtonProps, getDecrementButtonProps } =
@@ -65,33 +61,7 @@ function ProductsPageDetail() {
   }
 
   // Hàm thêm sản phẩm khi click vào nút trên UI
-  const handleAddToCart = (e) => {
-    e.preventDefault()
-    const newCartItem = {
-      id: product.id,
-      name: product.name,
-      price: giaSauKhiGiam,
-      image: product.image,
-      discount: product.discount,
-      quantity: quantity,
-    }
-    setCartItems([...cartItems, newCartItem])
-    dispatch(
-      addToCart({
-        id: product.id,
-        name: product.name,
-        price: giaSauKhiGiam,
-        image: product.image,
-        discount: product.discount,
-        quantity: quantity,
-      })
-    )
-    console.log(
-      `Đã thêm vào giỏ hàng:  ${product.name} số lượng ${quantity} với giá ${
-        giaSauKhiGiam * quantity
-      }đ`
-    )
-  }
+
   const handleAddItem = (e) => {
     e.preventDefault()
     setQuantity(quantity + 1)
@@ -221,11 +191,7 @@ function ProductsPageDetail() {
               </div>
             </div>
             <div className='products-page-detail-btn-wrap'>
-              <button
-                className='products-page-detail-btn btn-cart'
-                onClick={handleAddToCart}
-                type='button'
-              >
+              <button className='products-page-detail-btn btn-cart'>
                 Add to cart
               </button>
               <button className='products-page-detail-btn btn-buy'>

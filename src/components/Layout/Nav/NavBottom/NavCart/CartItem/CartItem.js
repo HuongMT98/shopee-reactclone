@@ -1,12 +1,18 @@
 import { Link } from "react-router-dom"
 import "../../NavCart/NavCart.scss"
 import "./CartItem.scss"
-import { useSelector } from "react-redux"
 import formatNumber from "../../../../../../untils/fomatNumber"
 import imgEmty from "../../../../../../Assets/emtycart.png"
+import { useEffect, useState } from "react"
+import ApiProduct from "../../../../../../Api/ApiProduct"
 
 function CartItem() {
-  const cartItem = useSelector((state) => state.renderCart)
+  const [cartItem, setCartItem] = useState([])
+  useEffect(() => {
+    ApiProduct().then((data) => {
+      setCartItem(data)
+    })
+  }, [])
 
   // Remove duplicates from cart items based on ID
   const uniqueCartItems = Array.from(
