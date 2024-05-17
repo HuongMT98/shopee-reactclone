@@ -18,10 +18,12 @@ import {
   faGlobe,
 } from "@fortawesome/free-solid-svg-icons"
 import ApiUser from "../../../Api/ApiUser"
+import { useSelector } from "react-redux"
 
 function Nav() {
   const [user, setUser] = useState([])
-  const [isLogin, setIsLogin] = useState(false)
+  // const [isLogin, setIsLogin] = useState(false)
+  const isLogin = useSelector((state) => state.login.isLogin)
 
   useEffect(() => {
     async function fetchData() {
@@ -56,9 +58,7 @@ function Nav() {
     </div>
   ))
 
-  const handleClickLogin = () => {
-    setIsLogin(!isLogin)
-  }
+  const handleClickLogin = () => {}
 
   const handleClickSignUp = () => {
     return console.log("Sign Up")
