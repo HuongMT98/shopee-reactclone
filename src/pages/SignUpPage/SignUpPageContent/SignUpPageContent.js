@@ -4,14 +4,20 @@ import img from "../../../Assets/shopeesignupbanner.png"
 import "./SignUpPageContent.scss"
 import { faFacebook, faGoogle } from "@fortawesome/free-brands-svg-icons"
 import { Link } from "react-router-dom"
+import { useSelector, useDispatch } from "react-redux"
+import { login } from "../../../Redux/loginSlice"
 
 function SignUpPageContent() {
+  const isLoginState = useSelector((state) => state.login.isLoggedIn)
+  const dispatch = useDispatch()
   const [phoneNumber, setPhoneNumber] = useState("")
   const [isPhoneNumberValid, setIsPhoneNumberValid] = useState(true)
   const [isFormSubmitted, setIsFormSubmitted] = useState(false)
 
-  const handleClickLogin = () => {
-    window.location.href = "/"
+  const handleClickLogin = (e) => {
+    e.preventDefault()
+    dispatch(login(true))
+    console.log(isLoginState)
   }
 
   const handlePhoneNumberChange = (event) => {

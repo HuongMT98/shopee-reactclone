@@ -18,12 +18,13 @@ import {
   faGlobe,
 } from "@fortawesome/free-solid-svg-icons"
 import ApiUser from "../../../Api/ApiUser"
-import { useSelector } from "react-redux"
+import { useDispatch, useSelector } from "react-redux"
+import { login } from "../../../Redux/loginSlice"
 
 function Nav() {
   const [user, setUser] = useState([])
-  // const [isLogin, setIsLogin] = useState(false)
-  const isLogin = useSelector((state) => state.login.isLogin)
+  const dispatch = useDispatch()
+  const isLoginState = useSelector((state) => state.login.isLoggedIn)
 
   useEffect(() => {
     async function fetchData() {
@@ -58,10 +59,14 @@ function Nav() {
     </div>
   ))
 
-  const handleClickLogin = () => {}
+  const handleClickLogin = (e) => {
+    e.preventDefault()
+    dispatch(login(!isLoginState))
+  }
 
-  const handleClickSignUp = () => {
-    return console.log("Sign Up")
+  const handleClickSignUp = (e) => {
+    e.preventDefault()
+    window.location.href = "/signup"
   }
 
   return (
@@ -80,8 +85,8 @@ function Nav() {
             </NavLink>
           </nav>
 
-          {/* isLogin === true render UI login */}
-          {isLogin && (
+          {/* isLoginState === true render UI login */}
+          {isLoginState && (
             <nav className='nav-info'>
               {/* Notifications */}
               <div className='notification-tippy'>
@@ -138,8 +143,8 @@ function Nav() {
             </nav>
           )}
 
-          {/* isLogin === false render UI log out */}
-          {!isLogin && (
+          {/* isLoginState === false render UI log out */}
+          {!isLoginState && (
             <nav className='nav-info'>
               {/* Notifications */}
               <div className='notification-tippy-logout'>
@@ -194,6 +199,7 @@ function Nav() {
         </nav>
       </nav>
       <NavBottom />
+      <confirmLogin />
     </div>
   )
 }

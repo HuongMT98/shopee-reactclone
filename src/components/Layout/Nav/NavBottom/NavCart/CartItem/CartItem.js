@@ -5,23 +5,32 @@ import formatNumber from "../../../../../../untils/fomatNumber"
 import imgEmty from "../../../../../../Assets/emtycart.png"
 import { useEffect, useState } from "react"
 import ApiProduct from "../../../../../../Api/ApiProduct"
+import { useSelector } from "react-redux"
 
 function CartItem() {
+  // Gọi Api để lấy dữ liệu
   const [cartItem, setCartItem] = useState([])
+  const [visible, setVisible] = useState(6)
+
   useEffect(() => {
     ApiProduct().then((data) => {
       setCartItem(data)
     })
   }, [])
 
-  // Remove duplicates from cart items based on ID
-  const uniqueCartItems = Array.from(
+  // Trạng thái đăng nhập của người dùng từ Redux
+  const isLoginState = useSelector((state) => state.login.isLoggedIn)
+
+  // Nếu trùng ID, sản phẩm sẽ gộp thành 1
+  const cartItemUnique = Array.from(
     new Set(cartItem.map((item) => item.id))
   ).map((id) => cartItem.find((item) => item.id === id))
 
+  console.log(cartItemUnique)
+
   return (
     <div className='cart-item-wrap'>
-      {uniqueCartItems.length === 0 && (
+      {isLoginState === false && (
         <div className='emty-cart'>
           <div className='emty-cart-wrap'>
             <img src={imgEmty} alt='' className='emty-cart-img' />
@@ -29,14 +38,14 @@ function CartItem() {
           </div>
         </div>
       )}
-      {uniqueCartItems.length > 0 && (
+      {isLoginState === true && cartItemUnique.length > 0 && (
         <>
           <div className='title-cart'>
             <p>Recently Added Products</p>
           </div>
           <div className='detail'>
             <div className='detail-wrap'>
-              {uniqueCartItems.slice(0, 6).map((item) => {
+              {cartItemUnique.slice(0, visible).map((item) => {
                 return (
                   <Link key={item.id} to={`/product/${item.id}`}>
                     <div className='detail-item'>
@@ -53,6 +62,9 @@ function CartItem() {
                   </Link>
                 )
               })}
+              {cartItemUnique.length > visible && (
+                <p>See all: {cartItemUnique.length} products in your cart</p>
+              )}
               <div className='add-to-cart'>
                 <Link to={"/cart"}>
                   <button className='btn-cart'>view my shopping cart</button>
