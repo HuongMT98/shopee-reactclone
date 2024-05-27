@@ -6,6 +6,8 @@ import CoundownFlashSale from "../../../components/Layout/FlashSale/CoundownFlas
 import Tippy from "@tippyjs/react"
 import VoucherRender from "../VoucherRender/VoucherRender"
 import HelpShipping from "./HelpShipping/HelpShipping"
+import GetLocation from "../../../untils/GetLocation"
+import { useSelector } from "react-redux"
 import { useEffect, useState } from "react"
 import { NavLink, useParams } from "react-router-dom"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
@@ -14,13 +16,38 @@ import { faCartFlatbed } from "@fortawesome/free-solid-svg-icons/faCartFlatbed"
 import { faTruck } from "@fortawesome/free-solid-svg-icons/faTruck"
 import { Button, HStack, Input } from "@chakra-ui/react"
 import { useNumberInput } from "@mui/base/unstable_useNumberInput/useNumberInput"
-import GetLocation from "../../../untils/GetLocation"
+import { useDispatch } from "react-redux"
+import { addToCart } from "../../../Redux/cartSlice"
 
 function ProductsPageDetail() {
   const [product, setProduct] = useState({})
   const { productId } = useParams()
   const [quantity, setQuantity] = useState(1)
   const [giaSauKhiGiam, setGiaSauKhiGiam] = useState(0)
+  const login = useSelector((state) => state.login)
+  const dispatch = useDispatch()
+
+  const themVaoGioHang = () => {
+    // Kiểm tra xem đã đăng nhập hay chưa
+    if (login.isLoggedIn) {
+      const { name, image } = product
+      const giaTien = Math.round(
+        product.price * (1 - product.discount / 100) * quantity
+      )
+      dispatch(
+        addToCart({
+          name,
+          image,
+          giaTien,
+          quantity,
+        })
+      )
+      // Sản phẩm sau khi thêm vào state redux sẽ được render ở pages/Cart/Cart.js
+    } else {
+      alert("Please login or signup")
+      window.location.href = "/signup"
+    }
+  }
 
   // Setting của thư viện
   const { getInputProps, getIncrementButtonProps, getDecrementButtonProps } =
@@ -61,7 +88,6 @@ function ProductsPageDetail() {
   }
 
   // Hàm thêm sản phẩm khi click vào nút trên UI
-
   const handleAddItem = (e) => {
     e.preventDefault()
     setQuantity(quantity + 1)
@@ -69,6 +95,9 @@ function ProductsPageDetail() {
   const handleDecreaseItem = (e) => {
     e.preventDefault()
     setQuantity(quantity - 1)
+    if (quantity <= 1) {
+      setQuantity(1)
+    }
   }
 
   // Render ra giao diện
@@ -191,7 +220,10 @@ function ProductsPageDetail() {
               </div>
             </div>
             <div className='products-page-detail-btn-wrap'>
-              <button className='products-page-detail-btn btn-cart'>
+              <button
+                className='products-page-detail-btn btn-cart'
+                onClick={themVaoGioHang}
+              >
                 Add to cart
               </button>
               <button className='products-page-detail-btn btn-buy'>

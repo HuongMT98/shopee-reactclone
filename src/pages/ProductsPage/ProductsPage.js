@@ -5,7 +5,6 @@ import ScrollToTop from "../../untils/ScrollToTop"
 import FooterInfo from "../../components/Layout/Footer/FooterInfo/FooterInfo"
 import FooterPolicy from "../../components/Layout/Footer/FooterPolicy/FooterPolicy"
 import FooterBottom from "../../components/Layout/Footer/FooterBottom/FooterBottom"
-import NavTopOnly from "../../components/Layout/NavTopOnly/NavTopOnly"
 
 function ProductsPage() {
   return (
@@ -14,7 +13,7 @@ function ProductsPage() {
       <ScrollToTop />
       <div className='products'>
         <div className='products-container'>
-          <Outlet />
+          <Outlet /> {/* <ProductsPageDetail />*/}
           <FooterBottom />
           <FooterInfo />
           <FooterPolicy />

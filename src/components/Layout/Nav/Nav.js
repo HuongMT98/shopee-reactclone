@@ -132,7 +132,7 @@ function Nav() {
                 interactive={true}
               >
                 <NavLink className='user'>
-                  {user.slice(0, 1).map((item) => (
+                  {user.map((item) => (
                     <div className='user-wrap' key={item.id}>
                       <img src={item.image} alt='' className='user-img' />
                       <p>{item.name}</p>
@@ -199,7 +199,6 @@ function Nav() {
         </nav>
       </nav>
       <NavBottom />
-      <confirmLogin />
     </div>
   )
 }

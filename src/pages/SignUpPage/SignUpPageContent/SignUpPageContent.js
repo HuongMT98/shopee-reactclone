@@ -1,23 +1,21 @@
+import "./SignUpPageContent.scss"
+import img from "../../../Assets/shopeesignupbanner.png"
 import { useState } from "react"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
-import img from "../../../Assets/shopeesignupbanner.png"
-import "./SignUpPageContent.scss"
 import { faFacebook, faGoogle } from "@fortawesome/free-brands-svg-icons"
 import { Link } from "react-router-dom"
-import { useSelector, useDispatch } from "react-redux"
-import { login } from "../../../Redux/loginSlice"
+import { useDispatch, useSelector } from "react-redux"
 
 function SignUpPageContent() {
-  const isLoginState = useSelector((state) => state.login.isLoggedIn)
   const dispatch = useDispatch()
+  const isLogIn = useSelector((state) => state.login.isLogin)
   const [phoneNumber, setPhoneNumber] = useState("")
   const [isPhoneNumberValid, setIsPhoneNumberValid] = useState(true)
   const [isFormSubmitted, setIsFormSubmitted] = useState(false)
 
   const handleClickLogin = (e) => {
     e.preventDefault()
-    dispatch(login(true))
-    console.log(isLoginState)
+    dispatch()
   }
 
   const handlePhoneNumberChange = (event) => {
@@ -34,7 +32,6 @@ function SignUpPageContent() {
     event.preventDefault()
     setIsFormSubmitted(true)
   }
-
   return (
     <>
       <div className='signuppage-contentcontainer'>
