@@ -23,5 +23,37 @@
         color: white;
       }
     }
+
+    .nav-cart {
+      display: flex;
+      position: relative;
+      justify-content: center;
+      font-size: 2rem;
+      color: white;
+      align-items: center;
+      cursor: pointer;
+
+      .tippy-box {
+        .tippy-content {
+          width: 400px;
+        }
+      }
+
+      .cart-lenght {
+        position: absolute;
+        color: red;
+        background: white;
+        width: 25px;
+        height: 20px;
+        top: -5px;
+        right: -15px;
+        font-size: 15px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 10px;
+        border: 1px solid #b69292;
+      }
+    }
   }
 }

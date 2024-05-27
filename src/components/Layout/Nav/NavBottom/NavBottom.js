@@ -4,8 +4,11 @@ import NavSearch from "./NavSearch/NavSearch"
 import NavCart from "./NavCart/NavCart"
 import "./NavBottom.scss"
 import NavHotSearch from "./NavSearch/NavHotSearch/NavHotSearch"
+import { useSelector } from "react-redux"
 
 function NavBottom() {
+  const numCartItems = useSelector((state) => state.cart.renderCart)
+  console.log(numCartItems.length)
   return (
     <nav className='nav-bottom'>
       <nav className='nav-bottom-item'>
@@ -18,6 +21,9 @@ function NavBottom() {
         </nav>
         <nav className='nav-cart'>
           <NavCart />
+          <div className='cart-lenght'>
+            <p>{numCartItems.length}</p>
+          </div>
         </nav>
       </nav>
     </nav>

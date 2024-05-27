@@ -30,16 +30,19 @@ function ProductsPageDetail() {
   const themVaoGioHang = () => {
     // Kiểm tra xem đã đăng nhập hay chưa
     if (login.isLoggedIn) {
-      const { name, image } = product
+      const { name, image, price, id, numItems } = product
       const giaTien = Math.round(
         product.price * (1 - product.discount / 100) * quantity
       )
       dispatch(
         addToCart({
+          id,
           name,
           image,
+          price,
           giaTien,
           quantity,
+          numItems,
         })
       )
       // Sản phẩm sau khi thêm vào state redux sẽ được render ở pages/Cart/Cart.js

@@ -1,3 +1,4 @@
+import "./NavTopOnly.scss"
 import { useEffect, useState } from "react"
 import { Link, NavLink } from "react-router-dom"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
@@ -6,15 +7,15 @@ import {
   faBell,
   faCircleQuestion,
   faGlobe,
+  faSearch,
 } from "@fortawesome/free-solid-svg-icons"
+import { faFacebook, faInstagram } from "@fortawesome/free-brands-svg-icons"
 import Tippy from "@tippyjs/react"
 import NavNotificationLogout from "../Nav/NavNotifications/NavNotificationLogout/NavNotificationLogout"
 import NavUser from "../Nav/NavUser/NavUser"
 import NavNotifications from "../Nav/NavNotifications/NavNotifications"
-import { faFacebook, faInstagram } from "@fortawesome/free-brands-svg-icons"
 import DownloadApp from "../Nav/DownloadApp/DownloadApp"
 import ApiUser from "../../../Api/ApiUser"
-import "./NavTopOnly.scss"
 import LOGO from "./NavLogoTopOnly/LOGO"
 
 function NavTopOnly() {
@@ -60,7 +61,7 @@ function NavTopOnly() {
     return console.log("Sign Up")
   }
   return (
-    <div className='nav-wrap'>
+    <div className='nav-wrap-toponly'>
       <nav className='nav'>
         <nav className='nav-item'>
           <nav className='nav-contact'>
@@ -192,15 +193,27 @@ function NavTopOnly() {
         <div className='nav-logo-wrap'>
           <div className='nav-logo-container'>
             <div className='logo'>
-              <NavLink to='/'>
-                <LOGO />
-                <div className='logo-text'>
-                  <p>Shopee</p>
-                </div>
-              </NavLink>
+              <div className='logo-wrap'>
+                <NavLink to='/'>
+                  <LOGO />
+                  <div className='logo-text'>
+                    <p>Shopee</p>
+                  </div>
+                </NavLink>
+              </div>
             </div>
             <div className='search'>
-              <div></div>
+              <div className='search-bar'>
+                <input
+                  placeholder='Search for products, brands and shops'
+                  className='search-input'
+                />
+              </div>
+              <div className='search-btn'>
+                <button type='button' className='btn'>
+                  <FontAwesomeIcon icon={faSearch} />
+                </button>
+              </div>
             </div>
           </div>
         </div>
