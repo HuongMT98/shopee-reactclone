@@ -10,11 +10,8 @@ function CartItem() {
   const dispatch = useDispatch()
   // Trạng thái đăng nhập của người dùng từ Redux
   const isLoginState = useSelector((state) => state.login.isLoggedIn)
-  console.log(isLoginState)
-
   // Lấy danh sách sản phẩm từ Redux
   const cartItems = useSelector((state) => state.cart.renderCart)
-  console.log(cartItems)
 
   const handleLogin = (e) => {
     e.preventDefault()
@@ -31,7 +28,7 @@ function CartItem() {
 
   // Nếu trùng ID, sản phẩm sẽ gộp thành 1
   let cartItemUnique = []
-  if (cartItems) {
+  if (Array.isArray(cartItems)) {
     cartItemUnique = Array.from(new Set(cartItems.map((item) => item.id))).map(
       (id) => cartItems.find((item) => item.id === id)
     )

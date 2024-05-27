@@ -20,11 +20,24 @@ import {
 import ApiUser from "../../../Api/ApiUser"
 import { useDispatch, useSelector } from "react-redux"
 import { login } from "../../../Redux/loginSlice"
+import { useNavigate } from "react-router-dom"
 
 function Nav() {
   const [user, setUser] = useState([])
   const dispatch = useDispatch()
   const isLoginState = useSelector((state) => state.login.isLoggedIn)
+  const navigate = useNavigate()
+
+  const languageChoice = [
+    {
+      id: 1,
+      name: "English",
+    },
+    {
+      id: 2,
+      name: "Tiếng Việt",
+    },
+  ]
 
   useEffect(() => {
     async function fetchData() {
@@ -40,17 +53,6 @@ function Nav() {
 
   //dùng data để render UI
 
-  const languageChoice = [
-    {
-      id: 1,
-      name: "English",
-    },
-    {
-      id: 2,
-      name: "Tiếng Việt",
-    },
-  ]
-
   const language = languageChoice.map((item) => (
     <div key={item.id}>
       <NavLink to='/language' className={"language-text"}>
@@ -64,9 +66,17 @@ function Nav() {
     dispatch(login(!isLoginState))
   }
 
+  const handleClickLogout = (e) => {
+    e.preventDefault()
+    dispatch(login(!isLoginState))
+    if (!isLoginState) {
+      navigate("/")
+    }
+  }
+
   const handleClickSignUp = (e) => {
     e.preventDefault()
-    window.location.href = "/signup"
+    navigate("/signup")
   }
 
   return (
@@ -126,7 +136,7 @@ function Nav() {
 
               {/* Nav User  */}
               <Tippy
-                content={<NavUser handleClickLogin={handleClickLogin} />}
+                content={<NavUser handleClickLogout={handleClickLogout} />}
                 delay={[0, 500]}
                 hideOnClick={true}
                 interactive={true}

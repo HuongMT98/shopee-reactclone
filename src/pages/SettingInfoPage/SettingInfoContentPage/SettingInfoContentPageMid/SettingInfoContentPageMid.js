@@ -6,28 +6,26 @@ function SettingInfoContentPageMid({ user }) {
       {user.map((item) => (
         <div key={item.id} className='settingmidwrap'>
           <div className='settingtext'>
-            <p contentEditable>{item.username}</p>
+            <div contentEditable>{item.username}</div>
           </div>
           <div>
             <input placeholder={item.name} />
           </div>
           <div>
-            <p contentEditable>{item.email}</p>
+            <div contentEditable>{item.email}</div>
           </div>
           <div>
-            <p contentEditable>{item.phone}</p>
+            <div contentEditable>{item.phone}</div>
           </div>
           <div>
-            <p>
-              <Select placeholder={item.gender}>
-                <option value='option1'>Female</option>
-                <option value='option2'>Male</option>
-                <option value='option3'>Orther Gender</option>
-              </Select>
-            </p>
+            <Select placeholder={item.gender}>
+              <option value='option1'>Female</option>
+              <option value='option2'>Male</option>
+              <option value='option3'>Orther Gender</option>
+            </Select>
           </div>
           <div>
-            <p contentEditable>{item.birthday}</p>
+            <div contentEditable>{item.birthday}</div>
           </div>
         </div>
       ))}

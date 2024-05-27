@@ -1,8 +1,8 @@
 import img from "../../../../../Assets/Notification/NotificationLogOut.png"
 import "./NavNotificationLogout.scss"
 import { Link } from "react-router-dom"
-function NavNotificationLogout() {
-  const handleClickLogin = () => {}
+function NavNotificationLogout({ props }) {
+  const handleClickLogin = props
 
   const handleClickSignUp = () => {
     return console.log("Sign Up")

@@ -2,7 +2,7 @@ import { NavLink } from "react-router-dom"
 import "./NavUser.scss"
 
 function NavUser({ props }) {
-  const handleClickLogin = { props }
+  const handleClickLogout = { props }
   return (
     <nav className='nav-user'>
       <ul>
@@ -13,7 +13,7 @@ function NavUser({ props }) {
           <NavLink to='/purchase'>my purchase</NavLink>
         </li>
         <li>
-          <NavLink onClick={handleClickLogin}>log out</NavLink>
+          <NavLink onClick={handleClickLogout}>log out</NavLink>
         </li>
       </ul>
     </nav>
