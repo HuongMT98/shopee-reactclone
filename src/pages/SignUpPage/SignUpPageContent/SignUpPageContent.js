@@ -3,8 +3,8 @@ import img from "../../../Assets/shopeesignupbanner.png"
 import { useState } from "react"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faFacebook, faGoogle } from "@fortawesome/free-brands-svg-icons"
-import { Link } from "react-router-dom"
-import { useDispatch, useSelector } from "react-redux"
+import { Link, useNavigate } from "react-router-dom"
+import { useDispatch } from "react-redux"
 import { login } from "../../../Redux/loginSlice"
 
 function SignUpPageContent() {
@@ -13,6 +13,7 @@ function SignUpPageContent() {
   const [phoneNumber, setPhoneNumber] = useState("")
   const [isPhoneNumberValid, setIsPhoneNumberValid] = useState(true)
   const [isFormSubmitted, setIsFormSubmitted] = useState(false)
+  const navigate = useNavigate()
 
   const handleClickLogin = (e) => {
     dispatch(login())
@@ -22,15 +23,20 @@ function SignUpPageContent() {
     const inputValue = event.target.value
     setPhoneNumber(inputValue)
     setIsPhoneNumberValid(
-      inputValue.length > 0 &&
+      inputValue.length >= 0 &&
         inputValue.length <= 10 &&
         /^[0-9]+$/.test(inputValue)
     )
   }
 
-  const handleSubmit = (event) => {
-    event.preventDefault()
+  const handleSubmit = (e) => {
+    e.preventDefault()
     setIsFormSubmitted(true)
+    if (isPhoneNumberValid) {
+      setIsFormSubmitted(false)
+      handleClickLogin()
+      navigate("/")
+    }
   }
   return (
     <>

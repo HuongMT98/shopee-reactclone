@@ -9,7 +9,7 @@ import HelpShipping from "./HelpShipping/HelpShipping"
 import GetLocation from "../../../untils/GetLocation"
 import { useSelector } from "react-redux"
 import { useEffect, useState } from "react"
-import { NavLink, useParams } from "react-router-dom"
+import { NavLink, useParams, useNavigate } from "react-router-dom"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faBolt, faQuestionCircle } from "@fortawesome/free-solid-svg-icons"
 import { faCartFlatbed } from "@fortawesome/free-solid-svg-icons/faCartFlatbed"
@@ -26,11 +26,12 @@ function ProductsPageDetail() {
   const [giaSauKhiGiam, setGiaSauKhiGiam] = useState(0)
   const login = useSelector((state) => state.login)
   const dispatch = useDispatch()
+  const navigate = useNavigate()
 
   const themVaoGioHang = () => {
     // Kiểm tra xem đã đăng nhập hay chưa
     if (login.isLoggedIn) {
-      const { name, image, price, id, numItems } = product
+      const { name, image, price, id, numItems, priceNew } = product
       const giaTien = Math.round(
         product.price * (1 - product.discount / 100) * quantity
       )
@@ -43,12 +44,15 @@ function ProductsPageDetail() {
           giaTien,
           quantity,
           numItems,
+          priceNew,
         })
       )
+
       // Sản phẩm sau khi thêm vào state redux sẽ được render ở pages/Cart/Cart.js
     } else {
-      alert("Please login or signup")
-      window.location.href = "/signup"
+      if (window.confirm("Bạn chưa đăng nhập. Đăng nhập ngay?")) {
+        navigate("/signup")
+      }
     }
   }
 

@@ -9,7 +9,31 @@ export const cartSlice = createSlice({
   initialState,
   reducers: {
     renderCart: (state, action) => {
-      state.renderCart = action.payload
+      const newItems = action.payload
+      const existingItems = state.renderCart
+
+      // Combine items with the same ID and update the quantity
+      const combinedItems = existingItems.map((existingItem) => {
+        const newItem = newItems.find((item) => item.id === existingItem.id)
+        if (newItem) {
+          return {
+            ...existingItem,
+            quantity: existingItem.quantity + newItem.quantity,
+          }
+        }
+        return existingItem
+      })
+
+      // Add new items that are not already in the cart
+      const itemsToAdd = newItems.filter((newItem) => {
+        return !existingItems.some(
+          (existingItem) => existingItem.id === newItem.id
+        )
+      })
+      const updatedItems = [...combinedItems, ...itemsToAdd]
+
+      // Update the state with the combined and updated items
+      state.renderCart = updatedItems
     },
 
     addToCart: (state, action) => {
