@@ -1,16 +1,24 @@
+import { useDispatch } from "react-redux"
 import img from "../../../../../Assets/Notification/NotificationLogOut.png"
 import "./NavNotificationLogout.scss"
 import { Link, useNavigate } from "react-router-dom"
+import { login } from "../../../../../Redux/loginSlice"
 
 function NavNotificationLogout({ props }) {
   const navigate = useNavigate()
-  const handleClickLogin = props
+  const dispatch = useDispatch()
 
-  const handleClickSignUp = () => {
-    if (window.confirm("Could you want to sign up?")) {
+  const handleClickLogin = (e) => {
+    e.preventDefault()
+    dispatch(login())
+  }
+
+  const handleClickSignUp = (e) => {
+    e.preventDefault()
+    if (window.confirm("Are you sure you want to sign up?")) {
       navigate("/signup")
     } else {
-      return console.log("Not login yet")
+      console.log("No Sign up")
     }
   }
 

@@ -5,7 +5,7 @@ import formatNumber from "../../../../untils/fomatNumber"
 
 function BodyWrapItemContent() {
   const [data, setData] = useState([])
-  const [visible, setVisible] = useState(24)
+  const [visible, setVisible] = useState(48)
 
   useEffect(() => {
     async function fetchData() {

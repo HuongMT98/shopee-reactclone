@@ -39,13 +39,12 @@ function Nav() {
     },
   ]
 
+  //dùng data để render UI
   useEffect(() => {
     ApiUser().then((data) => {
       setUser(data)
     })
   }, [])
-
-  //dùng data để render UI
 
   const language = languageChoice.map((item) => (
     <div key={item.id}>
@@ -153,9 +152,7 @@ function Nav() {
               {/* Notifications */}
               <div className='notification-tippy-logout'>
                 <Tippy
-                  content={
-                    <NotificationLogout handleClickLogin={handleClickLogin} />
-                  }
+                  content={<NotificationLogout />}
                   interactive={true}
                   arrow={true}
                   delay={[0, 500]}
