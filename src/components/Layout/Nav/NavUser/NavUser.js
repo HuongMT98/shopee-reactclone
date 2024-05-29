@@ -2,7 +2,9 @@ import { NavLink } from "react-router-dom"
 import "./NavUser.scss"
 
 function NavUser({ props }) {
+  // props được truyền từ Nav.js
   const handleClickLogout = { props }
+
   return (
     <nav className='nav-user'>
       <ul>

@@ -197,7 +197,7 @@ function NavTopOnly() {
                 <NavLink to='/'>
                   <LOGO />
                   <div className='logo-text'>
-                    <p>Shopee</p>
+                    <p>Shopee Cart</p>
                   </div>
                 </NavLink>
               </div>

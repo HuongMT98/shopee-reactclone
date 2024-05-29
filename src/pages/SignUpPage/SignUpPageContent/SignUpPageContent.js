@@ -6,25 +6,16 @@ import { faFacebook, faGoogle } from "@fortawesome/free-brands-svg-icons"
 import { Link } from "react-router-dom"
 import { useDispatch, useSelector } from "react-redux"
 import { login } from "../../../Redux/loginSlice"
-import { useNavigate } from "react-router-dom"
 
 function SignUpPageContent() {
   const dispatch = useDispatch()
-  const isLoginState = useSelector((state) => state.login.isLoggedIn)
+
   const [phoneNumber, setPhoneNumber] = useState("")
   const [isPhoneNumberValid, setIsPhoneNumberValid] = useState(true)
   const [isFormSubmitted, setIsFormSubmitted] = useState(false)
-  const navigate = useNavigate()
 
   const handleClickLogin = (e) => {
-    dispatch(login(isLoginState))
-    console.log(isLoginState)
-    if (isLoginState) {
-      e.preventDefault()
-      navigate("/")
-    } else {
-      console.log("Not login yet")
-    }
+    dispatch(login())
   }
 
   const handlePhoneNumberChange = (event) => {

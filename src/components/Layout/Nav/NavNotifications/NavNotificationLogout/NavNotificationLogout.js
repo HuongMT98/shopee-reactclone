@@ -1,15 +1,21 @@
 import img from "../../../../../Assets/Notification/NotificationLogOut.png"
 import "./NavNotificationLogout.scss"
-import { Link } from "react-router-dom"
+import { Link, useNavigate } from "react-router-dom"
+
 function NavNotificationLogout({ props }) {
+  const navigate = useNavigate()
   const handleClickLogin = props
 
   const handleClickSignUp = () => {
-    return console.log("Sign Up")
+    if (window.confirm("Could you want to sign up?")) {
+      navigate("/signup")
+    } else {
+      return console.log("Not login yet")
+    }
   }
 
   return (
-    <>
+    <div>
       <div className='notification-logout-container'>
         <div className='notification-logout'>
           <div className='notification-logout-content'>
@@ -26,7 +32,7 @@ function NavNotificationLogout({ props }) {
           </div>
         </div>
       </div>
-    </>
+    </div>
   )
 }
 

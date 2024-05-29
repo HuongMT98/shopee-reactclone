@@ -8,26 +8,27 @@ import { Button, HStack, Input, useNumberInput } from "@chakra-ui/react"
 import NavTopOnly from "../../components/Layout/NavTopOnly/NavTopOnly"
 import formatNumber from "../../untils/fomatNumber"
 import imgEmpty from "../../Assets/emtycart.png"
-import { removeFromCart, clearCart, renderCart } from "../../Redux/cartSlice"
+import {
+  removeFromCart,
+  clearCart,
+  updateQuantity,
+} from "../../Redux/cartSlice"
+import { LiaShippingFastSolid } from "react-icons/lia"
 
 function Cart() {
   const cartRender = useSelector((state) => state.cart.renderCart)
   const navigate = useNavigate()
   const dispatch = useDispatch()
 
-  //Setup thư viện input number
-  const { getInputProps, getIncrementButtonProps, getDecrementButtonProps } =
-    useNumberInput({
-      step: 1,
-      defaultValue: cartRender.quantity,
-      min: 1,
-      max: 99,
-      precision: 0,
-    })
+  const handleIncre = (e) => {
+    e.preventDefault()
+    dispatch()
+  }
 
-  const inc = getIncrementButtonProps()
-  const dec = getDecrementButtonProps()
-  const input = getInputProps()
+  const handleDecre = (e) => {
+    e.preventDefault()
+    dispatch(updateQuantity())
+  }
 
   const handleHome = (e) => {
     e.preventDefault()
@@ -36,12 +37,14 @@ function Cart() {
 
   const handleDeleteItem = (e) => {
     e.preventDefault()
-    dispatch(removeFromCart(renderCart.id))
+    dispatch(removeFromCart())
   }
 
   const handleClearCart = (e) => {
     e.preventDefault()
-    dispatch(clearCart())
+    if (window.confirm("Are you sure you want to clear the cart?")) {
+      dispatch(clearCart())
+    }
   }
 
   return (
@@ -49,6 +52,8 @@ function Cart() {
       <NavTopOnly />
       <div className='cart-container'>
         <div className='cart-container-wrap'>
+          {/* ⁜⁜⁜⁜⁜⁜⁜⁜⁜⁜⁜⁜⁜⁜⁜⁜⁜⁜⁜⁜⁜⁜⁜⁜⁜⁜⁜⁜⁜⁜⁜⁜⁜⁜⁜⁜⁜⁜ */}
+          {/* Khi giỏ hàng trống, render ra Ui */}
           {cartRender.length <= 0 && (
             <div className='cart-item-empty'>
               <div className='cart-item-empty-img'>
@@ -62,44 +67,64 @@ function Cart() {
               </div>
             </div>
           )}
+
+          {/* ⁜⁜⁜⁜⁜⁜⁜⁜⁜⁜⁜⁜⁜⁜⁜⁜⁜⁜⁜⁜⁜⁜⁜⁜⁜⁜⁜⁜⁜⁜⁜⁜⁜⁜⁜⁜⁜⁜ */}
+          {/* Khi giỏ hàng có sản phẩm, render ra Ui */}
           {cartRender.length >= 1 &&
             cartRender.map((item) => {
               return (
-                <div key={item.id} className='cart-item'>
-                  <div className='cart-item-wrap'>
-                    <div className='cart-item-img'>
-                      <img src={item.image} alt='' />
+                <>
+                  <div className='cart-head-freeship'>
+                    <LiaShippingFastSolid />
+                    <p>
+                      Select free shipping voucher below to enjoy shipping
+                      discount
+                    </p>
+                  </div>
+                  <div key={item.id} className='cart-item'>
+                    <div className='cart-item-wrap'>
+                      <div className='cart-item-img'>
+                        <img src={item.image} alt='' />
+                      </div>
+                      <div className='cart-item-name-item'>
+                        <p className='cart-item-name'>{item.name}</p>
+                      </div>
                     </div>
-                    <div className='cart-item-name-item'>
-                      <p className='cart-item-name'>{item.name}</p>
+                    <div className='cart-item-content'>
+                      <div>
+                        <p className='cart-item-price'>
+                          đ{formatNumber(item.price)}
+                        </p>
+                      </div>
+                      <div>
+                        <HStack maxW='320px'>
+                          {/* <Button {...dec}>-</Button> */}
+                          <Button onClick={handleDecre}>-</Button>
+                          <Input defaultValue={item.quantity} />
+                          {/* <Button {...inc}>+</Button> */}
+                          <Button onClick={handleIncre}>+</Button>
+                        </HStack>
+                      </div>
+                      <div>
+                        <p className='cart-item-total'>
+                          đ{formatNumber(item.price * item.quantity)}
+                        </p>
+                      </div>
+                      <div>
+                        <button onClick={handleDeleteItem}>Delete</button>
+                      </div>
                     </div>
                   </div>
-                  <div className='cart-item-content'>
-                    <div>
-                      <p className='cart-item-price'>
-                        đ{formatNumber(item.price)}
-                      </p>
-                    </div>
-                    <div>
-                      <HStack maxW='320px'>
-                        <Button {...dec}>-</Button>
-                        <Input {...input} />
-                        <Button {...inc}>+</Button>
-                      </HStack>
-                    </div>
-                    <div>
-                      <p className='cart-item-total'>
-                        đ{formatNumber(item.price * item.quantity)}
-                      </p>
-                    </div>
-                    <div>
-                      <button onClick={handleDeleteItem}>Delete</button>
-                    </div>
-                  </div>
-                </div>
+                </>
               )
             })}
-          <button onClick={handleClearCart}>Clear</button>
+          {/* ⁜⁜⁜⁜⁜⁜⁜⁜⁜⁜⁜⁜⁜⁜⁜⁜⁜⁜⁜⁜⁜⁜⁜⁜⁜⁜⁜⁜⁜⁜⁜⁜⁜⁜⁜⁜⁜⁜ */}
+          {/* Khi giỏ hàng có sản phẩm sẽ render ra UI nút clear cart */}
+          {cartRender.length > 0 && (
+            <button onClick={handleClearCart} className='button-clear'>
+              Clear All Cart
+            </button>
+          )}
         </div>
       </div>
       <FooterBottom />

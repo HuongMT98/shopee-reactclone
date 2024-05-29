@@ -10,7 +10,6 @@ export const cartSlice = createSlice({
   reducers: {
     renderCart: (state, action) => {
       state.renderCart = action.payload
-      console.log(state.renderCart)
     },
 
     addToCart: (state, action) => {
@@ -27,7 +26,7 @@ export const cartSlice = createSlice({
       state.renderCart = []
     },
 
-    updateCart: (state, action) => {
+    updateQuantity: (state, action) => {
       state.renderCart = state.renderCart.map((item) => {
         if (item.id === action.payload.id) {
           item.quantity = action.payload.quantity
@@ -38,7 +37,12 @@ export const cartSlice = createSlice({
   },
 })
 
-export const { addToCart, renderCart, removeFromCart, clearCart } =
-  cartSlice.actions
+export const {
+  addToCart,
+  renderCart,
+  removeFromCart,
+  clearCart,
+  updateQuantity,
+} = cartSlice.actions
 
 export default cartSlice.reducer

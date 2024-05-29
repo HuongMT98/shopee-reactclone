@@ -19,7 +19,7 @@ import {
 } from "@fortawesome/free-solid-svg-icons"
 import ApiUser from "../../../Api/ApiUser"
 import { useDispatch, useSelector } from "react-redux"
-import { login } from "../../../Redux/loginSlice"
+import { login, logout } from "../../../Redux/loginSlice"
 import { useNavigate } from "react-router-dom"
 
 function Nav() {
@@ -40,15 +40,9 @@ function Nav() {
   ]
 
   useEffect(() => {
-    async function fetchData() {
-      try {
-        const response = await ApiUser()
-        setUser(response.sort(() => Math.random() - 0.5))
-      } catch (error) {
-        console.error("Error fetching data:", error)
-      }
-    }
-    fetchData()
+    ApiUser().then((data) => {
+      setUser(data)
+    })
   }, [])
 
   //dùng data để render UI
@@ -63,20 +57,20 @@ function Nav() {
 
   const handleClickLogin = (e) => {
     e.preventDefault()
-    dispatch(login(!isLoginState))
+    dispatch(login())
   }
 
   const handleClickLogout = (e) => {
     e.preventDefault()
-    dispatch(login(!isLoginState))
-    if (!isLoginState) {
-      navigate("/")
-    }
+    dispatch(logout())
   }
 
   const handleClickSignUp = (e) => {
     e.preventDefault()
-    navigate("/signup")
+
+    if (window.confirm("Are you sure you want to sign up?")) {
+      navigate("/signup")
+    }
   }
 
   return (
@@ -160,10 +154,7 @@ function Nav() {
               <div className='notification-tippy-logout'>
                 <Tippy
                   content={
-                    <NotificationLogout
-                      handleClickLogin={handleClickLogin}
-                      handleClickSignUp={handleClickSignUp}
-                    />
+                    <NotificationLogout handleClickLogin={handleClickLogin} />
                   }
                   interactive={true}
                   arrow={true}
@@ -200,9 +191,13 @@ function Nav() {
               {/* Account  */}
               <div className='nav-info-account'>
                 <Link to='/signup'>
-                  <button onClick={handleClickSignUp}>Sign Up</button>
+                  <Tippy content='Click to sign up page'>
+                    <button onClick={handleClickSignUp}>Sign Up</button>
+                  </Tippy>
                 </Link>
-                <button onClick={handleClickLogin}>Login</button>
+                <Tippy content='Click to Login'>
+                  <button onClick={handleClickLogin}>Login</button>
+                </Tippy>
               </div>
             </nav>
           )}

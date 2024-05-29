@@ -8,7 +8,7 @@ import { useSelector } from "react-redux"
 
 function NavBottom() {
   const numCartItems = useSelector((state) => state.cart.renderCart)
-  console.log(numCartItems.length)
+
   return (
     <nav className='nav-bottom'>
       <nav className='nav-bottom-item'>

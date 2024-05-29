@@ -12,6 +12,7 @@ function FlashSaleContent() {
   const [data, setData] = useState([])
   const [visible, setVisible] = useState(16)
 
+  // dùng useeffect render ngẫu nhiên sản phẩm không theo sắp sếp id
   useEffect(() => {
     async function fetchData() {
       try {
@@ -23,10 +24,6 @@ function FlashSaleContent() {
     }
     fetchData()
   }, [])
-
-  //dùng data để render UI
-
-  //dùng data để render UI
 
   let settings = {
     dots: false,

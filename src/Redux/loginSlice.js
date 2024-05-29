@@ -9,6 +9,9 @@ export const loginSlice = createSlice({
     login: (state) => {
       state.isLoggedIn = true
     },
+    logout: (state) => {
+      state.isLoggedIn = false
+    },
   },
 })
 
