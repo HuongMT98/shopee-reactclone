@@ -2,7 +2,7 @@ import "./CartItem.scss"
 import imgempty from "../../../../../../Assets/emtycart.png"
 import formatNumber from "../../../../../../untils/fomatNumber"
 import { useSelector } from "react-redux"
-import { NavLink } from "react-router-dom"
+import { Link, NavLink } from "react-router-dom"
 
 function CartItem() {
   const isLoginState = useSelector((state) => state.login.isLoggedIn)
@@ -45,11 +45,13 @@ function CartItem() {
                 </div>
                 {cartItemUnique.slice(0, 6).map((item) => (
                   <div key={item.id} className='cart-item-content'>
-                    <img src={item.image} alt='' className='cart-item-img' />
-                    <p className='cart-item-name'>{item.name}</p>
-                    <p className='cart-item-price'>
-                      {formatNumber(item.giaSauKhiGiam)}đ
-                    </p>
+                    <Link to={`/product/${item.id}`} className='cart-item-link'>
+                      <img src={item.image} alt='' className='cart-item-img' />
+                      <p className='cart-item-name'>{item.name}</p>
+                      <p className='cart-item-price'>
+                        {formatNumber(item.giaSauKhiGiam)}đ
+                      </p>
+                    </Link>
                   </div>
                 ))}
               </div>

@@ -35,6 +35,7 @@ function ProductsPageDetail() {
       const giaTien = Math.round(
         product.price * (1 - product.discount / 100) * quantity
       )
+
       dispatch(
         addToCart({
           id,

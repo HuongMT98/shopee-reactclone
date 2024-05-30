@@ -31,6 +31,25 @@
         color: var(--color-black);
         font-weight: 100;
         font-size: 1.3rem;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        .flashsalepage-icon {
+          margin: 0 0.2rem;
+        }
+
+        .timer {
+          margin: 0 1rem;
+
+          .timebox {
+            background-color: var(--color-black);
+            color: white;
+            margin: 0.2rem;
+            padding: 2px;
+            border-radius: 5px;
+          }
+        }
       }
     }
   }

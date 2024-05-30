@@ -18,6 +18,7 @@ import { LiaShippingFastSolid } from "react-icons/lia"
 import { useState } from "react"
 import Tippy from "@tippyjs/react"
 import { Checkbox } from "rsuite"
+import OffersCart from "./OffersCart/OffersCart"
 
 function Cart() {
   const navigate = useNavigate()
@@ -43,9 +44,9 @@ function Cart() {
   }
 
   //Handle redux toolkit
-  const handleDeleteItem = (e) => {
-    e.preventDefault()
-    dispatch(removeFromCart())
+  const handleDeleteItem = (itemId) => {
+    dispatch(removeFromCart(itemId))
+    console.log(itemId)
   }
 
   const handleClearCart = (e) => {
@@ -72,7 +73,6 @@ function Cart() {
   }, [])
 
   //Tính tổng tiền của giỏ hàng
-  console.log(cartRender.map((item) => item.giaTien).reduce((a, b) => a + b, 0))
   const totalCart = cartRender
     .map((item) => item.giaTien)
     .reduce((a, b) => a + b, 0)
@@ -176,7 +176,7 @@ function Cart() {
                     </div>
                     <div className='cart-item-delete'>
                       <button
-                        onClick={handleDeleteItem}
+                        onClick={() => handleDeleteItem(item.id)}
                         className='button-delete'
                       >
                         Delete
@@ -207,6 +207,7 @@ function Cart() {
           )}
         </div>
       </div>
+      <OffersCart />
       <FooterBottom />
       <FooterInfo />
       <FooterPolicy />

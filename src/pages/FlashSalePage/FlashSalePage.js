@@ -31,10 +31,6 @@ function FlashSalePage() {
     fetchData()
   }, [])
 
-  //dùng data để render UI
-
-  //dùng data để render UI
-
   const handleLoadMore = () => {
     setVisible(visible + 24)
   }
@@ -46,13 +42,12 @@ function FlashSalePage() {
       <div className='flashsalepage-container'>
         <div className='flashsalepage-countdown'>
           <div className='flashsalepage-countdown-wrap'>
-            -----
             <img className='flashsalepage-img' src={imgFlashSale} alt='' />
-            <FlashSalePageCountdown />
             <h4 className='flashsalepage-title'>
-              <FontAwesomeIcon icon={faClock} /> end in:
+              <FontAwesomeIcon icon={faClock} className='flashsalepage-icon' />
+              end in:
+              <FlashSalePageCountdown />
             </h4>
-            -----
           </div>
         </div>
         <div className='flashsalepage-wrap'>

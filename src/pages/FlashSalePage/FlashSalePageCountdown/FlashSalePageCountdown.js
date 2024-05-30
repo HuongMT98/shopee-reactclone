@@ -8,7 +8,7 @@ const FlashSalePageCountdown = () => {
   const [minutes, setMinutes] = useState(0)
   const [seconds, setSeconds] = useState(0)
 
-  const deadline = "December, 31, 2024"
+  const deadline = "12, 31, 2024"
 
   const getTime = () => {
     const time = Date.parse(deadline) - Date.now()

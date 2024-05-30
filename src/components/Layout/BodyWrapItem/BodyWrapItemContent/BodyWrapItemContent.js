@@ -39,7 +39,10 @@ function BodyWrapItemContent() {
               <p className='bodywrapitem-item-name'>{item.name}</p>
               <div className='bodywrapitem-item-infosell'>
                 <p className='bodywrapitem-item-price'>
-                  đ{formatNumber(item.price)}
+                  đ
+                  {formatNumber(
+                    Math.round(item.price * (1 - item.discount / 100))
+                  )}
                 </p>
                 <p className='bodywrapitem-item-sold'>{item.sold} sold</p>
               </div>
