@@ -36,29 +36,36 @@ export const cartSlice = createSlice({
       state.renderCart = updatedItems
     },
 
+    // Thêm vào giỏ hàng
     addToCart: (state, action) => {
       state.renderCart.push(action.payload)
     },
 
+    // Xóa sản phẩm ra khỏi giỏ hàng
     removeFromCart: (state, action) => {
       state.renderCart = state.renderCart.filter(
         (item) => item.id !== action.payload
       )
     },
 
+    // Xóa bỏ toàn bộ sản phẩm ra khỏi giỏ hàng
     clearCart: (state) => {
       state.renderCart = []
     },
 
-    updateQuantity: (state, action) => {
-      if (state.renderCart) {
-        state.renderCart.forEach((item) => {
-          if (item.id === action.payload.id) {
-            item.quantity = action.payload.quantity
+    // Cập nhật số lượng sản phẩm của giỏ hàng trong cart
+    increateQuantity: (state, action) => {
+      if (Array.isArray(state.item)) {
+        state.item = state.item.map((item) => {
+          if (item.id === action.payload) {
+            return { ...item, quantity: item.quantity + 1 }
           }
+          return item
         })
       }
     },
+
+    //???????????????
   },
 })
 
@@ -67,7 +74,7 @@ export const {
   renderCart,
   removeFromCart,
   clearCart,
-  updateQuantity,
+  increateQuantity,
 } = cartSlice.actions
 
 export default cartSlice.reducer

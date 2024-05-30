@@ -11,32 +11,21 @@ import imgEmpty from "../../Assets/emtycart.png"
 import {
   removeFromCart,
   clearCart,
-  renderCart,
-  updateQuantity,
+  increateQuantity,
 } from "../../Redux/cartSlice"
 import { LiaShippingFastSolid } from "react-icons/lia"
-import { useState } from "react"
 import Tippy from "@tippyjs/react"
 import { Checkbox } from "rsuite"
 import OffersCart from "./OffersCart/OffersCart"
+import { useState } from "react"
 
 function Cart() {
   const navigate = useNavigate()
   const dispatch = useDispatch()
   const cartRender = useSelector((state) => state.cart.renderCart)
-  const [uiQuantity, SetUiQuantity] = useState(cartRender?.quantity)
+  const [proQuantity, setProductQuantity] = useState()
 
   // Handle tăng giảm sản phẩm
-  const handleDecre = (e) => {
-    e.preventDefault()
-    SetUiQuantity(uiQuantity - 1)
-  }
-  const handleIncre = (e) => {
-    e.preventDefault()
-    SetUiQuantity(uiQuantity + 1)
-  }
-
-  const handleInput = () => {}
 
   const handleHome = (e) => {
     e.preventDefault()
@@ -47,6 +36,11 @@ function Cart() {
   const handleDeleteItem = (itemId) => {
     dispatch(removeFromCart(itemId))
     console.log(itemId)
+  }
+
+  const handleIncreate = (e) => {
+    e.preventDefault()
+    setProductQuantity(proQuantity + 1)
   }
 
   const handleClearCart = (e) => {
@@ -161,12 +155,12 @@ function Cart() {
                     </div>
                     <div className='cart-item-quantity'>
                       <HStack maxW='320px'>
-                        <Button onClick={handleDecre}>-</Button>
+                        <Button>-</Button>
                         <Input
-                          defaultValue={item.quantity}
-                          onChange={handleInput}
+                          value={item.quantity}
+                          onChange={(e) => e.quantity + 1}
                         />
-                        <Button onClick={handleIncre}>+</Button>
+                        <Button onClick={handleIncreate}>+</Button>
                       </HStack>
                     </div>
                     <div className='cart-item-total-wrap'>

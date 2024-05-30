@@ -17,6 +17,7 @@ function SignUpPageContent() {
 
   const handleClickLogin = (e) => {
     dispatch(login())
+    navigate("/")
   }
 
   const handlePhoneNumberChange = (event) => {
@@ -106,7 +107,7 @@ function SignUpPageContent() {
                 </div>
                 <div className='signuppage-content-form-login'>
                   <p className='signuppage-content-form-login-text'>
-                    Have an account?{" "}
+                    Have an account?
                     <button onClick={handleClickLogin}>
                       <Link>Log In</Link>
                     </button>
