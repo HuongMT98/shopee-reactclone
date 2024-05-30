@@ -51,12 +51,13 @@ export const cartSlice = createSlice({
     },
 
     updateQuantity: (state, action) => {
-      state.renderCart = state.renderCart.map((item) => {
-        if (item.id === action.payload.id) {
-          item.quantity = action.payload.quantity
-        }
-        return item
-      })
+      if (state.renderCart) {
+        state.renderCart.forEach((item) => {
+          if (item.id === action.payload.id) {
+            item.quantity = action.payload.quantity
+          }
+        })
+      }
     },
   },
 })

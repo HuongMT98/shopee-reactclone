@@ -8,6 +8,7 @@
     width: var(--widthdefault);
     display: flex;
     flex-direction: column;
+    position: relative;
 
     //Cart Empty Css
     .cart-item-empty {
@@ -94,6 +95,7 @@
       }
     }
 
+    // Css cho sản phẩm
     .cart-item {
       width: 100%;
       display: flex;
@@ -135,6 +137,7 @@
 
         .cart-item-price-wrap {
           display: flex;
+          width: 20%;
 
           .cart-item-price-old {
             text-decoration: line-through;
@@ -178,6 +181,44 @@
               color: var(--color-red);
             }
           }
+        }
+      }
+    }
+
+    // Css Bill
+    .cart-itemTotal {
+      width: 100%;
+      height: 4rem;
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+      margin: 1rem 0;
+      background: white;
+      padding: 0 1rem;
+
+      .cart-item-total-price {
+        font-size: 17px;
+
+        .lengthCart {
+          color: var(--color-red);
+        }
+
+        .totalCart {
+          font-size: 22px;
+          color: var(--color-red);
+        }
+      }
+
+      .button-checkout {
+        width: 20%;
+        height: 2.5rem;
+        background: red;
+        color: white;
+        font-size: 16px;
+        margin: 0 0 0 1rem;
+
+        &:hover {
+          background: rgb(228, 110, 110);
         }
       }
     }

@@ -48,7 +48,7 @@ function CartItem() {
                     <img src={item.image} alt='' className='cart-item-img' />
                     <p className='cart-item-name'>{item.name}</p>
                     <p className='cart-item-price'>
-                      {formatNumber(item.giaTien)}đ
+                      {formatNumber(item.giaSauKhiGiam)}đ
                     </p>
                   </div>
                 ))}

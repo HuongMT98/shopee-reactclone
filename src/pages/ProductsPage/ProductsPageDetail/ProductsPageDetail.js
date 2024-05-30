@@ -31,7 +31,7 @@ function ProductsPageDetail() {
   const themVaoGioHang = () => {
     // Kiểm tra xem đã đăng nhập hay chưa
     if (login.isLoggedIn) {
-      const { name, image, price, id, numItems, priceNew } = product
+      const { name, image, price, id } = product
       const giaTien = Math.round(
         product.price * (1 - product.discount / 100) * quantity
       )
@@ -43,8 +43,7 @@ function ProductsPageDetail() {
           price,
           giaTien,
           quantity,
-          numItems,
-          priceNew,
+          giaSauKhiGiam,
         })
       )
 
@@ -73,11 +72,11 @@ function ProductsPageDetail() {
 
   // Dùng Useeffect tính toán số tiền sau khi giảm giá và cũng để lưu trong redux
   useEffect(() => {
-    const calculateGiaSauKhiGiam = () => {
+    const giaSauKhiGiam = () => {
       const gia = Math.round(product.price * (1 - product.discount / 100))
       setGiaSauKhiGiam(gia)
     }
-    calculateGiaSauKhiGiam()
+    giaSauKhiGiam()
   }, [product.price, product.discount])
 
   // Rest API lấy sản phẩm và render ra giao diện

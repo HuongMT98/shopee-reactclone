@@ -27,12 +27,18 @@ const FlashSalePageCountdown = () => {
 
   return (
     <div className='timer'>
-      <p>
-        <div className='timebox'>{days.toString().padStart(2, "0")}</div>
-        <div className='timebox'>{hours.toString().padStart(2, "0")}</div>
-        <div className='timebox'>{minutes.toString().padStart(2, "0")}</div>
-        <div className='timebox'>{seconds.toString().padStart(2, "0")}</div>
-      </p>
+      <span>
+        <span className='timebox'>{days.toString().padStart(2, "0")}</span>
+      </span>
+      <span>
+        <span className='timebox'>{hours.toString().padStart(2, "0")}</span>
+      </span>
+      <span>
+        <span className='timebox'>{minutes.toString().padStart(2, "0")}</span>
+      </span>
+      <span>
+        <span className='timebox'>{seconds.toString().padStart(2, "0")}</span>
+      </span>
     </div>
   )
 }
