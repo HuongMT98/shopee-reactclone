@@ -57,7 +57,12 @@ function CartItem() {
               </div>
               <div className='total-cartitem'>
                 <div className='total-cartitem-seemore'>
-                  <p>{`See more: ${cartItems.length} products `}</p>
+                  <p>
+                    See more: {""}
+                    <span className='total-cartlength'>
+                      {cartItems.length} products
+                    </span>
+                  </p>
                 </div>
                 <NavLink to='/cart'>
                   <button className='cart-item-btn'>

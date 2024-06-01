@@ -11,7 +11,12 @@ import { useSelector } from "react-redux"
 import { useEffect, useState } from "react"
 import { NavLink, useParams, useNavigate } from "react-router-dom"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
-import { faBolt, faQuestionCircle } from "@fortawesome/free-solid-svg-icons"
+import {
+  faBolt,
+  faCircleCheck,
+  faExclamationCircle,
+  faQuestionCircle,
+} from "@fortawesome/free-solid-svg-icons"
 import { faCartFlatbed } from "@fortawesome/free-solid-svg-icons/faCartFlatbed"
 import { faTruck } from "@fortawesome/free-solid-svg-icons/faTruck"
 import { Button, HStack, Input } from "@chakra-ui/react"
@@ -21,6 +26,7 @@ import { addToCart } from "../../../Redux/cartSlice"
 
 function ProductsPageDetail() {
   const [product, setProduct] = useState({})
+  const [warning, setWarning] = useState(false)
   const { productId } = useParams()
   const [quantity, setQuantity] = useState(1)
   const [giaSauKhiGiam, setGiaSauKhiGiam] = useState(0)
@@ -35,7 +41,6 @@ function ProductsPageDetail() {
       const giaTien = Math.round(
         product.price * (1 - product.discount / 100) * quantity
       )
-
       dispatch(
         addToCart({
           id,
@@ -47,6 +52,10 @@ function ProductsPageDetail() {
           giaSauKhiGiam,
         })
       )
+      setWarning(true)
+      setTimeout(() => {
+        setWarning(false)
+      }, 2000)
 
       // Sản phẩm sau khi thêm vào state redux sẽ được render ở pages/Cart/Cart.js
     } else {
@@ -239,6 +248,13 @@ function ProductsPageDetail() {
             </div>
           </div>
         </div>
+        {/* //Khi thêm giỏ hàng sẽ có popup */}
+        {warning && (
+          <div className='warning'>
+            <FontAwesomeIcon icon={faCircleCheck} />
+            <p>Item has been added to your shopping cart</p>
+          </div>
+        )}
       </div>
     </div>
   )

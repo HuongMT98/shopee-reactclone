@@ -2,12 +2,14 @@ import { createSlice } from "@reduxjs/toolkit"
 
 const initialState = {
   renderCart: [],
+  quantity: 0,
 }
 
 export const cartSlice = createSlice({
   name: "cart",
   initialState,
   reducers: {
+    // ⚙️⚙️⚙️⚙️⚙️⚙️⚙️⚙️⚙️⚙️⚙️⚙️⚙️⚙️⚙️⚙️⚙️⚙️⚙️⚙️⚙️⚙️
     renderCart: (state, action) => {
       const newItems = action.payload
       const existingItems = state.renderCart
@@ -36,6 +38,7 @@ export const cartSlice = createSlice({
       state.renderCart = updatedItems
     },
 
+    // ⚙️⚙️⚙️⚙️⚙️⚙️⚙️⚙️⚙️⚙️⚙️⚙️⚙️⚙️⚙️⚙️⚙️⚙️⚙️⚙️⚙️⚙️
     // Thêm vào giỏ hàng
     addToCart: (state, action) => {
       const { id, quantity } = action.payload
@@ -50,6 +53,7 @@ export const cartSlice = createSlice({
       }
     },
 
+    // ⚙️⚙️⚙️⚙️⚙️⚙️⚙️⚙️⚙️⚙️⚙️⚙️⚙️⚙️⚙️⚙️⚙️⚙️⚙️⚙️⚙️⚙️
     // Xóa sản phẩm ra khỏi giỏ hàng
     removeFromCart: (state, action) => {
       state.renderCart = state.renderCart.filter(
@@ -57,32 +61,39 @@ export const cartSlice = createSlice({
       )
     },
 
+    // ⚙️⚙️⚙️⚙️⚙️⚙️⚙️⚙️⚙️⚙️⚙️⚙️⚙️⚙️⚙️⚙️⚙️⚙️⚙️⚙️⚙️⚙️
     // Xóa bỏ toàn bộ sản phẩm ra khỏi giỏ hàng
     clearCart: (state) => {
       state.renderCart = []
     },
 
+    // ⚙️⚙️⚙️⚙️⚙️⚙️⚙️⚙️⚙️⚙️⚙️⚙️⚙️⚙️⚙️⚙️⚙️⚙️⚙️⚙️⚙️⚙️
     // Cập nhật số lượng sản phẩm của giỏ hàng trong cart
 
-    increateQuantityCart: (state, action) => {
-      const { id, quantity } = action.payload
-      const item = state.renderCart.find((item) => item.id === id)
-      if (item) {
-        item.quantity = quantity + 1
-        console.log(item)
+    increaQuantity: (state, action) => {
+      const itemIndex = state.renderCart.findIndex(
+        (renderCart) => renderCart.id === action.payload
+      )
+      if (itemIndex !== -1) {
+        state.renderCart[itemIndex].quantity += 1
       }
     },
 
-    decreateQuantityCart: (state, action) => {
-      const { id, quantity } = action.payload
-      const item = state.renderCart.find((item) => item.id === id)
-      if (item) {
-        item.quantity = quantity - 1
-        console.log(item)
+    decreaQuantity: (state, action) => {
+      const itemIndex = state.renderCart.findIndex(
+        (renderCart) => renderCart.id === action.payload
+      )
+      if (itemIndex !== -1 && state.renderCart[itemIndex].quantity > 1) {
+        state.renderCart[itemIndex].quantity -= 1
+      } else if (
+        itemIndex !== -1 &&
+        state.renderCart[itemIndex].quantity === 1
+      ) {
+        state.renderCart.splice(itemIndex, 1)
       }
     },
 
-    // ⚙️⚙️⚙️⚙️⚙️⚙️⚙️⚙️⚙️⚙️⚙️⚙️⚙️⚙️⚙️
+    // ⚙️⚙️⚙️⚙️⚙️⚙️⚙️⚙️⚙️⚙️⚙️⚙️⚙️⚙️⚙️⚙️⚙️⚙️⚙️⚙️⚙️⚙️
   },
 })
 
@@ -91,8 +102,8 @@ export const {
   renderCart,
   removeFromCart,
   clearCart,
-  increateQuantityCart,
-  decreateQuantityCart,
+  increaQuantity,
+  decreaQuantity,
 } = cartSlice.actions
 
 export default cartSlice.reducer

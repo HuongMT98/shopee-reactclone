@@ -276,5 +276,31 @@
         }
       }
     }
+
+    .warning {
+      position: fixed !important;
+      top: 30%;
+      right: 35%;
+      width: 25%;
+      height: 15rem;
+      z-index: 99;
+      background: black;
+      color: white !important;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      opacity: 0.7;
+      flex-direction: column;
+
+      svg {
+        color: rgb(0, 255, 255);
+        font-size: 3rem;
+        margin: 1rem 0;
+      }
+
+      p {
+        font-size: 18px;
+      }
+    }
   }
 }

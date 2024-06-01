@@ -143,6 +143,9 @@
         .total-cartitem-seemore {
           width: 50%;
           p {
+            .total-cartlength {
+              color: var(--color-red);
+            }
           }
         }
 

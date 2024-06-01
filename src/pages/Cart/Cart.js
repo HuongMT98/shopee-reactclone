@@ -11,8 +11,8 @@ import imgEmpty from "../../Assets/emtycart.png"
 import {
   removeFromCart,
   clearCart,
-  increateQuantityCart,
-  decreateQuantityCart,
+  decreaQuantity,
+  increaQuantity,
 } from "../../Redux/cartSlice"
 import { LiaShippingFastSolid } from "react-icons/lia"
 import Tippy from "@tippyjs/react"
@@ -22,30 +22,17 @@ import OffersCart from "./OffersCart/OffersCart"
 function Cart() {
   const navigate = useNavigate()
   const dispatch = useDispatch()
-  const cartRender = useSelector((state) => state.cart.renderCart)
 
-  // Handle tăng giảm sản phẩm
+  //State global Redux cartSlice.js
+  const cartRender = useSelector((state) => state.cart.renderCart)
 
   const handleHome = (e) => {
     e.preventDefault()
     navigate("/")
   }
 
-  const handleQuantityChange = (event) => {}
+  const handleQuantity = (itemId, quantity) => {}
 
-  //Handle redux toolkit
-
-  //Tăng sản phẩm thêm 1 khi ấn nút
-  const increateItem = (itemId) => {
-    dispatch(increateQuantityCart(itemId))
-  }
-
-  //Giảm sản phẩm khi ấn nút
-  const decreateItem = (itemId) => {
-    dispatch(decreateQuantityCart(itemId))
-  }
-
-  // Xóa sản phẩm
   const handleDeleteItem = (itemId) => {
     dispatch(removeFromCart(itemId))
   }
@@ -61,7 +48,12 @@ function Cart() {
   //Thanh toán
   const handleCheckout = (e) => {
     e.preventDefault()
-    navigate("/checkout")
+
+    if (window.confirm("Checkout : " + formatNumber(totalCart) + "đ")) {
+      alert("Thanh toán thành công")
+      navigate("/")
+      dispatch(clearCart())
+    }
   }
 
   // Render ra 1 sản phẩm duy nhất khi trùng id
@@ -164,12 +156,23 @@ function Cart() {
                     </div>
                     <div className='cart-item-quantity'>
                       <HStack maxW='320px'>
-                        <Button onClick={() => decreateItem(item.id)}>-</Button>
+                        <Button
+                          onClick={() => dispatch(decreaQuantity(item.id))}
+                        >
+                          -
+                        </Button>
                         <Input
-                          value={item.quantity || 0}
-                          onChange={handleQuantityChange}
+                          // value={item.quantity || 0}
+                          value={item.quantity}
+                          onChange={(e) =>
+                            handleQuantity(item.id, e.target.value)
+                          }
                         />
-                        <Button onClick={() => increateItem(item.id)}>+</Button>
+                        <Button
+                          onClick={() => dispatch(increaQuantity(item.id))}
+                        >
+                          +
+                        </Button>
                       </HStack>
                     </div>
                     <div className='cart-item-total-wrap'>
