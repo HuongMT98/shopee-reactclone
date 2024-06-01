@@ -21,8 +21,9 @@ function NavSideBar() {
       .then((res) => setUser(res.data))
       .catch((err) => console.log(err))
   }, [])
+
   return (
-    <>
+    <div>
       <div className='nav-sidebar-container'>
         <div className='nav-sidebar'>
           <div className='nav-sidebar-user'>
@@ -99,7 +100,7 @@ function NavSideBar() {
           </div>
         </div>
       </div>
-    </>
+    </div>
   )
 }
 

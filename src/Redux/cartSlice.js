@@ -38,7 +38,16 @@ export const cartSlice = createSlice({
 
     // Thêm vào giỏ hàng
     addToCart: (state, action) => {
-      state.renderCart.push(action.payload)
+      const { id, quantity } = action.payload
+      const existingItemIndex = state.renderCart.findIndex(
+        (item) => item.id === id
+      )
+
+      if (existingItemIndex !== -1) {
+        state.renderCart[existingItemIndex].quantity += quantity
+      } else {
+        state.renderCart.push(action.payload)
+      }
     },
 
     // Xóa sản phẩm ra khỏi giỏ hàng
@@ -54,18 +63,26 @@ export const cartSlice = createSlice({
     },
 
     // Cập nhật số lượng sản phẩm của giỏ hàng trong cart
-    increateQuantity: (state, action) => {
-      if (Array.isArray(state.item)) {
-        state.item = state.item.map((item) => {
-          if (item.id === action.payload) {
-            return { ...item, quantity: item.quantity + 1 }
-          }
-          return item
-        })
+
+    increateQuantityCart: (state, action) => {
+      const { id, quantity } = action.payload
+      const item = state.renderCart.find((item) => item.id === id)
+      if (item) {
+        item.quantity = quantity + 1
+        console.log(item)
       }
     },
 
-    //???????????????
+    decreateQuantityCart: (state, action) => {
+      const { id, quantity } = action.payload
+      const item = state.renderCart.find((item) => item.id === id)
+      if (item) {
+        item.quantity = quantity - 1
+        console.log(item)
+      }
+    },
+
+    // ⚙️⚙️⚙️⚙️⚙️⚙️⚙️⚙️⚙️⚙️⚙️⚙️⚙️⚙️⚙️
   },
 })
 
@@ -74,7 +91,8 @@ export const {
   renderCart,
   removeFromCart,
   clearCart,
-  increateQuantity,
+  increateQuantityCart,
+  decreateQuantityCart,
 } = cartSlice.actions
 
 export default cartSlice.reducer
