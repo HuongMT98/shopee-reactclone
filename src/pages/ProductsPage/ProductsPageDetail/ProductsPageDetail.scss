@@ -279,8 +279,9 @@
 
     .warning {
       position: fixed !important;
-      top: 30%;
-      right: 35%;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
       width: 25%;
       height: 15rem;
       z-index: 99;
@@ -299,7 +300,7 @@
       }
 
       p {
-        font-size: 18px;
+        font-size: 16px;
       }
     }
   }

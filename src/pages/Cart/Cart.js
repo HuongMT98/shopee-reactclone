@@ -18,10 +18,16 @@ import { LiaShippingFastSolid } from "react-icons/lia"
 import Tippy from "@tippyjs/react"
 import { Checkbox } from "rsuite"
 import OffersCart from "./OffersCart/OffersCart"
+import { useState } from "react"
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
+import { faCircleCheck } from "@fortawesome/free-solid-svg-icons"
 
 function Cart() {
   const navigate = useNavigate()
   const dispatch = useDispatch()
+  const [ischeckout, setIscheckout] = useState(false)
+
+  const [editQuantity, setEditQuantity] = useState()
 
   //State global Redux cartSlice.js
   const cartRender = useSelector((state) => state.cart.renderCart)
@@ -31,7 +37,9 @@ function Cart() {
     navigate("/")
   }
 
-  const handleQuantity = (itemId, quantity) => {}
+  const handleQuantity = () => {
+    setEditQuantity(editQuantity)
+  }
 
   const handleDeleteItem = (itemId) => {
     dispatch(removeFromCart(itemId))
@@ -50,10 +58,17 @@ function Cart() {
     e.preventDefault()
 
     if (window.confirm("Checkout : " + formatNumber(totalCart) + "đ")) {
-      alert("Thanh toán thành công")
-      navigate("/")
-      dispatch(clearCart())
+      setIscheckout(true)
     }
+
+    setTimeout(() => {
+      setIscheckout(false)
+    }, 2000)
+
+    setTimeout(() => {
+      dispatch(clearCart())
+      navigate("/purchase")
+    }, 2500)
   }
 
   // Render ra 1 sản phẩm duy nhất khi trùng id
@@ -162,8 +177,7 @@ function Cart() {
                           -
                         </Button>
                         <Input
-                          // value={item.quantity || 0}
-                          value={item.quantity}
+                          value={editQuantity || item.quantity}
                           onChange={(e) =>
                             handleQuantity(item.id, e.target.value)
                           }
@@ -217,6 +231,14 @@ function Cart() {
       <FooterBottom />
       <FooterInfo />
       <FooterPolicy />
+      {ischeckout && (
+        <div className='overlay-container'>
+          <div className='overlay'>
+            <FontAwesomeIcon icon={faCircleCheck} />
+            <p>Checkout</p>
+          </div>
+        </div>
+      )}
     </>
   )
 }

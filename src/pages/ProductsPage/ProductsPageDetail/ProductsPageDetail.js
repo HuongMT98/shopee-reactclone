@@ -14,7 +14,6 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import {
   faBolt,
   faCircleCheck,
-  faExclamationCircle,
   faQuestionCircle,
 } from "@fortawesome/free-solid-svg-icons"
 import { faCartFlatbed } from "@fortawesome/free-solid-svg-icons/faCartFlatbed"
@@ -35,7 +34,7 @@ function ProductsPageDetail() {
   const navigate = useNavigate()
 
   const themVaoGioHang = () => {
-    // Kiểm tra xem đã đăng nhập hay chưa
+    // Kiểm tra xem đã đăng nhập hay chưa khi dùng useState
     if (login.isLoggedIn) {
       const { name, image, price, id } = product
       const giaTien = Math.round(
@@ -75,12 +74,13 @@ function ProductsPageDetail() {
     })
   const dec = getDecrementButtonProps()
   const inc = getIncrementButtonProps()
-  // custom setting khi click với nút +/-
+
+  // Custom setting khi click với nút +/-
   const input = getInputProps({
     onChange: (e) => setQuantity(Number(e.target.value)),
   })
 
-  // Dùng Useeffect tính toán số tiền sau khi giảm giá và cũng để lưu trong redux
+  // Dùng Use-effect tính toán số tiền sau khi giảm giá và cũng để lưu trong redux
   useEffect(() => {
     const giaSauKhiGiam = () => {
       const gia = Math.round(product.price * (1 - product.discount / 100))
@@ -98,7 +98,6 @@ function ProductsPageDetail() {
     }
     getProductDetail()
   }, [productId])
-
   if (Object.keys(product).length === 0) {
     return <div>Loading... product</div>
   }
@@ -107,7 +106,11 @@ function ProductsPageDetail() {
   const handleAddItem = (e) => {
     e.preventDefault()
     setQuantity(quantity + 1)
+    if (quantity >= 99) {
+      setQuantity(99)
+    }
   }
+
   const handleDecreaseItem = (e) => {
     e.preventDefault()
     setQuantity(quantity - 1)
@@ -115,6 +118,8 @@ function ProductsPageDetail() {
       setQuantity(1)
     }
   }
+
+  const handleCheckout = () => {}
 
   // Render ra giao diện
   return (
@@ -242,7 +247,10 @@ function ProductsPageDetail() {
               >
                 Add to cart
               </button>
-              <button className='products-page-detail-btn btn-buy'>
+              <button
+                className='products-page-detail-btn btn-buy'
+                onClick={handleCheckout}
+              >
                 Buy now
               </button>
             </div>

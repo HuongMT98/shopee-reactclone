@@ -233,3 +233,34 @@
     }
   }
 }
+
+.overlay-container {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 30%;
+  height: 30%;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 99;
+
+  .overlay {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+    svg {
+      font-size: 3rem;
+      color: var(--color-prime);
+      margin: 1rem 0;
+    }
+    p {
+      font-size: 1.4rem;
+      color: var(--bg-primary);
+    }
+  }
+}
