@@ -1,24 +1,22 @@
 /* eslint-disable no-unused-vars */
 import express from "express"
 import { CONNECT_DB, GET_DB } from "./configs/mongodb.js"
+import env from "./configs/environment.js"
 
 const START_SERVER = () => {
   const app = express()
-  const host = "http://localhost"
-  const port = 5000
 
   app.get("/", async (req, res) => {
-    res.send("Hello World!")
+    res.send("<h1>Welcome to Backend Server</h1>")
   })
 
-  app.listen(port, () => {
-    console.log(`3: Backend server đang chạy tại: ${host}:${port}`)
+  app.listen(env.POST, () => {
+    console.log(`3: Backend server đang chạy tại: ${env.HOST}:${env.POST}`)
   })
 }
 
 //Chỉ khi kết nối database thành công thì mới start server
 //Cách 1: Dùng anonymous Async function
-
 ;(async () => {
   try {
     console.log("1: Đang kết nối Database MongoDB...")
