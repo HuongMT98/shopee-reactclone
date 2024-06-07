@@ -1,5 +1,6 @@
+/* eslint-disable no-unused-vars */
 import express from "express"
-import { CONNECT_DB, GET_DB } from "./configs/mongodb"
+import { CONNECT_DB, GET_DB } from "./configs/mongodb.js"
 
 const START_SERVER = () => {
   const app = express()
@@ -7,7 +8,6 @@ const START_SERVER = () => {
   const port = 5000
 
   app.get("/", async (req, res) => {
-    console.log(await GET_DB().listCollections().toArray())
     res.send("Hello World!")
   })
 
@@ -31,16 +31,3 @@ const START_SERVER = () => {
     process.exit(1)
   }
 })()
-
-//Chỉ khi kết nối database thành công thì mới start server
-//Cách 2: Dùng Promise
-
-// CONNECT_DB()
-//   .then(() => console.log("1: Kết nối database thành công"))
-//   .then(() => {
-//     START_SERVER()
-//   })
-//   .catch((error) => {
-//     console.error(error)
-//     process.exit(1)
-//   })

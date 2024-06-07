@@ -1,9 +1,10 @@
 import { MongoClient } from "mongodb"
 import { ServerApiVersion } from "mongodb"
+import env from "./environment.js"
 
-const MONGODB_URI = ""
+const MONGODB_URI = env.MONGODB_URI
 
-const MONGODB_NAME = ""
+const DATABASE_NAME = env.DATABASE_NAME
 
 let databaseInstance = null
 
@@ -24,7 +25,7 @@ const CONNECT_DB = async () => {
   try {
     await client.connect()
 
-    databaseInstance = client.db(MONGODB_NAME)
+    databaseInstance = client.db(DATABASE_NAME)
   } catch (err) {
     console.error(err)
     throw new Error("Error connecting to the database")
