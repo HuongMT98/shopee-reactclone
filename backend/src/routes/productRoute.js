@@ -1,4 +1,8 @@
+// Import controllers
+import productController from "../controllers/productController.js"
+
 const router = require("express").Router()
 
-// Import controllers
-router.post("/")
+//Route routes
+
+router.post("/", productController.addProduct)

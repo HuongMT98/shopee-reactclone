@@ -70,7 +70,7 @@ const shopSchema = new mongoose.Schema({
   },
 })
 
-let product = mongoose.model("Product", productSchema)
-let shop = mongoose.model("Shop", shopSchema)
+let Product = mongoose.model("Product", productSchema)
+let Shop = mongoose.model("Shop", shopSchema)
 
-module.exports = { product, shop }
+module.exports = { Product, Shop }
