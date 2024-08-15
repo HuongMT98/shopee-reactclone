@@ -67,7 +67,8 @@ function FlashSaleContent() {
         <Slider {...settings}>
           {data.slice(0, visible).map((item) => (
             <div key={item.id} className='slider-flashsale-item'>
-              <NavLink to={`/flashsale`}>
+              {/* <NavLink to={`/flashsale`}> */}
+              <NavLink to={`/product/${item.id}`}>
                 <div className='slider-flashsale-img'>
                   <img src={item.image} alt='' />
                 </div>
