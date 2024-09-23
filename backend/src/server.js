@@ -8,13 +8,15 @@ import env from "./configs/environment.js"
 
 const app = express()
 
-//Connect DB
+//Connect DataBase
 mongoose
   .connect(env.MONGODB_URL, {
     useNewUrlParser: true,
     useUnifiedTopology: true,
   })
-  .then(() => console.log("2: Message Configs MongoDB: Connected to MongoDB!"))
+  .then(() =>
+    console.log("*** 2: Message Configs MongoDB: Connected to MongoDB!")
+  )
   .catch((error) => console.error(error))
 
 app.use(cors())
@@ -23,6 +25,6 @@ app.use(bodyParser.json())
 
 app.listen(env.PORT, () => {
   console.log(
-    `1: Hello ${env.AUTHOR}! Server is running on '${env.HOST}:${env.PORT}'`
+    `*** 1: Hello ${env.AUTHOR}! Server is running on '${env.HOST}:${env.PORT}'`
   )
 })
