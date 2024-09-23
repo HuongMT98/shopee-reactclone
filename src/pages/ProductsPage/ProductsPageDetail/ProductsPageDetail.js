@@ -22,6 +22,7 @@ import { Button, HStack, Input } from "@chakra-ui/react"
 import { useNumberInput } from "@mui/base/unstable_useNumberInput/useNumberInput"
 import { useDispatch } from "react-redux"
 import { addToCart } from "../../../Redux/cartSlice"
+import OffersCart from "../../Cart/OffersCart/OffersCart"
 
 function ProductsPageDetail() {
   const [product, setProduct] = useState({})
@@ -54,7 +55,7 @@ function ProductsPageDetail() {
       setWarning(true)
       setTimeout(() => {
         setWarning(false)
-      }, 2000)
+      }, 1000)
 
       // Sản phẩm sau khi thêm vào state redux sẽ được render ở pages/Cart/Cart.js
     } else {
@@ -265,6 +266,12 @@ function ProductsPageDetail() {
             </div>
           </div>
         </div>
+
+        {/* // Hiển thị thêm sản phẩm có thể bạn thích */}
+        <div style={{ marginTop: "3rem", padding: "0" }}>
+          <OffersCart />
+        </div>
+
         {/* //Khi thêm giỏ hàng sẽ có popup */}
         {warning && (
           <div className='warning'>

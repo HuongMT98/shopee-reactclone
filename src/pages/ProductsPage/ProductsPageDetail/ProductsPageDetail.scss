@@ -6,12 +6,13 @@
   .products-page-detail-container {
     width: var(--widthdefault);
     background: var(--bg-primary);
-    padding: 1rem;
+    // padding: 1rem;
 
     .products-page-detail-wrap {
       display: flex;
       flex-direction: row;
       justify-content: space-around;
+      padding: 1rem;
 
       .products-page-detail-img {
         width: 40%;
