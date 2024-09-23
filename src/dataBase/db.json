@@ -750,10 +750,10 @@
   ],
   "notifications": [
     {
-      "id": "",
+      "id": "1",
       "title": "",
       "image": "",
-      "content": ""
+      "content": "Thông báo mua sắm của bạn"
     }
   ]
 }

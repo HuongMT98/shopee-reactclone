@@ -22,7 +22,7 @@ function BodyWrapItemContent() {
   //dùng data để render UI
 
   const handleLoadMore = () => {
-    setVisible((prevVisible) => prevVisible + 12)
+    setVisible((prevVisible) => prevVisible + 24)
   }
 
   return (

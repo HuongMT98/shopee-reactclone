@@ -7,7 +7,7 @@ const CoundownFlashSale = () => {
   const [minutes, setMinutes] = useState(0)
   const [seconds, setSeconds] = useState(0)
 
-  const deadline = "August, 9, 2024"
+  const deadline = "December, 24, 2024"
 
   const getTime = () => {
     const time = Date.parse(deadline) - Date.now()

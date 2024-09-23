@@ -158,7 +158,7 @@ function Nav() {
                   delay={[0, 500]}
                   placement='bottom-end'
                 >
-                  <NavLink to='/notification'>
+                  <NavLink to='/signup'>
                     <FontAwesomeIcon icon={faBell} className='icon' />
                     Notifications
                   </NavLink>
