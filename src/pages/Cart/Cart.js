@@ -26,6 +26,7 @@ function Cart() {
   const navigate = useNavigate()
   const dispatch = useDispatch()
   const [ischeckout, setIscheckout] = useState(false)
+  const [confirmDelete, setConfirmDelete] = useState(false)
 
   const [editQuantity, setEditQuantity] = useState()
 
@@ -42,14 +43,22 @@ function Cart() {
   }
 
   const handleDeleteItem = (itemId) => {
-    dispatch(removeFromCart(itemId))
+    window.confirm("Remove this item from your cart") && setConfirmDelete(true)
+    setTimeout(() => {
+      dispatch(removeFromCart(itemId))
+      setConfirmDelete(false)
+    }, 2000)
   }
 
   //Clear Cart
   const handleClearCart = (e) => {
     e.preventDefault()
     if (window.confirm("Are you sure you want to clear the cart?")) {
-      dispatch(clearCart())
+      setConfirmDelete(true)
+      setTimeout(() => {
+        dispatch(clearCart())
+        setConfirmDelete(false)
+      }, 2000)
     }
   }
 
@@ -59,16 +68,13 @@ function Cart() {
 
     if (window.confirm("Checkout : " + formatNumber(totalCart) + "đ")) {
       setIscheckout(true)
-    }
-
-    setTimeout(() => {
+      setTimeout(() => {
+        dispatch(clearCart())
+        navigate("/purchase")
+      }, 2000)
+    } else {
       setIscheckout(false)
-    }, 2000)
-
-    setTimeout(() => {
-      dispatch(clearCart())
-      navigate("/purchase")
-    }, 2500)
+    }
   }
 
   // Render ra 1 sản phẩm duy nhất khi trùng id
@@ -235,7 +241,33 @@ function Cart() {
         <div className='overlay-container'>
           <div className='overlay'>
             <FontAwesomeIcon icon={faCircleCheck} />
-            <p>Checkout</p>
+            <p
+              style={{
+                fontSize: "20px",
+                fontWeight: "bold",
+                gap: "10px",
+                display: "flex",
+              }}
+            >
+              Checkout successfully
+            </p>
+          </div>
+        </div>
+      )}
+      {confirmDelete && (
+        <div className='overlay-container'>
+          <div className='overlay'>
+            <FontAwesomeIcon icon={faCircleCheck} />
+            <p
+              style={{
+                fontSize: "20px",
+                fontWeight: "bold",
+                gap: "10px",
+                display: "flex",
+              }}
+            >
+              Delete successfully
+            </p>
           </div>
         </div>
       )}

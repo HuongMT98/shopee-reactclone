@@ -119,7 +119,16 @@ function ProductsPageDetail() {
     }
   }
 
-  const handleCheckout = () => {}
+  const handleCheckout = () => {
+    if (login.isLoggedIn) {
+      themVaoGioHang()
+      navigate("/cart")
+    } else {
+      if (window.confirm("Bạn chưa đăng nhập. Đăng nhập ngay?")) {
+        navigate("/signup")
+      }
+    }
+  }
 
   // Render ra giao diện
   return (
