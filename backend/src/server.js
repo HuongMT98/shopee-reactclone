@@ -14,6 +14,7 @@ mongoose
     useNewUrlParser: true,
     useUnifiedTopology: true,
   })
+
   .then(() =>
     console.log("*** 2: Message Configs MongoDB: Connected to MongoDB!")
   )
